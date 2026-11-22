@@ -1,0 +1,13 @@
+symbols: [XAUUSDT, BTCUSDT, ZECUSDT]
+market: Binance USD-M perpetual
+timeframe_minutes: 5
+max_sweep_mss: 24
+observation_horizon: 288
+risk_reward: 2
+round_trip_cost_bps: 10
+split: [0.6, 0.2, 0.2]
+seed: 20261121
+bootstrap_repetitions: 1000
+sensitivity_sweep_mss: [12, 48]
+data_cutoff_exclusive: '2026-11-21T00:00:00Z'
+

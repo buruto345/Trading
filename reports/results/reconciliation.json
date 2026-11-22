@@ -1,0 +1,9 @@
+{
+  "patterns_equal_simulation_rows": true,
+  "unique_pattern_ids": true,
+  "causal_timestamps": true,
+  "no_partition_crossing": true,
+  "cost_reconciliation": true,
+  "sql_rows": 10275,
+  "sql_resolved": 9987
+}

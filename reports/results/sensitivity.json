@@ -1,0 +1,2078 @@
+[
+  {
+    "symbol": "XAUUSDT",
+    "max_sweep_mss": 12,
+    "scope": "development only; cached M1 where available",
+    "patterns": 414,
+    "trades": 414,
+    "resolved": 397,
+    "wins": 126,
+    "losses": 271,
+    "breakeven": 0,
+    "unresolved": 16,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 16,
+    "ambiguous_trades": 1,
+    "win_rate": 0.31738035264483627,
+    "loss_rate": 0.6826196473551638,
+    "unresolved_rate": 0.03864734299516908,
+    "ambiguous_rate": 0.0024154589371980675,
+    "censored_rate": 0.04106280193236715,
+    "win_rate_all_trades_lower": 0.30434782608695654,
+    "win_rate_all_trades_upper": 0.34541062801932365,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.2803020148563054,
+        "high": 0.3569309373140149,
+        "margin_of_error": 0.038314461228854756,
+        "normal_margin_of_error": 0.03842478221248181
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.2735308585052179,
+        "high": 0.3647301127361277,
+        "margin_of_error": 0.0455996271154549,
+        "normal_margin_of_error": 0.04578595202409553
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.26063044234958954,
+        "high": 0.38013401775771527,
+        "margin_of_error": 0.059751787704062836,
+        "normal_margin_of_error": 0.06017294085239309
+      }
+    },
+    "gross": {
+      "gross_profit_r": 251.99999999999997,
+      "gross_loss_r": 271.0,
+      "net_result_r": -19.00000000000002,
+      "expectancy_r": -0.04785894206549124,
+      "profit_factor": 0.9298892988929889,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.9999999999999998,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 46.00000000000002,
+      "average_drawdown_r": 24.259445843828715,
+      "n": 397,
+      "mean": -0.04785894206549124,
+      "median": -1.0,
+      "std": 1.398132484673351,
+      "min": -1.0,
+      "max": 2.0,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 183.79873881305477,
+      "gross_loss_r": 447.01291797866764,
+      "net_result_r": -263.21417916561285,
+      "expectancy_r": -0.6630080079738359,
+      "profit_factor": 0.4111709783336195,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.5576164306191083,
+      "average_losing_outcome_r": -1.6021968386332173,
+      "maximum_drawdown_r": 268.7947402839389,
+      "average_drawdown_r": 125.12693257809816,
+      "n": 397,
+      "mean": -0.6630080079738359,
+      "median": -1.2501524064171148,
+      "std": 1.5859129468270738,
+      "min": -7.092847222220068,
+      "max": 1.90346374774051,
+      "percentiles": {
+        "5": -3.0314977812176807,
+        "25": -1.494132530120476,
+        "50": -1.2501524064171148,
+        "75": 1.3794663341646223,
+        "95": 1.778902002160653
+      }
+    },
+    "max_consecutive_wins": 3,
+    "max_consecutive_losses": 14,
+    "duration_bars": {
+      "n": 414,
+      "mean": 52.10144927536232,
+      "median": 26.0,
+      "std": 67.5913110153297,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 3.0,
+        "25": 10.25,
+        "50": 26.0,
+        "75": 61.0,
+        "95": 221.54999999999956
+      }
+    },
+    "duration_minutes": {
+      "n": 414,
+      "mean": 260.4975845410628,
+      "median": 130.0,
+      "std": 337.9583462792675,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 15.0,
+        "25": 51.25,
+        "50": 130.0,
+        "75": 305.0,
+        "95": 1107.7499999999977
+      }
+    },
+    "mfe_r": {
+      "n": 414,
+      "mean": 1.1922919160863341,
+      "median": 1.0039817582863297,
+      "std": 0.9438870866188963,
+      "min": 0.0,
+      "max": 4.822194199243175,
+      "percentiles": {
+        "5": 0.04297646905873981,
+        "25": 0.32021607766538235,
+        "50": 1.0039817582863297,
+        "75": 2.0630074889426195,
+        "95": 2.687598951484805
+      }
+    },
+    "mae_r": {
+      "n": 414,
+      "mean": 1.0018460371729883,
+      "median": 1.073928880594474,
+      "std": 0.5705344610896825,
+      "min": 0.0,
+      "max": 6.140562248996508,
+      "percentiles": {
+        "5": 0.08242697086700518,
+        "25": 0.6931532768493822,
+        "50": 1.073928880594474,
+        "75": 1.2539885767037686,
+        "95": 1.7368120953001742
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.7656701987779817,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "XAUUSDT",
+    "max_sweep_mss": 48,
+    "scope": "development only; cached M1 where available",
+    "patterns": 480,
+    "trades": 480,
+    "resolved": 455,
+    "wins": 146,
+    "losses": 309,
+    "breakeven": 0,
+    "unresolved": 24,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 24,
+    "ambiguous_trades": 1,
+    "win_rate": 0.3208791208791209,
+    "loss_rate": 0.6791208791208792,
+    "unresolved_rate": 0.05,
+    "ambiguous_rate": 0.0020833333333333333,
+    "censored_rate": 0.052083333333333336,
+    "win_rate_all_trades_lower": 0.30416666666666664,
+    "win_rate_all_trades_upper": 0.35625,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.2860318961450158,
+        "high": 0.3578439486395739,
+        "margin_of_error": 0.03590602624727908,
+        "normal_margin_of_error": 0.03599696032737205
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.2796393244173883,
+        "high": 0.3651181471089651,
+        "margin_of_error": 0.042739411345788424,
+        "normal_margin_of_error": 0.04289302381594096
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.26742994887142557,
+        "high": 0.379477160621043,
+        "margin_of_error": 0.056023605874808674,
+        "normal_margin_of_error": 0.05637098871939181
+      }
+    },
+    "gross": {
+      "gross_profit_r": 292.0,
+      "gross_loss_r": 309.0,
+      "net_result_r": -17.00000000000002,
+      "expectancy_r": -0.03736263736263741,
+      "profit_factor": 0.9449838187702265,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 40.00000000000002,
+      "average_drawdown_r": 17.12527472527473,
+      "n": 455,
+      "mean": -0.03736263736263741,
+      "median": -1.0,
+      "std": 1.4019847755720318,
+      "min": -1.0,
+      "max": 2.0,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 207.96520759727295,
+      "gross_loss_r": 516.8562078973973,
+      "net_result_r": -308.8910003001244,
+      "expectancy_r": -0.6788813193409328,
+      "profit_factor": 0.4023656955641263,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.5519791611736788,
+      "average_losing_outcome_r": -1.6101439498361287,
+      "maximum_drawdown_r": 313.8664019864849,
+      "average_drawdown_r": 139.01768330849816,
+      "n": 455,
+      "mean": -0.6788813193409328,
+      "median": -1.2459589041095938,
+      "std": 1.607818098505036,
+      "min": -7.092847222220068,
+      "max": 1.9581763454206933,
+      "percentiles": {
+        "5": -3.05160050877209,
+        "25": -1.4841481174925266,
+        "50": -1.2459589041095938,
+        "75": 1.3639266775689063,
+        "95": 1.7948517385626899
+      }
+    },
+    "max_consecutive_wins": 3,
+    "max_consecutive_losses": 9,
+    "duration_bars": {
+      "n": 480,
+      "mean": 57.639583333333334,
+      "median": 30.0,
+      "std": 72.77827809058277,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 3.950000000000003,
+        "25": 11.0,
+        "50": 30.0,
+        "75": 65.25,
+        "95": 261.3999999999987
+      }
+    },
+    "duration_minutes": {
+      "n": 480,
+      "mean": 288.18958333333336,
+      "median": 150.0,
+      "std": 363.89346025064424,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 19.750000000000014,
+        "25": 55.0,
+        "50": 150.0,
+        "75": 326.25,
+        "95": 1306.9999999999936
+      }
+    },
+    "mfe_r": {
+      "n": 480,
+      "mean": 1.1729118280691124,
+      "median": 0.9357173872740259,
+      "std": 0.943158724184775,
+      "min": 0.0,
+      "max": 4.822194199243175,
+      "percentiles": {
+        "5": 0.03855265554291442,
+        "25": 0.30794505257078486,
+        "50": 0.9357173872740259,
+        "75": 2.0614808771789637,
+        "95": 2.6531279732056494
+      }
+    },
+    "mae_r": {
+      "n": 480,
+      "mean": 0.9914084316880417,
+      "median": 1.06602601194081,
+      "std": 0.5521203517295032,
+      "min": 0.0,
+      "max": 6.140562248996508,
+      "percentiles": {
+        "5": 0.08829964369426571,
+        "25": 0.6826115831992496,
+        "50": 1.06602601194081,
+        "75": 1.2441687350537218,
+        "95": 1.7249663425827892
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.7289842149466494,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "XAUUSDT",
+    "horizon_bars": 144,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 465,
+    "trades": 465,
+    "resolved": 413,
+    "wins": 127,
+    "losses": 286,
+    "breakeven": 0,
+    "unresolved": 51,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 51,
+    "ambiguous_trades": 1,
+    "win_rate": 0.3075060532687651,
+    "loss_rate": 0.6924939467312349,
+    "unresolved_rate": 0.10967741935483871,
+    "ambiguous_rate": 0.002150537634408602,
+    "censored_rate": 0.11182795698924732,
+    "win_rate_all_trades_lower": 0.2731182795698925,
+    "win_rate_all_trades_upper": 0.3849462365591398,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.27150983629074377,
+        "high": 0.34600789349734196,
+        "margin_of_error": 0.037249028603299074,
+        "normal_margin_of_error": 0.037349694712906494
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.26494514166145006,
+        "high": 0.3536148728586161,
+        "margin_of_error": 0.04433486559858302,
+        "normal_margin_of_error": 0.044504906255115995
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.2524447042841102,
+        "high": 0.36865449102143805,
+        "margin_of_error": 0.05810489336866391,
+        "normal_margin_of_error": 0.058489361329017726
+      }
+    },
+    "gross": {
+      "gross_profit_r": 253.99999999999997,
+      "gross_loss_r": 286.0,
+      "net_result_r": -32.00000000000002,
+      "expectancy_r": -0.07748184019370465,
+      "profit_factor": 0.888111888111888,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.9999999999999998,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 47.00000000000002,
+      "average_drawdown_r": 22.791767554479424,
+      "n": 413,
+      "mean": -0.07748184019370465,
+      "median": -1.0,
+      "std": 1.386061491786739,
+      "min": -1.0,
+      "max": 2.0,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 182.58093222684255,
+      "gross_loss_r": 477.3301584991786,
+      "net_result_r": -294.74922627233605,
+      "expectancy_r": -0.7136785139766006,
+      "profit_factor": 0.38250449709884976,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.5605207882636116,
+      "average_losing_outcome_r": -1.6126018868215493,
+      "maximum_drawdown_r": 299.1201114864818,
+      "average_drawdown_r": 138.1436501864669,
+      "n": 413,
+      "mean": -0.7136785139766006,
+      "median": -1.2559065265486735,
+      "std": 1.5945247656781627,
+      "min": -7.092847222220068,
+      "max": 1.9126552423069842,
+      "percentiles": {
+        "5": -3.034740660474721,
+        "25": -1.494843093922642,
+        "50": -1.2559065265486735,
+        "75": 1.2919276895943654,
+        "95": 1.778347121917725
+      }
+    },
+    "max_consecutive_wins": 3,
+    "max_consecutive_losses": 12,
+    "duration_bars": {
+      "n": 465,
+      "mean": 46.5505376344086,
+      "median": 28.0,
+      "std": 46.26346640777985,
+      "min": 1.0,
+      "max": 144.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 28.0,
+        "75": 65.0,
+        "95": 144.0
+      }
+    },
+    "duration_minutes": {
+      "n": 465,
+      "mean": 232.74408602150538,
+      "median": 140.0,
+      "std": 231.3186270314536,
+      "min": 5.0,
+      "max": 720.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 140.0,
+        "75": 325.0,
+        "95": 720.0
+      }
+    },
+    "mfe_r": {
+      "n": 465,
+      "mean": 1.145365829321507,
+      "median": 0.9073512496078758,
+      "std": 0.9245751194554376,
+      "min": 0.0,
+      "max": 4.822194199243175,
+      "percentiles": {
+        "5": 0.03886016895724322,
+        "25": 0.3072519083968436,
+        "50": 0.9073512496078758,
+        "75": 2.023469387755057,
+        "95": 2.639285458678194
+      }
+    },
+    "mae_r": {
+      "n": 465,
+      "mean": 0.974233431945427,
+      "median": 1.0548340548340718,
+      "std": 0.5569164854455064,
+      "min": 0.0,
+      "max": 6.140562248996508,
+      "percentiles": {
+        "5": 0.08571655111922018,
+        "25": 0.6061472480342884,
+        "50": 1.0548340548340718,
+        "75": 1.2331022530329343,
+        "95": 1.7153631756756895
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.8785713966171034,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "XAUUSDT",
+    "horizon_bars": 576,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 465,
+    "trades": 465,
+    "resolved": 450,
+    "wins": 143,
+    "losses": 307,
+    "breakeven": 0,
+    "unresolved": 14,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 14,
+    "ambiguous_trades": 1,
+    "win_rate": 0.31777777777777777,
+    "loss_rate": 0.6822222222222222,
+    "unresolved_rate": 0.030107526881720432,
+    "ambiguous_rate": 0.002150537634408602,
+    "censored_rate": 0.03225806451612903,
+    "win_rate_all_trades_lower": 0.30752688172043013,
+    "win_rate_all_trades_upper": 0.33978494623655914,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.2828551831718213,
+        "high": 0.35487843336687314,
+        "margin_of_error": 0.03601162509752594,
+        "normal_margin_of_error": 0.03610319961626886
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.276455243354326,
+        "high": 0.3621850861868456,
+        "margin_of_error": 0.04286492141625979,
+        "normal_margin_of_error": 0.043019615736686403
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.26423793376003907,
+        "high": 0.37661299283199307,
+        "margin_of_error": 0.05618752953597702,
+        "normal_margin_of_error": 0.056537358704565374
+      }
+    },
+    "gross": {
+      "gross_profit_r": 286.0,
+      "gross_loss_r": 307.0,
+      "net_result_r": -21.00000000000002,
+      "expectancy_r": -0.04666666666666672,
+      "profit_factor": 0.9315960912052117,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 46.00000000000002,
+      "average_drawdown_r": 21.571111111111115,
+      "n": 450,
+      "mean": -0.04666666666666672,
+      "median": -1.0,
+      "std": 1.3983923317816591,
+      "min": -1.0,
+      "max": 2.0,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 205.082085353467,
+      "gross_loss_r": 507.0785971896371,
+      "net_result_r": -301.99651183617016,
+      "expectancy_r": -0.6711033596359337,
+      "profit_factor": 0.40443845685873125,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.5536521617686894,
+      "average_losing_outcome_r": -1.594586783615211,
+      "maximum_drawdown_r": 306.3673970503159,
+      "average_drawdown_r": 140.80526466075779,
+      "n": 450,
+      "mean": -0.6711033596359337,
+      "median": -1.2404239187499173,
+      "std": 1.5921676435562238,
+      "min": -7.092847222220068,
+      "max": 1.9581763454206933,
+      "percentiles": {
+        "5": -3.0115603259486794,
+        "25": -1.4713744414613494,
+        "50": -1.2404239187499173,
+        "75": 1.3582926680506202,
+        "95": 1.789225751850103
+      }
+    },
+    "max_consecutive_wins": 4,
+    "max_consecutive_losses": 12,
+    "duration_bars": {
+      "n": 465,
+      "mean": 65.91397849462365,
+      "median": 28.0,
+      "std": 110.83183283948652,
+      "min": 1.0,
+      "max": 576.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 28.0,
+        "75": 65.0,
+        "95": 254.19999999999982
+      }
+    },
+    "duration_minutes": {
+      "n": 465,
+      "mean": 329.56129032258065,
+      "median": 140.0,
+      "std": 554.1612108730297,
+      "min": 5.0,
+      "max": 2880.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 140.0,
+        "75": 325.0,
+        "95": 1270.999999999999
+      }
+    },
+    "mfe_r": {
+      "n": 465,
+      "mean": 1.1770385808047839,
+      "median": 0.973158981417796,
+      "std": 0.9361425032859513,
+      "min": 0.0,
+      "max": 4.822194199243175,
+      "percentiles": {
+        "5": 0.03886016895724322,
+        "25": 0.3107569721115591,
+        "50": 0.973158981417796,
+        "75": 2.0668016194332464,
+        "95": 2.643741309920087
+      }
+    },
+    "mae_r": {
+      "n": 465,
+      "mean": 1.0016889334964578,
+      "median": 1.0719424460431066,
+      "std": 0.5524543080054084,
+      "min": 0.0,
+      "max": 6.140562248996508,
+      "percentiles": {
+        "5": 0.08571655111922018,
+        "25": 0.712820512820481,
+        "50": 1.0719424460431066,
+        "75": 1.2446197991391486,
+        "95": 1.7153631756756895
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.7726225523662228,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "BTCUSDT",
+    "max_sweep_mss": 12,
+    "scope": "development only; cached M1 where available",
+    "patterns": 3790,
+    "trades": 3790,
+    "resolved": 3722,
+    "wins": 1278,
+    "losses": 2444,
+    "breakeven": 0,
+    "unresolved": 67,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 67,
+    "ambiguous_trades": 1,
+    "win_rate": 0.3433637829124127,
+    "loss_rate": 0.6566362170875873,
+    "unresolved_rate": 0.017678100263852244,
+    "ambiguous_rate": 0.0002638522427440633,
+    "censored_rate": 0.017941952506596307,
+    "win_rate_all_trades_lower": 0.33720316622691293,
+    "win_rate_all_trades_upper": 0.35514511873350924,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.33067967783831675,
+        "high": 0.3562754421310559,
+        "margin_of_error": 0.012797882146369562,
+        "normal_margin_of_error": 0.012802026778678468
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.32827773465838905,
+        "high": 0.35877282482272665,
+        "margin_of_error": 0.015247545082168808,
+        "normal_margin_of_error": 0.015254555787940268
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.3236105294537422,
+        "high": 0.3636744870913447,
+        "margin_of_error": 0.020031978818801255,
+        "normal_margin_of_error": 0.020047884614787435
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2556.0,
+      "gross_loss_r": 2444.0,
+      "net_result_r": 111.99999999999994,
+      "expectancy_r": 0.030091348737238028,
+      "profit_factor": 1.0458265139116203,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 57.0,
+      "average_drawdown_r": 17.06851155292854,
+      "n": 3722,
+      "mean": 0.030091348737238028,
+      "median": -1.0,
+      "std": 1.424686348970587,
+      "min": -1.0,
+      "max": 2.000000000000007,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 2240.5679537793776,
+      "gross_loss_r": 3059.210821378185,
+      "net_result_r": -818.6428675988075,
+      "expectancy_r": -0.21994703589435988,
+      "profit_factor": 0.7324006368315584,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.7545559544082832,
+      "average_losing_outcome_r": -1.251210969888828,
+      "maximum_drawdown_r": 820.7343019702337,
+      "average_drawdown_r": 386.66034153816156,
+      "n": 3722,
+      "mean": -0.21994703589435988,
+      "median": -1.123428866587957,
+      "std": 1.4386947779594128,
+      "min": -3.4020991735532857,
+      "max": 1.9763195823127497,
+      "percentiles": {
+        "5": -1.5284483543700833,
+        "25": -1.2473889438295427,
+        "50": -1.123428866587957,
+        "75": 1.6988788249694002,
+        "95": 1.8971688223165526
+      }
+    },
+    "max_consecutive_wins": 8,
+    "max_consecutive_losses": 14,
+    "duration_bars": {
+      "n": 3790,
+      "mean": 43.91926121372032,
+      "median": 23.0,
+      "std": 56.42324245592656,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 10.0,
+        "50": 23.0,
+        "75": 52.0,
+        "95": 167.54999999999973
+      }
+    },
+    "duration_minutes": {
+      "n": 3790,
+      "mean": 219.59208443271768,
+      "median": 115.0,
+      "std": 282.1161987214359,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 50.0,
+        "50": 115.0,
+        "75": 260.0,
+        "95": 837.7499999999986
+      }
+    },
+    "mfe_r": {
+      "n": 3790,
+      "mean": 1.261824201282768,
+      "median": 0.9938762943794055,
+      "std": 1.086470382315965,
+      "min": 0.0,
+      "max": 11.746403479424021,
+      "percentiles": {
+        "5": 0.02768483148278247,
+        "25": 0.3377119703675195,
+        "50": 0.9938762943794055,
+        "75": 2.104178079984532,
+        "95": 2.9048512048267536
+      }
+    },
+    "mae_r": {
+      "n": 3790,
+      "mean": 1.0243669969139828,
+      "median": 1.0695159473752747,
+      "std": 0.6425583939589778,
+      "min": 0.0,
+      "max": 15.485461091110254,
+      "percentiles": {
+        "5": 0.11710645176321886,
+        "25": 0.6415228043661453,
+        "50": 1.0695159473752747,
+        "75": 1.2760972826892587,
+        "95": 1.9083031856810704
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.10035516549705073,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "BTCUSDT",
+    "max_sweep_mss": 48,
+    "scope": "development only; cached M1 where available",
+    "patterns": 4569,
+    "trades": 4569,
+    "resolved": 4434,
+    "wins": 1499,
+    "losses": 2935,
+    "breakeven": 0,
+    "unresolved": 133,
+    "ambiguous": 2,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 133,
+    "ambiguous_trades": 2,
+    "win_rate": 0.33806946323861076,
+    "loss_rate": 0.6619305367613892,
+    "unresolved_rate": 0.02910921427008098,
+    "ambiguous_rate": 0.0004377325454147516,
+    "censored_rate": 0.02954694681549573,
+    "win_rate_all_trades_lower": 0.3280805427883563,
+    "win_rate_all_trades_upper": 0.35762748960385204,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.3264860903112127,
+        "high": 0.3498503295986749,
+        "margin_of_error": 0.011682119643731134,
+        "normal_margin_of_error": 0.011685265726827732
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.3242911015281628,
+        "high": 0.35212816371039307,
+        "margin_of_error": 0.013918531091115141,
+        "normal_margin_of_error": 0.01392385291863925
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.3200244394130505,
+        "high": 0.35659837839636865,
+        "margin_of_error": 0.018286969491659085,
+        "normal_margin_of_error": 0.018299044599308
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2998.0,
+      "gross_loss_r": 2935.0,
+      "net_result_r": 62.99999999999994,
+      "expectancy_r": 0.014208389715832192,
+      "profit_factor": 1.021465076660988,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 64.0,
+      "average_drawdown_r": 24.600360847992796,
+      "n": 4434,
+      "mean": 0.014208389715832192,
+      "median": -1.0,
+      "std": 1.4193170303776506,
+      "min": -1.0,
+      "max": 2.000000000000007,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 2639.5247473246022,
+      "gross_loss_r": 3629.382906846892,
+      "net_result_r": -989.85815952229,
+      "expectancy_r": -0.22324270625220793,
+      "profit_factor": 0.727265437423286,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.7620325416052085,
+      "average_losing_outcome_r": -1.236165840206707,
+      "maximum_drawdown_r": 993.2309223031635,
+      "average_drawdown_r": 469.48323427170857,
+      "n": 4434,
+      "mean": -0.22324270625220793,
+      "median": -1.1157489965822895,
+      "std": 1.4292550441842575,
+      "min": -3.4020991735532857,
+      "max": 1.978118872636461,
+      "percentiles": {
+        "5": -1.5009838497924637,
+        "25": -1.2336567548792179,
+        "50": -1.1157489965822895,
+        "75": 1.704802959467776,
+        "95": 1.9025997244396191
+      }
+    },
+    "max_consecutive_wins": 6,
+    "max_consecutive_losses": 14,
+    "duration_bars": {
+      "n": 4569,
+      "mean": 50.96235500109433,
+      "median": 26.0,
+      "std": 64.31664826886053,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 12.0,
+        "50": 26.0,
+        "75": 61.0,
+        "95": 204.59999999999945
+      }
+    },
+    "duration_minutes": {
+      "n": 4569,
+      "mean": 254.80827314510833,
+      "median": 130.0,
+      "std": 321.5836150427123,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 60.0,
+        "50": 130.0,
+        "75": 305.0,
+        "95": 1022.9999999999973
+      }
+    },
+    "mfe_r": {
+      "n": 4569,
+      "mean": 1.2465970951005665,
+      "median": 0.9935232325836192,
+      "std": 1.0669257946652007,
+      "min": 0.0,
+      "max": 11.746403479424021,
+      "percentiles": {
+        "5": 0.028241273494452324,
+        "25": 0.33687405159334544,
+        "50": 0.9935232325836192,
+        "75": 2.0901644174671636,
+        "95": 2.8717467645370123
+      }
+    },
+    "mae_r": {
+      "n": 4569,
+      "mean": 1.023136607763239,
+      "median": 1.0673490844888824,
+      "std": 0.6464462912648744,
+      "min": 0.0,
+      "max": 15.485461091110254,
+      "percentiles": {
+        "5": 0.1193540423238357,
+        "25": 0.6291148500365898,
+        "50": 1.0673490844888824,
+        "75": 1.2748917748917863,
+        "95": 1.9108845245568953
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.2565294513913673,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "BTCUSDT",
+    "horizon_bars": 144,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 4390,
+    "trades": 4390,
+    "resolved": 4031,
+    "wins": 1339,
+    "losses": 2692,
+    "breakeven": 0,
+    "unresolved": 358,
+    "ambiguous": 1,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 358,
+    "ambiguous_trades": 1,
+    "win_rate": 0.3321756387993054,
+    "loss_rate": 0.6678243612006947,
+    "unresolved_rate": 0.0815489749430524,
+    "ambiguous_rate": 0.00022779043280182233,
+    "censored_rate": 0.08177676537585421,
+    "win_rate_all_trades_lower": 0.3050113895216401,
+    "win_rate_all_trades_upper": 0.3867881548974943,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.3200896413966229,
+        "high": 0.3444867672121683,
+        "margin_of_error": 0.012198562907772726,
+        "normal_margin_of_error": 0.012202136412854826
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.31780172207498214,
+        "high": 0.3468691172111157,
+        "margin_of_error": 0.014533697568066764,
+        "normal_margin_of_error": 0.014539742328297646
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.3133566728642415,
+        "high": 0.3515461639081007,
+        "margin_of_error": 0.019094745521929597,
+        "normal_margin_of_error": 0.019108460487384033
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2678.0,
+      "gross_loss_r": 2692.0,
+      "net_result_r": -14.000000000000057,
+      "expectancy_r": -0.003473083602083864,
+      "profit_factor": 0.9947994056463596,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 101.00000000000006,
+      "average_drawdown_r": 53.796824609278126,
+      "n": 4031,
+      "mean": -0.003473083602083864,
+      "median": -1.0,
+      "std": 1.4131561368806234,
+      "min": -1.0,
+      "max": 2.000000000000007,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 2342.364969108382,
+      "gross_loss_r": 3351.556735925292,
+      "net_result_r": -1009.1917668169099,
+      "expectancy_r": -0.2503576697635599,
+      "profit_factor": 0.6988886519510779,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.7506464642065636,
+      "average_losing_outcome_r": -1.2445439049109883,
+      "maximum_drawdown_r": 1011.7596838548682,
+      "average_drawdown_r": 477.92439494484813,
+      "n": 4031,
+      "mean": -0.2503576697635599,
+      "median": -1.1247958801498137,
+      "std": 1.42203251052443,
+      "min": -3.4020991735532857,
+      "max": 1.978118872636461,
+      "percentiles": {
+        "5": -1.5166053361984178,
+        "25": -1.243706344816113,
+        "50": -1.1247958801498137,
+        "75": 1.6771641454104573,
+        "95": 1.893549501778965
+      }
+    },
+    "max_consecutive_wins": 6,
+    "max_consecutive_losses": 14,
+    "duration_bars": {
+      "n": 4390,
+      "mean": 42.3127562642369,
+      "median": 25.0,
+      "std": 42.51393720425393,
+      "min": 1.0,
+      "max": 144.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 25.0,
+        "75": 59.0,
+        "95": 144.0
+      }
+    },
+    "duration_minutes": {
+      "n": 4390,
+      "mean": 211.5601366742597,
+      "median": 125.0,
+      "std": 212.56953273771256,
+      "min": 5.0,
+      "max": 720.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 125.0,
+        "75": 295.0,
+        "95": 720.0
+      }
+    },
+    "mfe_r": {
+      "n": 4390,
+      "mean": 1.2219428850015848,
+      "median": 0.9561988665181994,
+      "std": 1.0612289468252911,
+      "min": 0.0,
+      "max": 11.746403479424021,
+      "percentiles": {
+        "5": 0.028484001542040817,
+        "25": 0.33443918868663636,
+        "50": 0.9561988665181994,
+        "75": 2.0677135180112707,
+        "95": 2.873991073203674
+      }
+    },
+    "mae_r": {
+      "n": 4390,
+      "mean": 1.0008954221447053,
+      "median": 1.0531818846487842,
+      "std": 0.6462208461409286,
+      "min": 0.0,
+      "max": 15.485461091110254,
+      "percentiles": {
+        "5": 0.11259634003939653,
+        "25": 0.5748991801570524,
+        "50": 1.0531818846487842,
+        "75": 1.2614402711484032,
+        "95": 1.8811957366457532
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.5678183232436687,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "BTCUSDT",
+    "horizon_bars": 576,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 4390,
+    "trades": 4390,
+    "resolved": 4350,
+    "wins": 1489,
+    "losses": 2861,
+    "breakeven": 0,
+    "unresolved": 38,
+    "ambiguous": 2,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 38,
+    "ambiguous_trades": 2,
+    "win_rate": 0.34229885057471265,
+    "loss_rate": 0.6577011494252873,
+    "unresolved_rate": 0.008656036446469248,
+    "ambiguous_rate": 0.00045558086560364467,
+    "censored_rate": 0.009111617312072893,
+    "win_rate_all_trades_lower": 0.33917995444191346,
+    "win_rate_all_trades_upper": 0.34829157175398634,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.33056701573384606,
+        "high": 0.3542267323607592,
+        "margin_of_error": 0.011829858313456582,
+        "normal_margin_of_error": 0.011833130364931138
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.3283434830175375,
+        "high": 0.35653250225280636,
+        "margin_of_error": 0.014094509617634433,
+        "normal_margin_of_error": 0.014100044502206992
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.32402097885826026,
+        "high": 0.36105706128909926,
+        "margin_of_error": 0.018518041215419525,
+        "normal_margin_of_error": 0.01853059959091616
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2978.0,
+      "gross_loss_r": 2861.0,
+      "net_result_r": 116.99999999999996,
+      "expectancy_r": 0.02689655172413792,
+      "profit_factor": 1.0408947920307585,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0,
+      "maximum_drawdown_r": 67.0,
+      "average_drawdown_r": 20.994252873563227,
+      "n": 4350,
+      "mean": 0.02689655172413792,
+      "median": -1.0,
+      "std": 1.423600723959272,
+      "min": -1.0,
+      "max": 2.000000000000007,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 2624.6103466982663,
+      "gross_loss_r": 3541.234951047363,
+      "net_result_r": -916.6246043490967,
+      "expectancy_r": -0.21071829985036705,
+      "profit_factor": 0.7411567950107366,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.7638510394477596,
+      "average_losing_outcome_r": -1.2373287739508607,
+      "maximum_drawdown_r": 920.5541095954171,
+      "average_drawdown_r": 436.3079978573278,
+      "n": 4350,
+      "mean": -0.21071829985036705,
+      "median": -1.1147221847293691,
+      "std": 1.4349572418904375,
+      "min": -3.4020991735532857,
+      "max": 1.978118872636461,
+      "percentiles": {
+        "5": -1.501930724230707,
+        "25": -1.2342348952187505,
+        "50": -1.1147221847293691,
+        "75": 1.7110339481800174,
+        "95": 1.905222557774973
+      }
+    },
+    "max_consecutive_wins": 7,
+    "max_consecutive_losses": 16,
+    "duration_bars": {
+      "n": 4390,
+      "mean": 53.34624145785877,
+      "median": 25.0,
+      "std": 84.3293104869012,
+      "min": 1.0,
+      "max": 576.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 25.0,
+        "75": 59.0,
+        "95": 191.55000000000018
+      }
+    },
+    "duration_minutes": {
+      "n": 4390,
+      "mean": 266.72756264236904,
+      "median": 125.0,
+      "std": 421.6469521249434,
+      "min": 5.0,
+      "max": 2880.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 125.0,
+        "75": 295.0,
+        "95": 957.7500000000009
+      }
+    },
+    "mfe_r": {
+      "n": 4390,
+      "mean": 1.2616836039964998,
+      "median": 1.0002034182093236,
+      "std": 1.0776977248215596,
+      "min": 0.0,
+      "max": 11.746403479424021,
+      "percentiles": {
+        "5": 0.028484001542040817,
+        "25": 0.3387458104019967,
+        "50": 1.0002034182093236,
+        "75": 2.1027030608278032,
+        "95": 2.899472075401361
+      }
+    },
+    "mae_r": {
+      "n": 4390,
+      "mean": 1.031081614797485,
+      "median": 1.0714955360957161,
+      "std": 0.6490628315718615,
+      "min": 0.0,
+      "max": 15.485461091110254,
+      "percentiles": {
+        "5": 0.11838326000474567,
+        "25": 0.648543598095701,
+        "50": 1.0714955360957161,
+        "75": 1.2811906957456256,
+        "95": 1.9188559737294366
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.10797662374822044,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "ZECUSDT",
+    "max_sweep_mss": 12,
+    "scope": "development only; cached M1 where available",
+    "patterns": 2663,
+    "trades": 2663,
+    "resolved": 2611,
+    "wins": 846,
+    "losses": 1765,
+    "breakeven": 0,
+    "unresolved": 52,
+    "ambiguous": 0,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 52,
+    "ambiguous_trades": 0,
+    "win_rate": 0.32401378782075835,
+    "loss_rate": 0.6759862121792417,
+    "unresolved_rate": 0.01952684941794968,
+    "ambiguous_rate": 0.0,
+    "censored_rate": 0.01952684941794968,
+    "win_rate_all_trades_lower": 0.3176868193766429,
+    "win_rate_all_trades_upper": 0.3372136687945926,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.3091374694510946,
+        "high": 0.3392544458885683,
+        "margin_of_error": 0.015058488218736869,
+        "normal_margin_of_error": 0.01506518556457721
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.30633238089766196,
+        "high": 0.34221227679088745,
+        "margin_of_error": 0.017939947946612723,
+        "normal_margin_of_error": 0.017951275811519483
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.30089357916152193,
+        "high": 0.3480261379490216,
+        "margin_of_error": 0.023566279393749844,
+        "normal_margin_of_error": 0.02359197548329006
+      }
+    },
+    "gross": {
+      "gross_profit_r": 1692.0,
+      "gross_loss_r": 1765.0105263157893,
+      "net_result_r": -73.0105263157894,
+      "expectancy_r": -0.027962668064262508,
+      "profit_factor": 0.958634509411007,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0000059639182943,
+      "maximum_drawdown_r": 89.99999999999997,
+      "average_drawdown_r": 38.70364651575317,
+      "n": 2611,
+      "mean": -0.027962668064262508,
+      "median": -1.0,
+      "std": 1.4042873043197723,
+      "min": -1.0105263157894715,
+      "max": 2.0000000000000124,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 1607.181318946402,
+      "gross_loss_r": 1942.1804419335654,
+      "net_result_r": -334.9991229871632,
+      "expectancy_r": -0.12830299616513335,
+      "profit_factor": 0.827513903572394,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.8997415117569763,
+      "average_losing_outcome_r": -1.1003855195091021,
+      "maximum_drawdown_r": 339.36737882504593,
+      "average_drawdown_r": 156.91542039762635,
+      "n": 2611,
+      "mean": -0.12830299616513335,
+      "median": -1.063787037037037,
+      "std": 1.4053763434113156,
+      "min": -1.3954615384615523,
+      "max": 1.9850775444264943,
+      "percentiles": {
+        "5": -1.1816911764705889,
+        "25": -1.1055995825879545,
+        "50": -1.063787037037037,
+        "75": 1.8723190045248876,
+        "95": 1.9474126886984906
+      }
+    },
+    "max_consecutive_wins": 7,
+    "max_consecutive_losses": 15,
+    "duration_bars": {
+      "n": 2663,
+      "mean": 46.33345850544499,
+      "median": 23.0,
+      "std": 59.250103072208276,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 3.0,
+        "25": 10.0,
+        "50": 23.0,
+        "75": 57.0,
+        "95": 182.0
+      }
+    },
+    "duration_minutes": {
+      "n": 2663,
+      "mean": 231.66015771686068,
+      "median": 115.0,
+      "std": 296.25299704471615,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 15.0,
+        "25": 50.0,
+        "50": 115.0,
+        "75": 285.0,
+        "95": 910.0
+      }
+    },
+    "mfe_r": {
+      "n": 2663,
+      "mean": 1.176147771804798,
+      "median": 0.9432624113475289,
+      "std": 0.9504663720346183,
+      "min": 0.0,
+      "max": 7.727272727272759,
+      "percentiles": {
+        "5": 0.030817307692311453,
+        "25": 0.304347826086958,
+        "50": 0.9432624113475289,
+        "75": 2.058823529411746,
+        "95": 2.574946808510609
+      }
+    },
+    "mae_r": {
+      "n": 2663,
+      "mean": 0.974716330303341,
+      "median": 1.0458715596330248,
+      "std": 0.5637911744976786,
+      "min": 0.0,
+      "max": 10.479999999999997,
+      "percentiles": {
+        "5": 0.11507828454730726,
+        "25": 0.6611536358665911,
+        "50": 1.0458715596330248,
+        "75": 1.1875000000000069,
+        "95": 1.6449308755760408
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.8487545757128088,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "ZECUSDT",
+    "max_sweep_mss": 48,
+    "scope": "development only; cached M1 where available",
+    "patterns": 3306,
+    "trades": 3306,
+    "resolved": 3190,
+    "wins": 1028,
+    "losses": 2162,
+    "breakeven": 0,
+    "unresolved": 116,
+    "ambiguous": 0,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 116,
+    "ambiguous_trades": 0,
+    "win_rate": 0.32225705329153603,
+    "loss_rate": 0.6777429467084639,
+    "unresolved_rate": 0.03508771929824561,
+    "ambiguous_rate": 0.0,
+    "censored_rate": 0.03508771929824561,
+    "win_rate_all_trades_lower": 0.31094978826376285,
+    "win_rate_all_trades_upper": 0.34603750756200846,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.30880237402734284,
+        "high": 0.3360129762873754,
+        "margin_of_error": 0.013605301130016302,
+        "normal_margin_of_error": 0.013610235324912965
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.30626158772152395,
+        "high": 0.3386800868665682,
+        "margin_of_error": 0.016209249572522098,
+        "normal_margin_of_error": 0.016217595669825044
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.30133137542972815,
+        "high": 0.3439205733599879,
+        "margin_of_error": 0.021294598965129845,
+        "normal_margin_of_error": 0.021313533559263936
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2056.0,
+      "gross_loss_r": 2162.0105263157893,
+      "net_result_r": -106.0105263157894,
+      "expectancy_r": -0.03323213991090577,
+      "profit_factor": 0.9509666927956922,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0000048687862115,
+      "maximum_drawdown_r": 145.99999999999994,
+      "average_drawdown_r": 63.0539679920805,
+      "n": 3190,
+      "mean": -0.03323213991090577,
+      "median": -1.0,
+      "std": 1.4022445617107584,
+      "min": -1.0105263157894715,
+      "max": 2.0000000000000124,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 1955.5341912740942,
+      "gross_loss_r": 2368.5011478135903,
+      "net_result_r": -412.9669565394961,
+      "expectancy_r": -0.1294567261879298,
+      "profit_factor": 0.8256420703360376,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.9022706140798582,
+      "average_losing_outcome_r": -1.0955139444096162,
+      "maximum_drawdown_r": 426.25379312997217,
+      "average_drawdown_r": 191.59865549218836,
+      "n": 3190,
+      "mean": -0.1294567261879298,
+      "median": -1.0590141676946656,
+      "std": 1.4022148776266163,
+      "min": -1.3954615384615523,
+      "max": 1.9858118948824344,
+      "percentiles": {
+        "5": -1.1782339285714303,
+        "25": -1.1003433388157893,
+        "50": -1.0590141676946656,
+        "75": 1.8742103407755586,
+        "95": 1.9485515624999998
+      }
+    },
+    "max_consecutive_wins": 9,
+    "max_consecutive_losses": 19,
+    "duration_bars": {
+      "n": 3306,
+      "mean": 54.8929219600726,
+      "median": 27.0,
+      "std": 68.85801149585315,
+      "min": 1.0,
+      "max": 288.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 27.0,
+        "75": 67.0,
+        "95": 232.75
+      }
+    },
+    "duration_minutes": {
+      "n": 3306,
+      "mean": 274.4588626739262,
+      "median": 135.0,
+      "std": 344.29249206507876,
+      "min": 5.0,
+      "max": 1440.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 135.0,
+        "75": 335.0,
+        "95": 1163.75
+      }
+    },
+    "mfe_r": {
+      "n": 3306,
+      "mean": 1.1682161808924896,
+      "median": 0.953727020901532,
+      "std": 0.9377654427463241,
+      "min": 0.0,
+      "max": 7.727272727272759,
+      "percentiles": {
+        "5": 0.032258064516131064,
+        "25": 0.31249999999999567,
+        "50": 0.953727020901532,
+        "75": 2.051282051282048,
+        "95": 2.532812499999997
+      }
+    },
+    "mae_r": {
+      "n": 3306,
+      "mean": 0.963070261808993,
+      "median": 1.0412067919951502,
+      "std": 0.5411012564352466,
+      "min": 0.0,
+      "max": 10.479999999999997,
+      "percentiles": {
+        "5": 0.11892274392274725,
+        "25": 0.6552610584168059,
+        "50": 1.0412067919951502,
+        "75": 1.179043805363432,
+        "95": 1.608482523444154
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.9111060321596727,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "ZECUSDT",
+    "horizon_bars": 144,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 3152,
+    "trades": 3152,
+    "resolved": 2872,
+    "wins": 905,
+    "losses": 1967,
+    "breakeven": 0,
+    "unresolved": 280,
+    "ambiguous": 0,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 280,
+    "ambiguous_trades": 0,
+    "win_rate": 0.3151114206128134,
+    "loss_rate": 0.6848885793871866,
+    "unresolved_rate": 0.08883248730964467,
+    "ambiguous_rate": 0.0,
+    "censored_rate": 0.08883248730964467,
+    "win_rate_all_trades_lower": 0.2871192893401015,
+    "win_rate_all_trades_upper": 0.3759517766497462,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.30103247239159764,
+        "high": 0.3295383864505375,
+        "margin_of_error": 0.014252957029469946,
+        "normal_margin_of_error": 0.014258606145568654
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.298377767023594,
+        "high": 0.33233901093276186,
+        "margin_of_error": 0.016980621954583944,
+        "normal_margin_of_error": 0.016990177154456637
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.2932303648202637,
+        "high": 0.3378447669187535,
+        "margin_of_error": 0.022307201049244888,
+        "normal_margin_of_error": 0.02232887774068285
+      }
+    },
+    "gross": {
+      "gross_profit_r": 1810.0,
+      "gross_loss_r": 1967.0105263157893,
+      "net_result_r": -157.0105263157894,
+      "expectancy_r": -0.054669403313297144,
+      "profit_factor": 0.920178095533698,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.000005351456934,
+      "maximum_drawdown_r": 179.99999999999997,
+      "average_drawdown_r": 78.0672445389239,
+      "n": 2872,
+      "mean": -0.054669403313297144,
+      "median": -1.0,
+      "std": 1.3939259052561725,
+      "min": -1.0105263157894715,
+      "max": 2.0000000000000124,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 1717.736979083616,
+      "gross_loss_r": 2161.473666231158,
+      "net_result_r": -443.73668714754194,
+      "expectancy_r": -0.1545044175304812,
+      "profit_factor": 0.7947064106863438,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.898051910589631,
+      "average_losing_outcome_r": -1.0988681577179247,
+      "maximum_drawdown_r": 453.5187632664363,
+      "average_drawdown_r": 207.9969081812296,
+      "n": 2872,
+      "mean": -0.1545044175304812,
+      "median": -1.0631677862595423,
+      "std": 1.393522786541774,
+      "min": -1.3954615384615523,
+      "max": 1.9858118948824344,
+      "percentiles": {
+        "5": -1.1813175,
+        "25": -1.1041047794117649,
+        "50": -1.0631677862595423,
+        "75": 1.8644903076274755,
+        "95": 1.9454484955752214
+      }
+    },
+    "max_consecutive_wins": 7,
+    "max_consecutive_losses": 19,
+    "duration_bars": {
+      "n": 3152,
+      "mean": 44.06472081218274,
+      "median": 26.0,
+      "std": 43.924948241926884,
+      "min": 1.0,
+      "max": 144.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 26.0,
+        "75": 62.0,
+        "95": 144.0
+      }
+    },
+    "duration_minutes": {
+      "n": 3152,
+      "mean": 220.31757614213197,
+      "median": 130.0,
+      "std": 219.62725780892848,
+      "min": 5.0,
+      "max": 720.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 130.0,
+        "75": 310.0,
+        "95": 720.0
+      }
+    },
+    "mfe_r": {
+      "n": 3152,
+      "mean": 1.14032711163508,
+      "median": 0.901388888888903,
+      "std": 0.9336044071731222,
+      "min": 0.0,
+      "max": 7.727272727272759,
+      "percentiles": {
+        "5": 0.03216501240694759,
+        "25": 0.3043478260869572,
+        "50": 0.901388888888903,
+        "75": 2.0333333333333266,
+        "95": 2.534031007751941
+      }
+    },
+    "mae_r": {
+      "n": 3152,
+      "mean": 0.9407847263293837,
+      "median": 1.032840811044005,
+      "std": 0.5098904650017826,
+      "min": 0.0,
+      "max": 8.07246376811597,
+      "percentiles": {
+        "5": 0.1148256489323475,
+        "25": 0.6080368906455903,
+        "50": 1.032840811044005,
+        "75": 1.1714739709443156,
+        "95": 1.5895737657864546
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.9820941841911078,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  },
+  {
+    "symbol": "ZECUSDT",
+    "horizon_bars": 576,
+    "scope": "development only; baseline patterns, cached M1",
+    "patterns": 3152,
+    "trades": 3152,
+    "resolved": 3127,
+    "wins": 1012,
+    "losses": 2115,
+    "breakeven": 0,
+    "unresolved": 25,
+    "ambiguous": 0,
+    "invalid": 0,
+    "no_entry": 0,
+    "unresolved_trades": 25,
+    "ambiguous_trades": 0,
+    "win_rate": 0.3236328749600256,
+    "loss_rate": 0.6763671250399744,
+    "unresolved_rate": 0.007931472081218274,
+    "ambiguous_rate": 0.0,
+    "censored_rate": 0.007931472081218274,
+    "win_rate_all_trades_lower": 0.3210659898477157,
+    "win_rate_all_trades_upper": 0.32899746192893403,
+    "break_even_win_rate_gross": 0.3333333333333333,
+    "risk_reward": 2,
+    "wilson": {
+      "90": {
+        "confidence": 0.9,
+        "low": 0.31002846569244513,
+        "high": 0.3375422131827709,
+        "margin_of_error": 0.013756873745162884,
+        "normal_margin_of_error": 0.013761978563784617
+      },
+      "95": {
+        "confidence": 0.95,
+        "low": 0.3074594984761021,
+        "high": 0.3402390469445047,
+        "margin_of_error": 0.016389774234201283,
+        "normal_margin_of_error": 0.01639840889126476
+      },
+      "99": {
+        "confidence": 0.99,
+        "low": 0.3024747265367466,
+        "high": 0.3455378734006623,
+        "margin_of_error": 0.021531573431957815,
+        "normal_margin_of_error": 0.02155116241261391
+      }
+    },
+    "gross": {
+      "gross_profit_r": 2024.0,
+      "gross_loss_r": 2115.0105263157893,
+      "net_result_r": -91.0105263157894,
+      "expectancy_r": -0.029104741386565207,
+      "profit_factor": 0.9569692324537392,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 2.0,
+      "average_losing_outcome_r": -1.0000049769814607,
+      "maximum_drawdown_r": 132.99999999999994,
+      "average_drawdown_r": 56.44200090889198,
+      "n": 3127,
+      "mean": -0.029104741386565207,
+      "median": -1.0,
+      "std": 1.4038121398055126,
+      "min": -1.0105263157894715,
+      "max": 2.0000000000000124,
+      "percentiles": {
+        "5": -1.0,
+        "25": -1.0,
+        "50": -1.0,
+        "75": 2.0,
+        "95": 2.0
+      }
+    },
+    "cost_adjusted": {
+      "gross_profit_r": 1925.4509982693821,
+      "gross_loss_r": 2317.694597911363,
+      "net_result_r": -392.24359964198106,
+      "expectancy_r": -0.1254376717754976,
+      "profit_factor": 0.8307613091062735,
+      "profit_factor_infinite": false,
+      "average_winning_outcome_r": 1.9026195635072947,
+      "average_losing_outcome_r": -1.0958366893197933,
+      "maximum_drawdown_r": 407.1585638025529,
+      "average_drawdown_r": 182.0789808045562,
+      "n": 3127,
+      "mean": -0.1254376717754976,
+      "median": -1.0592690582959643,
+      "std": 1.404101904670078,
+      "min": -1.3954615384615523,
+      "max": 1.9858118948824344,
+      "percentiles": {
+        "5": -1.1789760784313712,
+        "25": -1.1003429276315786,
+        "50": -1.0592690582959643,
+        "75": 1.8753147229114968,
+        "95": 1.948877125506073
+      }
+    },
+    "max_consecutive_wins": 8,
+    "max_consecutive_losses": 19,
+    "duration_bars": {
+      "n": 3152,
+      "mean": 55.23730964467005,
+      "median": 26.0,
+      "std": 83.41994661720038,
+      "min": 1.0,
+      "max": 576.0,
+      "percentiles": {
+        "5": 4.0,
+        "25": 11.0,
+        "50": 26.0,
+        "75": 62.0,
+        "95": 209.0
+      }
+    },
+    "duration_minutes": {
+      "n": 3152,
+      "mean": 276.1805203045685,
+      "median": 130.0,
+      "std": 417.1018657953941,
+      "min": 5.0,
+      "max": 2880.0,
+      "percentiles": {
+        "5": 20.0,
+        "25": 55.0,
+        "50": 130.0,
+        "75": 310.0,
+        "95": 1045.0
+      }
+    },
+    "mfe_r": {
+      "n": 3152,
+      "mean": 1.177493818224693,
+      "median": 0.9547502047502041,
+      "std": 0.9519312022455806,
+      "min": 0.0,
+      "max": 7.727272727272759,
+      "percentiles": {
+        "5": 0.03216501240694759,
+        "25": 0.3058006535947728,
+        "50": 0.9547502047502041,
+        "75": 2.058823529411737,
+        "95": 2.5479646697388483
+      }
+    },
+    "mae_r": {
+      "n": 3152,
+      "mean": 0.9736148940124445,
+      "median": 1.0463874865513474,
+      "std": 0.5432073430706728,
+      "min": 0.0,
+      "max": 10.479999999999997,
+      "percentiles": {
+        "5": 0.11924307036247683,
+        "25": 0.6861229946524025,
+        "50": 1.0463874865513474,
+        "75": 1.1844541910331396,
+        "95": 1.6104609929078064
+      }
+    },
+    "binomial_p_greater_than_one_third": 0.8790937658346412,
+    "denominators": {
+      "win_rate": "wins / resolved (wins + losses + breakeven)",
+      "loss_rate": "losses / resolved",
+      "unresolved_rate": "unresolved entered trades / trades",
+      "ambiguous_rate": "ambiguous entered trades / trades",
+      "censored_rate": "(unresolved entered trades + ambiguous entered trades) / trades",
+      "all_trades_bounds": "wins / trades to (wins + unresolved entered trades + ambiguous entered trades) / trades",
+      "expectancy": "sum(realized R) / finite resolved R records",
+      "trades": "sum(traded=True) when available; otherwise patterns - invalid",
+      "unresolved": "All unresolved pattern rows, including no-entry; unresolved_trades excludes no-entry."
+    }
+  }
+]

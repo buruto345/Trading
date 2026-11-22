@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+data/raw/
+data/processed/
+reports/figures/
+reports/results/*.parquet
+reports/ICT_Quantitative_Research_Report.html
+logs/*.log
+*.zip
+

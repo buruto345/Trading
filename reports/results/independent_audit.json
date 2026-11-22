@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "library": "Polars independent of pandas aggregation",
+  "total_rows": 10275,
+  "checks": [
+    "Overall, instrument and partition counts match Parquet",
+    "Win rate numerator/denominator reconstructed",
+    "Gross/net sum and expectancy reconstructed",
+    "Actual entries counted via traded",
+    "Exploratory totals exclude OOS",
+    "All quantile edges fitted only in_sample"
+  ]
+}

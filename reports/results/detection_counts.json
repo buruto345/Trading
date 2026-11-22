@@ -1,0 +1,47 @@
+{
+  "XAUUSDT": {
+    "candles": 91872,
+    "swing_highs": 18077,
+    "swing_lows": 17916,
+    "bullish_sweeps": 1831,
+    "bearish_sweeps": 1812,
+    "mss_events": 1336,
+    "bullish_fvgs": 12779,
+    "bearish_fvgs": 12466,
+    "valid_patterns": 564,
+    "detected_swings": 35993,
+    "detected_sweeps": 3643,
+    "detected_fvgs": 25245,
+    "rejected_setups": 3079
+  },
+  "BTCUSDT": {
+    "candles": 724608,
+    "swing_highs": 161397,
+    "swing_lows": 160868,
+    "bullish_sweeps": 17177,
+    "bearish_sweeps": 16811,
+    "mss_events": 12261,
+    "bullish_fvgs": 84159,
+    "bearish_fvgs": 80572,
+    "valid_patterns": 5609,
+    "detected_swings": 322265,
+    "detected_sweeps": 33988,
+    "detected_fvgs": 164731,
+    "rejected_setups": 28379
+  },
+  "ZECUSDT": {
+    "candles": 714432,
+    "swing_highs": 143358,
+    "swing_lows": 145258,
+    "bullish_sweeps": 13485,
+    "bearish_sweeps": 13162,
+    "mss_events": 9515,
+    "bullish_fvgs": 76355,
+    "bearish_fvgs": 74417,
+    "valid_patterns": 4102,
+    "detected_swings": 288616,
+    "detected_sweeps": 26647,
+    "detected_fvgs": 150772,
+    "rejected_setups": 22545
+  }
+}

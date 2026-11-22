@@ -1,0 +1,14 @@
+symbol,reason,count
+BTCUSDT,mss_without_fvg,6652
+BTCUSDT,replaced_by_new_sweep,1270
+BTCUSDT,setup_expired,781
+BTCUSDT,sweep_extreme_invalidated,19676
+XAUUSDT,end_of_data_before_mss,1
+XAUUSDT,mss_without_fvg,772
+XAUUSDT,replaced_by_new_sweep,117
+XAUUSDT,setup_expired,93
+XAUUSDT,sweep_extreme_invalidated,2096
+ZECUSDT,mss_without_fvg,5413
+ZECUSDT,replaced_by_new_sweep,859
+ZECUSDT,setup_expired,655
+ZECUSDT,sweep_extreme_invalidated,15618

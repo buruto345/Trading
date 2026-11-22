@@ -1,0 +1,18 @@
+{
+  "reports\\ICT_Quantitative_Research_Report.html": {
+    "bytes": 9883073,
+    "sha256": "a3eddd889f5dcaa7bb8d9e5e955719d322ea4804839b5e9ef2351c58d6cfc7ba"
+  },
+  "reports\\results\\patterns.parquet": {
+    "bytes": 2085096,
+    "sha256": "254a5d8ca678c83c2d1db39ed48fa7a7574334cd9b7ef481e21902c0f741d23c"
+  },
+  "reports\\results\\simulations.parquet": {
+    "bytes": 3098129,
+    "sha256": "90c104114b2575333bd9b14fcace3f208989072f6263b14dd2be86758da439e6"
+  },
+  "reports\\results\\statistical_analysis.json": {
+    "bytes": 4614299,
+    "sha256": "71384f6ce65cfe9cd9ab897ec479f4bd1364c6eeac1dd5d1641fe4aa2db6b446"
+  }
+}

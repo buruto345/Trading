@@ -1,0 +1,14 @@
+{
+  "XAUUSDT": {
+    "requested_days": 1,
+    "failed_days": []
+  },
+  "BTCUSDT": {
+    "requested_days": 4,
+    "failed_days": []
+  },
+  "ZECUSDT": {
+    "requested_days": 1,
+    "failed_days": []
+  }
+}

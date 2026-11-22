@@ -1,0 +1,65 @@
+[
+  {
+    "symbol": "XAUUSDT",
+    "partition": "in_sample",
+    "start": "2026-01-05 00:00:00+00:00",
+    "end": "2026-07-15 09:30:00+00:00",
+    "candles": 55123
+  },
+  {
+    "symbol": "XAUUSDT",
+    "partition": "validation",
+    "start": "2026-07-15 09:35:00+00:00",
+    "end": "2026-09-17 04:40:00+00:00",
+    "candles": 18374
+  },
+  {
+    "symbol": "XAUUSDT",
+    "partition": "out_of_sample",
+    "start": "2026-09-17 04:45:00+00:00",
+    "end": "2026-11-19 23:55:00+00:00",
+    "candles": 18375
+  },
+  {
+    "symbol": "BTCUSDT",
+    "partition": "in_sample",
+    "start": "2019-12-31 00:00:00+00:00",
+    "end": "2024-02-17 14:15:00+00:00",
+    "candles": 434764
+  },
+  {
+    "symbol": "BTCUSDT",
+    "partition": "validation",
+    "start": "2024-02-17 14:20:00+00:00",
+    "end": "2025-07-04 19:05:00+00:00",
+    "candles": 144922
+  },
+  {
+    "symbol": "BTCUSDT",
+    "partition": "out_of_sample",
+    "start": "2025-07-04 19:10:00+00:00",
+    "end": "2026-11-19 23:55:00+00:00",
+    "candles": 144922
+  },
+  {
+    "symbol": "ZECUSDT",
+    "partition": "in_sample",
+    "start": "2020-02-05 08:00:00+00:00",
+    "end": "2024-03-03 17:30:00+00:00",
+    "candles": 428659
+  },
+  {
+    "symbol": "ZECUSDT",
+    "partition": "validation",
+    "start": "2024-03-03 17:35:00+00:00",
+    "end": "2025-07-12 20:40:00+00:00",
+    "candles": 142886
+  },
+  {
+    "symbol": "ZECUSDT",
+    "partition": "out_of_sample",
+    "start": "2025-07-12 20:45:00+00:00",
+    "end": "2026-11-20 23:55:00+00:00",
+    "candles": 142887
+  }
+]

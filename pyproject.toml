@@ -1,0 +1,14 @@
+[project]
+name = "ict-quantitative-research"
+version = "0.1.0"
+description = "Reproducible offline ICT reversal research"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "polars", "pyarrow", "scipy", "statsmodels", "plotly", "jinja2", "pyyaml", "requests", "duckdb", "tzdata"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov", "playwright"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+

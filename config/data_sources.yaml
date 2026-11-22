@@ -1,0 +1,10 @@
+provider: Binance Public Data
+documentation: https://github.com/binance/binance-public-data
+base_url: https://data.binance.vision/
+bucket_listing: https://s3-ap-northeast-1.amazonaws.com/data.binance.vision/
+market_path: data/futures/um
+intervals: [5m, 1m]
+authentication: none
+gold_product: XAUUSDT
+gold_description_source: https://www.binance.com/en/learn/binance-futures-tradfi-perpetual-contracts
+

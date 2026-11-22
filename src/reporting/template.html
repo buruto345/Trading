@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ICT · Quantitative Research</title><style>{{ css | safe }}</style></head>
+<body>
+<a class="skip" href="#main">Đến nội dung</a>
+<aside class="sidebar"><div class="wordmark">ICT<span>RESEARCH NOTEBOOK</span></div><p class="side-caption">Liquidity Sweep<br>Market Structure Shift<br>Fair Value Gap</p><nav aria-label="Mục lục">{% for section in sections %}<a href="#{{ section.id }}"><span>{{ section.number }}</span>{{ section.title }}</a>{% endfor %}</nav><div class="side-footer">M5 · PERPETUAL<br>Offline historical simulation</div></aside>
+<main id="main">
+<header><div class="topline"><span>ĐỊNH LƯỢNG / MÔ HÌNH ĐẢO CHIỀU ICT</span><button id="theme" type="button" aria-label="Đổi giao diện sáng tối">Chế độ tối</button></div><h1>Từ mô hình nến<br>đến bằng chứng thống kê.</h1><p class="lead">Ba điều kiện. Ba instrument. Một nghiên cứu có thể kiểm chứng.</p><div class="header-meta"><span>{{ period }} · UTC</span><span>{{ report_date }}</span><span>RR giả định 1:2</span></div></header>
+<div class="kpis" aria-label="Chỉ số toàn bộ dữ liệu">{% for label,value,note in kpis %}<div class="kpi"><span>{{ label }}</span><strong>{{ value }}</strong><small>{{ note }}</small></div>{% endfor %}</div>
+<div class="scope-note"><strong>Đọc Win Rate cùng độ bất định.</strong> Tỷ lệ này chỉ dùng outcomes đã resolved; unresolved và ambiguous được trình bày riêng. Chi phí, phụ thuộc thời gian và các giả định entry/stop có thể thay đổi kết luận.</div>
+<section class="explorer" id="explorer"><div class="section-heading"><span>LIVE</span><div><h2>Khám phá mẫu quan sát</h2><p>Bộ lọc chỉ cập nhật vùng này. Các mục01–18 giữ nguyên population ghi tại từng mục.</p></div></div>
+<div class="filters"><label>Instrument<select id="instrument"><option value="">Tất cả</option>{% for symbol in symbols %}<option>{{ symbol }}</option>{% endfor %}</select></label><label>Direction<select id="direction"><option value="">Tất cả</option><option value="bullish">Bullish</option><option value="bearish">Bearish</option></select></label><label>Partition<select id="partition"><option value="development">Development · IS + validation</option><option value="in_sample">In-sample</option><option value="validation">Validation</option></select></label><label>Session<select id="session"><option value="">Tất cả</option>{% for session in sessions %}<option>{{ session }}</option>{% endfor %}</select></label><label>Từ ngày UTC<input type="date" id="from-date"></label><label>Đến ngày UTC<input type="date" id="to-date"></label><button id="reset" type="button">Đặt lại</button></div>
+<p class="note">OOS được giữ ngoài vùng khám phá; xem phần15 cho đánh giá cuối. Đây là phân tích exploratory, không chọn tham số từ kết quả.</p>
+<div id="live-metrics" class="live-metrics" aria-live="polite"></div><div id="live-chart" class="chart" style="min-height:320px"></div><p id="live-denominator" class="note"></p></section>
+{% for section in sections %}<section id="{{ section.id }}" class="research-section"><div class="section-heading"><span>{{ section.number }}</span><div><h2>{{ section.title }}</h2>{% if section.scope %}<p>{{ section.scope }}</p>{% endif %}</div></div>{{ section.body | safe }}</section>{% endfor %}
+<footer>ICT Quantitative Research · Dữ liệu thật, giả định công khai, kết quả có thể tái lập.<br>Nguồn và phương pháp được nhúng; báo cáo hoạt động offline. Mở README.md trong project để chạy lại.</footer></main>
+<script>{{ plotly_js | safe }}</script><script>window.RESEARCH_CHARTS={{ chart_json | safe }};window.RESEARCH_RECORDS={{ records_json | safe }};</script><script>{{ js | safe }}</script>
+</body></html>
