@@ -1,0 +1,73 @@
+........................................................................ [ 56%]
+.......................................................                  [100%]
+127 passed in 9.30s
+
+XAUUSDT 91872 candles
+XAUUSDT in_sample detecting
+XAUUSDT validation detecting
+XAUUSDT out_of_sample detecting
+XAUUSDT A simulating {3: 3643, 0: 564, 2: 247, 1: 40, 4: 6}
+XAUUSDT B simulating {3: 3643, 0: 564, 2: 247, 1: 40, 4: 6}
+BTCUSDT 724608 candles
+BTCUSDT in_sample detecting
+BTCUSDT validation detecting
+BTCUSDT out_of_sample detecting
+BTCUSDT A simulating {3: 33988, 0: 5609, 2: 1278, 1: 218, 4: 60}
+BTCUSDT B simulating {3: 33988, 0: 5609, 2: 1278, 1: 218, 4: 60}
+ZECUSDT 714432 candles
+ZECUSDT in_sample detecting
+ZECUSDT validation detecting
+ZECUSDT out_of_sample detecting
+ZECUSDT A simulating {3: 26647, 0: 4102, 2: 1185, 1: 209, 4: 36}
+ZECUSDT B simulating {3: 26647, 0: 4102, 2: 1185, 1: 209, 4: 36}
+statistics A 0
+statistics A 1
+statistics A 2
+statistics A 3
+statistics A 4
+statistics B 0
+statistics B 1
+statistics B 2
+statistics B 3
+statistics B 4
+Report: C:\Users\Anh Kiet\Desktop\Trading\WinRate\ICT-Quantitative-Research\reports\ICT_Multi_Model_Comparison.html
+{'status': 'passed', 'sql_groups': 10, 'patterns': 77832, 'simulations': 155664, 'protected_files_unchanged': 52}
+{
+  "status": "passed",
+  "browser": "Chrome headless / Playwright",
+  "offline": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false
+    }
+  ],
+  "checks": [
+    "21 sections",
+    "Track A/B and all models reconcile",
+    "Empty-state correct",
+    "Three Silver Bullet sessions",
+    "UTC confirmation marker falls inside each candle example"
+  ],
+  "charts": 22,
+  "errors": [],
+  "remote_requests": []
+}
+Report: C:\Users\Anh Kiet\Desktop\Trading\WinRate\ICT-Quantitative-Research\reports\ICT_Multi_Model_Comparison.html
+COMPLETE 205.9510416984558

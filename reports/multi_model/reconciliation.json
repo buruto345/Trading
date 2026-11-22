@@ -1,0 +1,263 @@
+{
+  "patterns": 77832,
+  "simulation_rows": 155664,
+  "original_baseline_exact_match": true,
+  "causal_entry": true,
+  "partition_boundaries": true,
+  "cost_identity": true,
+  "unique_patterns": true,
+  "counts": [
+    {
+      "track": "A",
+      "model": 0,
+      "outcome": "ambiguous",
+      "n": 2
+    },
+    {
+      "track": "A",
+      "model": 0,
+      "outcome": "loss",
+      "n": 6692
+    },
+    {
+      "track": "A",
+      "model": 0,
+      "outcome": "unresolved",
+      "n": 286
+    },
+    {
+      "track": "A",
+      "model": 0,
+      "outcome": "win",
+      "n": 3295
+    },
+    {
+      "track": "A",
+      "model": 1,
+      "outcome": "invalid",
+      "n": 10
+    },
+    {
+      "track": "A",
+      "model": 1,
+      "outcome": "loss",
+      "n": 214
+    },
+    {
+      "track": "A",
+      "model": 1,
+      "outcome": "unresolved",
+      "n": 1
+    },
+    {
+      "track": "A",
+      "model": 1,
+      "outcome": "win",
+      "n": 242
+    },
+    {
+      "track": "A",
+      "model": 2,
+      "outcome": "ambiguous",
+      "n": 5
+    },
+    {
+      "track": "A",
+      "model": 2,
+      "outcome": "invalid",
+      "n": 143
+    },
+    {
+      "track": "A",
+      "model": 2,
+      "outcome": "loss",
+      "n": 1064
+    },
+    {
+      "track": "A",
+      "model": 2,
+      "outcome": "unresolved",
+      "n": 2
+    },
+    {
+      "track": "A",
+      "model": 2,
+      "outcome": "win",
+      "n": 1496
+    },
+    {
+      "track": "A",
+      "model": 3,
+      "outcome": "ambiguous",
+      "n": 503
+    },
+    {
+      "track": "A",
+      "model": 3,
+      "outcome": "invalid",
+      "n": 3312
+    },
+    {
+      "track": "A",
+      "model": 3,
+      "outcome": "loss",
+      "n": 34600
+    },
+    {
+      "track": "A",
+      "model": 3,
+      "outcome": "unresolved",
+      "n": 30
+    },
+    {
+      "track": "A",
+      "model": 3,
+      "outcome": "win",
+      "n": 25833
+    },
+    {
+      "track": "A",
+      "model": 4,
+      "outcome": "invalid",
+      "n": 1
+    },
+    {
+      "track": "A",
+      "model": 4,
+      "outcome": "loss",
+      "n": 36
+    },
+    {
+      "track": "A",
+      "model": 4,
+      "outcome": "win",
+      "n": 65
+    },
+    {
+      "track": "B",
+      "model": 0,
+      "outcome": "ambiguous",
+      "n": 2
+    },
+    {
+      "track": "B",
+      "model": 0,
+      "outcome": "loss",
+      "n": 6692
+    },
+    {
+      "track": "B",
+      "model": 0,
+      "outcome": "unresolved",
+      "n": 286
+    },
+    {
+      "track": "B",
+      "model": 0,
+      "outcome": "win",
+      "n": 3295
+    },
+    {
+      "track": "B",
+      "model": 1,
+      "outcome": "ambiguous",
+      "n": 1
+    },
+    {
+      "track": "B",
+      "model": 1,
+      "outcome": "loss",
+      "n": 314
+    },
+    {
+      "track": "B",
+      "model": 1,
+      "outcome": "unresolved",
+      "n": 7
+    },
+    {
+      "track": "B",
+      "model": 1,
+      "outcome": "win",
+      "n": 145
+    },
+    {
+      "track": "B",
+      "model": 2,
+      "outcome": "ambiguous",
+      "n": 14
+    },
+    {
+      "track": "B",
+      "model": 2,
+      "outcome": "invalid",
+      "n": 1
+    },
+    {
+      "track": "B",
+      "model": 2,
+      "outcome": "loss",
+      "n": 1746
+    },
+    {
+      "track": "B",
+      "model": 2,
+      "outcome": "unresolved",
+      "n": 47
+    },
+    {
+      "track": "B",
+      "model": 2,
+      "outcome": "win",
+      "n": 902
+    },
+    {
+      "track": "B",
+      "model": 3,
+      "outcome": "ambiguous",
+      "n": 589
+    },
+    {
+      "track": "B",
+      "model": 3,
+      "outcome": "invalid",
+      "n": 14
+    },
+    {
+      "track": "B",
+      "model": 3,
+      "outcome": "loss",
+      "n": 41977
+    },
+    {
+      "track": "B",
+      "model": 3,
+      "outcome": "unresolved",
+      "n": 83
+    },
+    {
+      "track": "B",
+      "model": 3,
+      "outcome": "win",
+      "n": 21615
+    },
+    {
+      "track": "B",
+      "model": 4,
+      "outcome": "loss",
+      "n": 66
+    },
+    {
+      "track": "B",
+      "model": 4,
+      "outcome": "unresolved",
+      "n": 2
+    },
+    {
+      "track": "B",
+      "model": 4,
+      "outcome": "win",
+      "n": 34
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "A": [
+    {
+      "model": 1,
+      "baseline": 0,
+      "delta_net_expectancy": -0.2626273162339353,
+      "ci98_75_bonferroni": [
+        -0.46725559254438587,
+        -0.06632347896360481
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 456,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 2,
+      "baseline": 0,
+      "delta_net_expectancy": -0.5729323254678325,
+      "ci98_75_bonferroni": [
+        -0.8898618781589481,
+        -0.34888991149088966
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 2560,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 3,
+      "baseline": 0,
+      "delta_net_expectancy": -0.48713603640797415,
+      "ci98_75_bonferroni": [
+        -0.5404520329821193,
+        -0.4315910652155282
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 60433,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 4,
+      "baseline": 0,
+      "delta_net_expectancy": -0.049686351762096015,
+      "ci98_75_bonferroni": [
+        -0.3559505885348893,
+        0.27875729855526205
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 101,
+      "resolved_baseline": 9987
+    }
+  ],
+  "B": [
+    {
+      "model": 1,
+      "baseline": 0,
+      "delta_net_expectancy": -0.26569271633566194,
+      "ci98_75_bonferroni": [
+        -0.48107743023669786,
+        -0.06492029335283067
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 459,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 2,
+      "baseline": 0,
+      "delta_net_expectancy": -0.5453217046172121,
+      "ci98_75_bonferroni": [
+        -0.8494936128987205,
+        -0.3100446056741812
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 2648,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 3,
+      "baseline": 0,
+      "delta_net_expectancy": -0.46130175894960007,
+      "ci98_75_bonferroni": [
+        -0.5104381035080757,
+        -0.412478557249118
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 63592,
+      "resolved_baseline": 9987
+    },
+    {
+      "model": 4,
+      "baseline": 0,
+      "delta_net_expectancy": -0.1584503451323544,
+      "ci98_75_bonferroni": [
+        -0.5641122147489962,
+        0.2298329267615157
+      ],
+      "valid_reps": 1000,
+      "resolved_model": 100,
+      "resolved_baseline": 9987
+    }
+  ]
+}

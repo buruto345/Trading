@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "browser": "Chrome headless / Playwright",
+  "offline": true,
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false
+    }
+  ],
+  "checks": [
+    "21 sections",
+    "Track A/B and all models reconcile",
+    "Empty-state correct",
+    "Three Silver Bullet sessions",
+    "UTC confirmation marker falls inside each candle example"
+  ],
+  "charts": 22,
+  "errors": [],
+  "remote_requests": []
+}
