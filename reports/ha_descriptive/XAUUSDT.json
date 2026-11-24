@@ -1,0 +1,2130 @@
+{
+  "symbol": "XAUUSDT",
+  "source": "Binance Vision USD-M perpetual",
+  "source_manifest": "data/manifests/ha_m1/XAUUSDT.json",
+  "source_sha256": "6ba1df305e55e68232ff9cf28a5c6d274ab1ab5bd773f726dbb5e5d313bb47b4",
+  "quality": {
+    "raw_candles": 499195,
+    "validated_candles": 499195,
+    "invalid_candles": 0,
+    "duplicate_candles": 0,
+    "conflicting_duplicate_timestamps": 0,
+    "missing_candles": 0,
+    "gap_count": 0,
+    "completeness": 1.0,
+    "gap_ranges": [],
+    "earliest_timestamp": "2025-12-11T08:05:00+00:00",
+    "latest_timestamp": "2026-11-22T23:59:00+00:00",
+    "zero_volume_candles": 11538,
+    "missing_policy": "No imputation. Segment id increments after every temporal gap.",
+    "missing_definition": "Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.",
+    "input_monotonic": true,
+    "source_duplicate_rows": 0,
+    "quarantined_conflict_rows": 0,
+    "missing_volume_rows": 0,
+    "timezone": "UTC",
+    "timestamp_role": "candle open; indicators available one minute later",
+    "closure_policy": "No inferred closure calendar. All gaps remain unclassified; no imputation.",
+    "volume_policy": "Optional, missing retained as null; never a pattern filter"
+  },
+  "source_quality": {
+    "raw_candles": 499195,
+    "validated_candles": 499195,
+    "invalid_candles": 0,
+    "duplicate_candles": 0,
+    "conflicting_duplicate_timestamps": 0,
+    "missing_candles": 0,
+    "gap_count": 0,
+    "completeness": 1.0,
+    "gap_ranges": [],
+    "earliest_timestamp": "2025-12-11T08:05:00+00:00",
+    "latest_timestamp": "2026-11-22T23:59:00+00:00",
+    "zero_volume_candles": 11538,
+    "missing_policy": "No imputation. Segment id increments after every temporal gap.",
+    "missing_definition": "Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.",
+    "input_monotonic": false,
+    "source_duplicate_rows": 0,
+    "quarantined_conflict_rows": 0,
+    "missing_volume_rows": 0,
+    "timezone": "UTC",
+    "timestamp_role": "candle open; indicators available one minute later",
+    "closure_policy": "No inferred closure calendar. All gaps remain unclassified; no imputation.",
+    "volume_policy": "Optional, missing retained as null; never a pattern filter"
+  },
+  "trailing_missing_minutes": 1440,
+  "excluded_before_research": 35515,
+  "descriptive": {
+    "overall": {
+      "candles": {
+        "candles": 463680,
+        "ready_candles": 463181,
+        "warmup_excluded": 499,
+        "counts": {
+          "no_upper_wick": 136564,
+          "no_lower_wick": 137699,
+          "no_upper_exact": 136564,
+          "no_lower_exact": 137699,
+          "both_wicks": 192247,
+          "same_color_two_wicks": 92717,
+          "above_ema": 203814,
+          "below_ema": 204772,
+          "ema_touch_or_straddle": 54595,
+          "bullish_clean_component": 43040,
+          "bearish_clean_component": 42847,
+          "zero_range": 0
+        },
+        "frequencies": {
+          "no_upper_wick": 0.29483938244444396,
+          "no_lower_wick": 0.297289828382425,
+          "no_upper_exact": 0.29483938244444396,
+          "no_lower_exact": 0.297289828382425,
+          "both_wicks": 0.4150580442634737,
+          "same_color_two_wicks": 0.2001744458429858,
+          "above_ema": 0.4400310029988277,
+          "below_ema": 0.442099308909476,
+          "ema_touch_or_straddle": 0.11786968809169633,
+          "bullish_clean_component": 0.09292263715480557,
+          "bearish_clean_component": 0.09250595339618853,
+          "zero_range": 0.0
+        },
+        "distributions": {
+          "body": {
+            "n": 463181,
+            "mean": 1.0143949705909412,
+            "min": 2.1450614440254867e-07,
+            "max": 91.74790879708416,
+            "p05": 0.005767235406892723,
+            "p25": 0.1539925859788127,
+            "median": 0.5339221642998382,
+            "p75": 1.2901967538991812,
+            "p95": 3.455853032833602
+          },
+          "body_bps": {
+            "n": 463181,
+            "mean": 2.2455728123631085,
+            "min": 4.590217540174994e-07,
+            "max": 175.80151278414468,
+            "p05": 0.013103323584251845,
+            "p25": 0.3483602734674675,
+            "median": 1.2037800073240414,
+            "p75": 2.89437289061094,
+            "p95": 7.611432201965776
+          },
+          "range": {
+            "n": 463181,
+            "mean": 2.1091363643057712,
+            "min": 4.8824351324583404e-05,
+            "max": 152.5829087970842,
+            "p05": 0.013088352721752017,
+            "p25": 0.5,
+            "median": 1.4433590392600308,
+            "p75": 2.7100000000000364,
+            "p95": 6.4055328417252895
+          },
+          "range_bps": {
+            "n": 463181,
+            "mean": 4.662070642173951,
+            "min": 0.00010613458745450424,
+            "max": 316.79593980734234,
+            "p05": 0.02972172721152519,
+            "p25": 1.1349777335857203,
+            "median": 3.269785141675613,
+            "p75": 6.063904795719868,
+            "p95": 13.912046125423256
+          },
+          "upper_wick": {
+            "n": 463181,
+            "mean": 0.537867291880405,
+            "min": 0.0,
+            "max": 49.62750000000051,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.17059447741939948,
+            "p75": 0.742500000000291,
+            "p95": 2.100000000000364
+          },
+          "upper_wick_bps": {
+            "n": 463181,
+            "mean": 1.187923738465941,
+            "min": 0.0,
+            "max": 91.053409652277,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.3857503809281503,
+            "p75": 1.6708554083506908,
+            "p95": 4.61952481320402
+          },
+          "lower_wick": {
+            "n": 463181,
+            "mean": 0.5568741018344249,
+            "min": 0.0,
+            "max": 94.19250000000011,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.17250000000012733,
+            "p75": 0.7474999999994907,
+            "p95": 2.1450000000004366
+          },
+          "lower_wick_bps": {
+            "n": 463181,
+            "mean": 1.2285740913449017,
+            "min": 0.0,
+            "max": 196.33530361701585,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.3910641834087463,
+            "p75": 1.6835791485206872,
+            "p95": 4.712118981003556
+          },
+          "body_ratio": {
+            "n": 463181,
+            "mean": 0.5069709444218309,
+            "min": 3.803900957185631e-06,
+            "max": 1.0,
+            "p05": 0.05581072415199687,
+            "p25": 0.28497161222985407,
+            "median": 0.5330217750201631,
+            "p75": 0.704997950642883,
+            "p95": 0.9620423117677327
+          }
+        },
+        "two_wick_body_ratio": {
+          "n": 192247,
+          "mean": 0.24618357608481448,
+          "min": 3.803900957185631e-06,
+          "max": 0.7499472807303402,
+          "p05": 0.022767498112945962,
+          "p25": 0.11667599211570609,
+          "median": 0.23534342262200725,
+          "p75": 0.36422634745595805,
+          "p95": 0.496853804436349
+        },
+        "same_color_two_wick_body_ratio": {
+          "n": 92717,
+          "mean": 0.25302092055105796,
+          "min": 3.803900957185631e-06,
+          "max": 0.7498991082520683,
+          "p05": 0.02447513932019023,
+          "p25": 0.12196047612982203,
+          "median": 0.24415019523921272,
+          "p75": 0.37231633774020767,
+          "p95": 0.5025018484967779
+        },
+        "body_ratio_histogram": {
+          "edges": [
+            0,
+            0.05,
+            0.1,
+            0.2,
+            0.3,
+            0.5,
+            0.75,
+            1
+          ],
+          "counts": [
+            20809,
+            20547,
+            40613,
+            39612,
+            88870,
+            161533,
+            91197
+          ],
+          "zero_range_excluded": 0
+        }
+      },
+      "sequences": {
+        "clean_runs": 37968,
+        "statuses": {
+          "observed_two_wick_terminal": 30866,
+          "censored_ema_zone_lost": 6957,
+          "censored_replaced_by_clean_run": 145
+        },
+        "observed_terminals": 30866,
+        "same_color_terminals": 13110,
+        "with_impulse_same_color": 4394,
+        "pullback_length": {
+          "n": 37968,
+          "mean": 2.262089127686473,
+          "min": 1.0,
+          "max": 24.0,
+          "p05": 1.0,
+          "p25": 1.0,
+          "median": 2.0,
+          "p75": 3.0,
+          "p95": 6.0
+        },
+        "impulse_count": {
+          "n": 37968,
+          "mean": 1.5286557100716394,
+          "min": 0.0,
+          "max": 48.0,
+          "p05": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 2.0,
+          "p95": 8.0
+        },
+        "intermediate_count": {
+          "n": 30866,
+          "mean": 0.13403097259120067,
+          "min": 0.0,
+          "max": 25.0,
+          "p05": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p95": 1.0
+        },
+        "terminal_body_ratio": {
+          "n": 30866,
+          "mean": 0.2560208545634558,
+          "min": 3.803900957185631e-06,
+          "max": 0.7499472807303402,
+          "p05": 0.02459649976295632,
+          "p25": 0.12368363731193974,
+          "median": 0.24840055991572282,
+          "p75": 0.37685373538094624,
+          "p95": 0.5079453189912141
+        },
+        "exact_pattern_count": null,
+        "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+      },
+      "forward": [
+        {
+          "horizon_minutes": 1,
+          "sample_size": 4394,
+          "observed": 4394,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 4394,
+            "mean": -0.0017077777873780382,
+            "min": -26.633423379668344,
+            "max": 36.185444832055325,
+            "p05": -4.769071111320744,
+            "p25": -1.1090619279879865,
+            "median": 0.0,
+            "p75": 0.9559311483905986,
+            "p95": 4.815792214043653
+          },
+          "favorable_excursion_bps": {
+            "n": 4394,
+            "mean": 1.7151339952027307,
+            "min": 0.0,
+            "max": 42.31344929559677,
+            "p05": 0.0,
+            "p25": 0.022001522514136784,
+            "median": 0.6419004837904252,
+            "p75": 2.145726247156643,
+            "p95": 6.761038431132288
+          },
+          "adverse_excursion_bps": {
+            "n": 4394,
+            "mean": -1.6443922446573571,
+            "min": -52.31223689492248,
+            "max": 0.0,
+            "p05": -6.403421223934447,
+            "p25": -2.183509620066748,
+            "median": -0.7238216261373775,
+            "p75": -0.022149535560678224,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 5,
+          "sample_size": 4394,
+          "observed": 4394,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 4394,
+            "mean": 0.010150578293647771,
+            "min": -76.08831233628433,
+            "max": 106.88551100311194,
+            "p05": -10.498574066477417,
+            "p25": -2.865974206771038,
+            "median": -0.04280670792389252,
+            "p75": 2.4401431621212666,
+            "p95": 10.860596747651607
+          },
+          "favorable_excursion_bps": {
+            "n": 4394,
+            "mean": 4.414967342218711,
+            "min": 0.0,
+            "max": 113.15508992521983,
+            "p05": 0.0,
+            "p25": 0.49264451814273746,
+            "median": 2.0778131607146477,
+            "p75": 5.610138946847421,
+            "p95": 15.599022344213557
+          },
+          "adverse_excursion_bps": {
+            "n": 4394,
+            "mean": -4.248794146305983,
+            "min": -76.08831233628433,
+            "max": 0.0,
+            "p05": -14.800346528630437,
+            "p25": -5.778174194777941,
+            "median": -2.3663230361536947,
+            "p75": -0.577554588758189,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 15,
+          "sample_size": 4394,
+          "observed": 4394,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 4394,
+            "mean": 0.2741688031199677,
+            "min": -156.65784282473672,
+            "max": 196.5736338050683,
+            "p05": -18.129940948579335,
+            "p25": -4.777966380826171,
+            "median": -0.13098103320341448,
+            "p75": 4.426410139170001,
+            "p95": 20.652091694945852
+          },
+          "favorable_excursion_bps": {
+            "n": 4394,
+            "mean": 8.367390622025116,
+            "min": 0.0,
+            "max": 330.11015283522573,
+            "p05": 0.0,
+            "p25": 1.1551668290865624,
+            "median": 4.192314554670173,
+            "p75": 10.186528089215496,
+            "p95": 29.85311294382755
+          },
+          "adverse_excursion_bps": {
+            "n": 4394,
+            "mean": -7.705879306785532,
+            "min": -310.0637845499643,
+            "max": 0.0,
+            "p05": -26.107695693673328,
+            "p25": -10.10740649794034,
+            "median": -4.513641357534182,
+            "p75": -1.3694582157278146,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 60,
+          "sample_size": 4394,
+          "observed": 4394,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 4394,
+            "mean": -0.044305239061203865,
+            "min": -218.2210361716086,
+            "max": 538.5924971701328,
+            "p05": -36.88311719573655,
+            "p25": -10.367101810378754,
+            "median": -0.757904130330167,
+            "p75": 8.934685704705958,
+            "p95": 38.33529426210274
+          },
+          "favorable_excursion_bps": {
+            "n": 4394,
+            "mean": 17.61560128076166,
+            "min": 0.0,
+            "max": 710.8556104066465,
+            "p05": 0.06698297698093382,
+            "p25": 2.9341085929227018,
+            "median": 9.675896654264271,
+            "p75": 22.73687843241612,
+            "p95": 57.44861987258009
+          },
+          "adverse_excursion_bps": {
+            "n": 4394,
+            "mean": -16.548612813126912,
+            "min": -310.0637845499643,
+            "max": 0.0,
+            "p05": -53.818256230061316,
+            "p25": -22.352844909562243,
+            "median": -10.00818740159004,
+            "p75": -3.6987437469521156,
+            "p95": -0.351617726055746
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        }
+      ]
+    },
+    "partitions": {
+      "in_sample": {
+        "candles": {
+          "candles": 0,
+          "ready_candles": 0,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 0,
+            "no_lower_wick": 0,
+            "no_upper_exact": 0,
+            "no_lower_exact": 0,
+            "both_wicks": 0,
+            "same_color_two_wicks": 0,
+            "above_ema": 0,
+            "below_ema": 0,
+            "ema_touch_or_straddle": 0,
+            "bullish_clean_component": 0,
+            "bearish_clean_component": 0,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": null,
+            "no_lower_wick": null,
+            "no_upper_exact": null,
+            "no_lower_exact": null,
+            "both_wicks": null,
+            "same_color_two_wicks": null,
+            "above_ema": null,
+            "below_ema": null,
+            "ema_touch_or_straddle": null,
+            "bullish_clean_component": null,
+            "bearish_clean_component": null,
+            "zero_range": null
+          },
+          "distributions": {
+            "body": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "body_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "range": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "range_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "upper_wick": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "upper_wick_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "lower_wick": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "lower_wick_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "body_ratio": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 0,
+          "statuses": {},
+          "observed_terminals": 0,
+          "same_color_terminals": 0,
+          "with_impulse_same_color": 0,
+          "pullback_length": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "impulse_count": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "intermediate_count": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "terminal_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "validation": {
+        "candles": {
+          "candles": 0,
+          "ready_candles": 0,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 0,
+            "no_lower_wick": 0,
+            "no_upper_exact": 0,
+            "no_lower_exact": 0,
+            "both_wicks": 0,
+            "same_color_two_wicks": 0,
+            "above_ema": 0,
+            "below_ema": 0,
+            "ema_touch_or_straddle": 0,
+            "bullish_clean_component": 0,
+            "bearish_clean_component": 0,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": null,
+            "no_lower_wick": null,
+            "no_upper_exact": null,
+            "no_lower_exact": null,
+            "both_wicks": null,
+            "same_color_two_wicks": null,
+            "above_ema": null,
+            "below_ema": null,
+            "ema_touch_or_straddle": null,
+            "bullish_clean_component": null,
+            "bearish_clean_component": null,
+            "zero_range": null
+          },
+          "distributions": {
+            "body": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "body_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "range": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "range_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "upper_wick": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "upper_wick_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "lower_wick": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "lower_wick_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "body_ratio": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 0,
+          "statuses": {},
+          "observed_terminals": 0,
+          "same_color_terminals": 0,
+          "with_impulse_same_color": 0,
+          "pullback_length": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "impulse_count": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "intermediate_count": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "terminal_body_ratio": {
+            "n": 0,
+            "mean": null,
+            "min": null,
+            "max": null,
+            "p05": null,
+            "p25": null,
+            "median": null,
+            "p75": null,
+            "p95": null
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 0,
+            "observed": 0,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "favorable_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "adverse_excursion_bps": {
+              "n": 0,
+              "mean": null,
+              "min": null,
+              "max": null,
+              "p05": null,
+              "p25": null,
+              "median": null,
+              "p75": null,
+              "p95": null
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "out_of_sample": {
+        "candles": {
+          "candles": 463680,
+          "ready_candles": 463181,
+          "warmup_excluded": 499,
+          "counts": {
+            "no_upper_wick": 136564,
+            "no_lower_wick": 137699,
+            "no_upper_exact": 136564,
+            "no_lower_exact": 137699,
+            "both_wicks": 192247,
+            "same_color_two_wicks": 92717,
+            "above_ema": 203814,
+            "below_ema": 204772,
+            "ema_touch_or_straddle": 54595,
+            "bullish_clean_component": 43040,
+            "bearish_clean_component": 42847,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.29483938244444396,
+            "no_lower_wick": 0.297289828382425,
+            "no_upper_exact": 0.29483938244444396,
+            "no_lower_exact": 0.297289828382425,
+            "both_wicks": 0.4150580442634737,
+            "same_color_two_wicks": 0.2001744458429858,
+            "above_ema": 0.4400310029988277,
+            "below_ema": 0.442099308909476,
+            "ema_touch_or_straddle": 0.11786968809169633,
+            "bullish_clean_component": 0.09292263715480557,
+            "bearish_clean_component": 0.09250595339618853,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 463181,
+              "mean": 1.0143949705909412,
+              "min": 2.1450614440254867e-07,
+              "max": 91.74790879708416,
+              "p05": 0.005767235406892723,
+              "p25": 0.1539925859788127,
+              "median": 0.5339221642998382,
+              "p75": 1.2901967538991812,
+              "p95": 3.455853032833602
+            },
+            "body_bps": {
+              "n": 463181,
+              "mean": 2.2455728123631085,
+              "min": 4.590217540174994e-07,
+              "max": 175.80151278414468,
+              "p05": 0.013103323584251845,
+              "p25": 0.3483602734674675,
+              "median": 1.2037800073240414,
+              "p75": 2.89437289061094,
+              "p95": 7.611432201965776
+            },
+            "range": {
+              "n": 463181,
+              "mean": 2.1091363643057712,
+              "min": 4.8824351324583404e-05,
+              "max": 152.5829087970842,
+              "p05": 0.013088352721752017,
+              "p25": 0.5,
+              "median": 1.4433590392600308,
+              "p75": 2.7100000000000364,
+              "p95": 6.4055328417252895
+            },
+            "range_bps": {
+              "n": 463181,
+              "mean": 4.662070642173951,
+              "min": 0.00010613458745450424,
+              "max": 316.79593980734234,
+              "p05": 0.02972172721152519,
+              "p25": 1.1349777335857203,
+              "median": 3.269785141675613,
+              "p75": 6.063904795719868,
+              "p95": 13.912046125423256
+            },
+            "upper_wick": {
+              "n": 463181,
+              "mean": 0.537867291880405,
+              "min": 0.0,
+              "max": 49.62750000000051,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.17059447741939948,
+              "p75": 0.742500000000291,
+              "p95": 2.100000000000364
+            },
+            "upper_wick_bps": {
+              "n": 463181,
+              "mean": 1.187923738465941,
+              "min": 0.0,
+              "max": 91.053409652277,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.3857503809281503,
+              "p75": 1.6708554083506908,
+              "p95": 4.61952481320402
+            },
+            "lower_wick": {
+              "n": 463181,
+              "mean": 0.5568741018344249,
+              "min": 0.0,
+              "max": 94.19250000000011,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.17250000000012733,
+              "p75": 0.7474999999994907,
+              "p95": 2.1450000000004366
+            },
+            "lower_wick_bps": {
+              "n": 463181,
+              "mean": 1.2285740913449017,
+              "min": 0.0,
+              "max": 196.33530361701585,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.3910641834087463,
+              "p75": 1.6835791485206872,
+              "p95": 4.712118981003556
+            },
+            "body_ratio": {
+              "n": 463181,
+              "mean": 0.5069709444218309,
+              "min": 3.803900957185631e-06,
+              "max": 1.0,
+              "p05": 0.05581072415199687,
+              "p25": 0.28497161222985407,
+              "median": 0.5330217750201631,
+              "p75": 0.704997950642883,
+              "p95": 0.9620423117677327
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 192247,
+            "mean": 0.24618357608481448,
+            "min": 3.803900957185631e-06,
+            "max": 0.7499472807303402,
+            "p05": 0.022767498112945962,
+            "p25": 0.11667599211570609,
+            "median": 0.23534342262200725,
+            "p75": 0.36422634745595805,
+            "p95": 0.496853804436349
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 92717,
+            "mean": 0.25302092055105796,
+            "min": 3.803900957185631e-06,
+            "max": 0.7498991082520683,
+            "p05": 0.02447513932019023,
+            "p25": 0.12196047612982203,
+            "median": 0.24415019523921272,
+            "p75": 0.37231633774020767,
+            "p95": 0.5025018484967779
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              20809,
+              20547,
+              40613,
+              39612,
+              88870,
+              161533,
+              91197
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 37968,
+          "statuses": {
+            "observed_two_wick_terminal": 30866,
+            "censored_ema_zone_lost": 6957,
+            "censored_replaced_by_clean_run": 145
+          },
+          "observed_terminals": 30866,
+          "same_color_terminals": 13110,
+          "with_impulse_same_color": 4394,
+          "pullback_length": {
+            "n": 37968,
+            "mean": 2.262089127686473,
+            "min": 1.0,
+            "max": 24.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 2.0,
+            "p75": 3.0,
+            "p95": 6.0
+          },
+          "impulse_count": {
+            "n": 37968,
+            "mean": 1.5286557100716394,
+            "min": 0.0,
+            "max": 48.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 30866,
+            "mean": 0.13403097259120067,
+            "min": 0.0,
+            "max": 25.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 30866,
+            "mean": 0.2560208545634558,
+            "min": 3.803900957185631e-06,
+            "max": 0.7499472807303402,
+            "p05": 0.02459649976295632,
+            "p25": 0.12368363731193974,
+            "median": 0.24840055991572282,
+            "p75": 0.37685373538094624,
+            "p95": 0.5079453189912141
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": -0.0017077777873780382,
+              "min": -26.633423379668344,
+              "max": 36.185444832055325,
+              "p05": -4.769071111320744,
+              "p25": -1.1090619279879865,
+              "median": 0.0,
+              "p75": 0.9559311483905986,
+              "p95": 4.815792214043653
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 1.7151339952027307,
+              "min": 0.0,
+              "max": 42.31344929559677,
+              "p05": 0.0,
+              "p25": 0.022001522514136784,
+              "median": 0.6419004837904252,
+              "p75": 2.145726247156643,
+              "p95": 6.761038431132288
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -1.6443922446573571,
+              "min": -52.31223689492248,
+              "max": 0.0,
+              "p05": -6.403421223934447,
+              "p25": -2.183509620066748,
+              "median": -0.7238216261373775,
+              "p75": -0.022149535560678224,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": 0.010150578293647771,
+              "min": -76.08831233628433,
+              "max": 106.88551100311194,
+              "p05": -10.498574066477417,
+              "p25": -2.865974206771038,
+              "median": -0.04280670792389252,
+              "p75": 2.4401431621212666,
+              "p95": 10.860596747651607
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 4.414967342218711,
+              "min": 0.0,
+              "max": 113.15508992521983,
+              "p05": 0.0,
+              "p25": 0.49264451814273746,
+              "median": 2.0778131607146477,
+              "p75": 5.610138946847421,
+              "p95": 15.599022344213557
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -4.248794146305983,
+              "min": -76.08831233628433,
+              "max": 0.0,
+              "p05": -14.800346528630437,
+              "p25": -5.778174194777941,
+              "median": -2.3663230361536947,
+              "p75": -0.577554588758189,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": 0.2741688031199677,
+              "min": -156.65784282473672,
+              "max": 196.5736338050683,
+              "p05": -18.129940948579335,
+              "p25": -4.777966380826171,
+              "median": -0.13098103320341448,
+              "p75": 4.426410139170001,
+              "p95": 20.652091694945852
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 8.367390622025116,
+              "min": 0.0,
+              "max": 330.11015283522573,
+              "p05": 0.0,
+              "p25": 1.1551668290865624,
+              "median": 4.192314554670173,
+              "p75": 10.186528089215496,
+              "p95": 29.85311294382755
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -7.705879306785532,
+              "min": -310.0637845499643,
+              "max": 0.0,
+              "p05": -26.107695693673328,
+              "p25": -10.10740649794034,
+              "median": -4.513641357534182,
+              "p75": -1.3694582157278146,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": -0.044305239061203865,
+              "min": -218.2210361716086,
+              "max": 538.5924971701328,
+              "p05": -36.88311719573655,
+              "p25": -10.367101810378754,
+              "median": -0.757904130330167,
+              "p75": 8.934685704705958,
+              "p95": 38.33529426210274
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 17.61560128076166,
+              "min": 0.0,
+              "max": 710.8556104066465,
+              "p05": 0.06698297698093382,
+              "p25": 2.9341085929227018,
+              "median": 9.675896654264271,
+              "p75": 22.73687843241612,
+              "p95": 57.44861987258009
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -16.548612813126912,
+              "min": -310.0637845499643,
+              "max": 0.0,
+              "p05": -53.818256230061316,
+              "p25": -22.352844909562243,
+              "median": -10.00818740159004,
+              "p75": -3.6987437469521156,
+              "p95": -0.351617726055746
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      }
+    },
+    "years": {
+      "2026": {
+        "candles": {
+          "candles": 463680,
+          "ready_candles": 463181,
+          "warmup_excluded": 499,
+          "counts": {
+            "no_upper_wick": 136564,
+            "no_lower_wick": 137699,
+            "no_upper_exact": 136564,
+            "no_lower_exact": 137699,
+            "both_wicks": 192247,
+            "same_color_two_wicks": 92717,
+            "above_ema": 203814,
+            "below_ema": 204772,
+            "ema_touch_or_straddle": 54595,
+            "bullish_clean_component": 43040,
+            "bearish_clean_component": 42847,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.29483938244444396,
+            "no_lower_wick": 0.297289828382425,
+            "no_upper_exact": 0.29483938244444396,
+            "no_lower_exact": 0.297289828382425,
+            "both_wicks": 0.4150580442634737,
+            "same_color_two_wicks": 0.2001744458429858,
+            "above_ema": 0.4400310029988277,
+            "below_ema": 0.442099308909476,
+            "ema_touch_or_straddle": 0.11786968809169633,
+            "bullish_clean_component": 0.09292263715480557,
+            "bearish_clean_component": 0.09250595339618853,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 463181,
+              "mean": 1.0143949705909412,
+              "min": 2.1450614440254867e-07,
+              "max": 91.74790879708416,
+              "p05": 0.005767235406892723,
+              "p25": 0.1539925859788127,
+              "median": 0.5339221642998382,
+              "p75": 1.2901967538991812,
+              "p95": 3.455853032833602
+            },
+            "body_bps": {
+              "n": 463181,
+              "mean": 2.2455728123631085,
+              "min": 4.590217540174994e-07,
+              "max": 175.80151278414468,
+              "p05": 0.013103323584251845,
+              "p25": 0.3483602734674675,
+              "median": 1.2037800073240414,
+              "p75": 2.89437289061094,
+              "p95": 7.611432201965776
+            },
+            "range": {
+              "n": 463181,
+              "mean": 2.1091363643057712,
+              "min": 4.8824351324583404e-05,
+              "max": 152.5829087970842,
+              "p05": 0.013088352721752017,
+              "p25": 0.5,
+              "median": 1.4433590392600308,
+              "p75": 2.7100000000000364,
+              "p95": 6.4055328417252895
+            },
+            "range_bps": {
+              "n": 463181,
+              "mean": 4.662070642173951,
+              "min": 0.00010613458745450424,
+              "max": 316.79593980734234,
+              "p05": 0.02972172721152519,
+              "p25": 1.1349777335857203,
+              "median": 3.269785141675613,
+              "p75": 6.063904795719868,
+              "p95": 13.912046125423256
+            },
+            "upper_wick": {
+              "n": 463181,
+              "mean": 0.537867291880405,
+              "min": 0.0,
+              "max": 49.62750000000051,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.17059447741939948,
+              "p75": 0.742500000000291,
+              "p95": 2.100000000000364
+            },
+            "upper_wick_bps": {
+              "n": 463181,
+              "mean": 1.187923738465941,
+              "min": 0.0,
+              "max": 91.053409652277,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.3857503809281503,
+              "p75": 1.6708554083506908,
+              "p95": 4.61952481320402
+            },
+            "lower_wick": {
+              "n": 463181,
+              "mean": 0.5568741018344249,
+              "min": 0.0,
+              "max": 94.19250000000011,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.17250000000012733,
+              "p75": 0.7474999999994907,
+              "p95": 2.1450000000004366
+            },
+            "lower_wick_bps": {
+              "n": 463181,
+              "mean": 1.2285740913449017,
+              "min": 0.0,
+              "max": 196.33530361701585,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.3910641834087463,
+              "p75": 1.6835791485206872,
+              "p95": 4.712118981003556
+            },
+            "body_ratio": {
+              "n": 463181,
+              "mean": 0.5069709444218309,
+              "min": 3.803900957185631e-06,
+              "max": 1.0,
+              "p05": 0.05581072415199687,
+              "p25": 0.28497161222985407,
+              "median": 0.5330217750201631,
+              "p75": 0.704997950642883,
+              "p95": 0.9620423117677327
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 192247,
+            "mean": 0.24618357608481448,
+            "min": 3.803900957185631e-06,
+            "max": 0.7499472807303402,
+            "p05": 0.022767498112945962,
+            "p25": 0.11667599211570609,
+            "median": 0.23534342262200725,
+            "p75": 0.36422634745595805,
+            "p95": 0.496853804436349
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 92717,
+            "mean": 0.25302092055105796,
+            "min": 3.803900957185631e-06,
+            "max": 0.7498991082520683,
+            "p05": 0.02447513932019023,
+            "p25": 0.12196047612982203,
+            "median": 0.24415019523921272,
+            "p75": 0.37231633774020767,
+            "p95": 0.5025018484967779
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              20809,
+              20547,
+              40613,
+              39612,
+              88870,
+              161533,
+              91197
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 37968,
+          "statuses": {
+            "observed_two_wick_terminal": 30866,
+            "censored_ema_zone_lost": 6957,
+            "censored_replaced_by_clean_run": 145
+          },
+          "observed_terminals": 30866,
+          "same_color_terminals": 13110,
+          "with_impulse_same_color": 4394,
+          "pullback_length": {
+            "n": 37968,
+            "mean": 2.262089127686473,
+            "min": 1.0,
+            "max": 24.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 2.0,
+            "p75": 3.0,
+            "p95": 6.0
+          },
+          "impulse_count": {
+            "n": 37968,
+            "mean": 1.5286557100716394,
+            "min": 0.0,
+            "max": 48.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 30866,
+            "mean": 0.13403097259120067,
+            "min": 0.0,
+            "max": 25.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 30866,
+            "mean": 0.2560208545634558,
+            "min": 3.803900957185631e-06,
+            "max": 0.7499472807303402,
+            "p05": 0.02459649976295632,
+            "p25": 0.12368363731193974,
+            "median": 0.24840055991572282,
+            "p75": 0.37685373538094624,
+            "p95": 0.5079453189912141
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": -0.0017077777873780382,
+              "min": -26.633423379668344,
+              "max": 36.185444832055325,
+              "p05": -4.769071111320744,
+              "p25": -1.1090619279879865,
+              "median": 0.0,
+              "p75": 0.9559311483905986,
+              "p95": 4.815792214043653
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 1.7151339952027307,
+              "min": 0.0,
+              "max": 42.31344929559677,
+              "p05": 0.0,
+              "p25": 0.022001522514136784,
+              "median": 0.6419004837904252,
+              "p75": 2.145726247156643,
+              "p95": 6.761038431132288
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -1.6443922446573571,
+              "min": -52.31223689492248,
+              "max": 0.0,
+              "p05": -6.403421223934447,
+              "p25": -2.183509620066748,
+              "median": -0.7238216261373775,
+              "p75": -0.022149535560678224,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": 0.010150578293647771,
+              "min": -76.08831233628433,
+              "max": 106.88551100311194,
+              "p05": -10.498574066477417,
+              "p25": -2.865974206771038,
+              "median": -0.04280670792389252,
+              "p75": 2.4401431621212666,
+              "p95": 10.860596747651607
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 4.414967342218711,
+              "min": 0.0,
+              "max": 113.15508992521983,
+              "p05": 0.0,
+              "p25": 0.49264451814273746,
+              "median": 2.0778131607146477,
+              "p75": 5.610138946847421,
+              "p95": 15.599022344213557
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -4.248794146305983,
+              "min": -76.08831233628433,
+              "max": 0.0,
+              "p05": -14.800346528630437,
+              "p25": -5.778174194777941,
+              "median": -2.3663230361536947,
+              "p75": -0.577554588758189,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": 0.2741688031199677,
+              "min": -156.65784282473672,
+              "max": 196.5736338050683,
+              "p05": -18.129940948579335,
+              "p25": -4.777966380826171,
+              "median": -0.13098103320341448,
+              "p75": 4.426410139170001,
+              "p95": 20.652091694945852
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 8.367390622025116,
+              "min": 0.0,
+              "max": 330.11015283522573,
+              "p05": 0.0,
+              "p25": 1.1551668290865624,
+              "median": 4.192314554670173,
+              "p75": 10.186528089215496,
+              "p95": 29.85311294382755
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -7.705879306785532,
+              "min": -310.0637845499643,
+              "max": 0.0,
+              "p05": -26.107695693673328,
+              "p25": -10.10740649794034,
+              "median": -4.513641357534182,
+              "p75": -1.3694582157278146,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 4394,
+            "observed": 4394,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4394,
+              "mean": -0.044305239061203865,
+              "min": -218.2210361716086,
+              "max": 538.5924971701328,
+              "p05": -36.88311719573655,
+              "p25": -10.367101810378754,
+              "median": -0.757904130330167,
+              "p75": 8.934685704705958,
+              "p95": 38.33529426210274
+            },
+            "favorable_excursion_bps": {
+              "n": 4394,
+              "mean": 17.61560128076166,
+              "min": 0.0,
+              "max": 710.8556104066465,
+              "p05": 0.06698297698093382,
+              "p25": 2.9341085929227018,
+              "median": 9.675896654264271,
+              "p75": 22.73687843241612,
+              "p95": 57.44861987258009
+            },
+            "adverse_excursion_bps": {
+              "n": 4394,
+              "mean": -16.548612813126912,
+              "min": -310.0637845499643,
+              "max": 0.0,
+              "p05": -53.818256230061316,
+              "p25": -22.352844909562243,
+              "median": -10.00818740159004,
+              "p75": -3.6987437469521156,
+              "p95": -0.351617726055746
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      }
+    },
+    "year_assignment": "candles by candle open, sequences by run start, markouts by terminal time"
+  },
+  "unavailable_metrics": {
+    "original_pattern_count": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "outcome_sample_size": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "observed_win_proportion": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "win_rate_confidence_interval": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "independent_observations": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "p_value_075": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    }
+  },
+  "unresolved_definitions": {
+    "minimum_pullback_candles": null,
+    "minimum_impulse_candles": null,
+    "pullback_color_continuity": null,
+    "maximum_doji_body_ratio": null,
+    "doji_wick_ratio": null,
+    "intermediate_characteristics": null,
+    "maximum_intermediate_candles": null,
+    "entry_price": null,
+    "stop_loss": null,
+    "outcome_labeling": null,
+    "maximum_observation_period": null,
+    "ambiguous_intrabar_handling": null
+  }
+}

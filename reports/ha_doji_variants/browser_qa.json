@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "offline": true,
+  "views": [
+    {
+      "report": "BTCUSDT",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "report": "BTCUSDT",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "report": "ZECUSDT",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "report": "ZECUSDT",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "report": "XAUUSDT",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "report": "XAUUSDT",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "report": "comparison",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "report": "comparison",
+      "width": 390,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "remote_requests": []
+}

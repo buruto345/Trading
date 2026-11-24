@@ -1,0 +1,2 @@
+# Disposable pytest fixtures stay in the synthetic-data area, never in research data.
+.ha_pytest/

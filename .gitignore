@@ -10,3 +10,6 @@ reports/ICT_Quantitative_Research_Report.html
 logs/*.log
 *.zip
 
+# Rebuildable per-candle geometry cache; source M1/features remain local as above.
+reports/ha_descriptive/*_geometry.parquet
+

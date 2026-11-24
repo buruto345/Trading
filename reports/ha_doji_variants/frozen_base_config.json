@@ -1,0 +1,20 @@
+{
+  "symbols": [
+    "BTCUSDT",
+    "ZECUSDT",
+    "XAUUSDT"
+  ],
+  "cutoff_exclusive": "2026-11-24T00:00:00Z",
+  "ema_span": 100,
+  "warmup_bars": 500,
+  "train_end_exclusive": "2024-01-01T00:00:00Z",
+  "validation_end_exclusive": "2025-01-01T00:00:00Z",
+  "research_start_by_symbol": {
+    "XAUUSDT": "2026-01-05T00:00:00Z"
+  },
+  "workers": 4,
+  "minimum_free_disk_gb": 3,
+  "seed": 20261124,
+  "pattern_definition_status": "unresolved",
+  "outcome_definition_status": "unresolved"
+}

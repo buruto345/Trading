@@ -1,0 +1,559 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>XAUUSDT · HA / EMA 100 · M1</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#193042;background:#f2f5f7;margin:0}
+main{max-width:1180px;margin:auto;padding:24px}section{background:white;padding:20px;margin:20px 0;border-radius:8px}
+h1{line-height:1.2}h2{line-height:1.3}a{color:#175c99}.notice{background:#fff2d3;border-left:5px solid #b37a10;padding:14px}
+.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:10px;border-bottom:1px solid #d5dfe7}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}li{overflow-wrap:anywhere}.metric{font-size:26px;font-weight:700}
+@media(max-width:500px){main{padding:12px}section{padding:12px}h1{font-size:27px}}</style><main><h1>XAUUSDT · HA / EMA 100 · M1</h1>
+<p class="notice" id="status">Win rate 75%: chưa thể kiểm chứng. Chưa có định nghĩa Doji, entry, SL và outcome đầy đủ.
+Số chuỗi hình thái và biến động sau sự kiện không phải số lệnh hoặc tỷ lệ thắng.</p><p><a href="comparison.html">So sánh ba sản phẩm</a> · <a href="XAUUSDT.json">JSON đầy đủ</a></p>
+<section><h2>Coverage và kiểm định</h2><p class="metric" id="valid-count">499,195 nến M1 hợp lệ</p><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Thuộc tính</th>
+      <th>Giá trị</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nguồn</td>
+      <td>Binance Vision — USD-M perpetual</td>
+    </tr>
+    <tr>
+      <td>Đầu UTC</td>
+      <td>2025-12-11T08:05:00+00:00</td>
+    </tr>
+    <tr>
+      <td>Cuối UTC</td>
+      <td>2026-11-22T23:59:00+00:00</td>
+    </tr>
+    <tr>
+      <td>Tổng nến nguồn (manifest)</td>
+      <td>499195</td>
+    </tr>
+    <tr>
+      <td>Nến hợp lệ kiểm tra lại</td>
+      <td>499195</td>
+    </tr>
+    <tr>
+      <td>Nến ngoài thời kỳ nghiên cứu</td>
+      <td>35515</td>
+    </tr>
+    <tr>
+      <td>Missing nội bộ</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Trùng timestamp trong Parquet</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Invalid OHLC/timestamp/volume</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Completeness nội bộ</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Thiếu đuôi tới cutoff (phút)</td>
+      <td>1440</td>
+    </tr>
+    <tr>
+      <td>Thứ tự tăng</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Timezone</td>
+      <td>UTC</td>
+    </tr>
+    <tr>
+      <td>Warm-up</td>
+      <td>500 nến mỗi segment</td>
+    </tr>
+    <tr>
+      <td>Lịch đóng cửa</td>
+      <td>Chưa xác minh</td>
+    </tr>
+    <tr>
+      <td>Zero-volume</td>
+      <td>11538</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Không tải lại dữ liệu. Hash nguồn/Parquet được xác minh trước phân tích. Completeness nội bộ chỉ tính giữa nến đầu và cuối,
+không khẳng định đủ từ ngày listing hoặc tới cutoff. Các gap không được lấp.</p></section>
+<section><h2>Thân nến, wick và EMA</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Đặc tính</th>
+      <th>Số nến</th>
+      <th>Tỷ lệ trên nến đủ warm-up (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>no_upper_wick</td>
+      <td>136564</td>
+      <td>29.4839</td>
+    </tr>
+    <tr>
+      <td>no_lower_wick</td>
+      <td>137699</td>
+      <td>29.7290</td>
+    </tr>
+    <tr>
+      <td>no_upper_exact</td>
+      <td>136564</td>
+      <td>29.4839</td>
+    </tr>
+    <tr>
+      <td>no_lower_exact</td>
+      <td>137699</td>
+      <td>29.7290</td>
+    </tr>
+    <tr>
+      <td>both_wicks</td>
+      <td>192247</td>
+      <td>41.5058</td>
+    </tr>
+    <tr>
+      <td>same_color_two_wicks</td>
+      <td>92717</td>
+      <td>20.0174</td>
+    </tr>
+    <tr>
+      <td>above_ema</td>
+      <td>203814</td>
+      <td>44.0031</td>
+    </tr>
+    <tr>
+      <td>below_ema</td>
+      <td>204772</td>
+      <td>44.2099</td>
+    </tr>
+    <tr>
+      <td>ema_touch_or_straddle</td>
+      <td>54595</td>
+      <td>11.7870</td>
+    </tr>
+    <tr>
+      <td>bullish_clean_component</td>
+      <td>43040</td>
+      <td>9.2923</td>
+    </tr>
+    <tr>
+      <td>bearish_clean_component</td>
+      <td>42847</td>
+      <td>9.2506</td>
+    </tr>
+    <tr>
+      <td>zero_range</td>
+      <td>0</td>
+      <td>0.0000</td>
+    </tr>
+  </tbody>
+</table></div><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>measure</th>
+      <th>n</th>
+      <th>mean</th>
+      <th>min</th>
+      <th>max</th>
+      <th>p05</th>
+      <th>p25</th>
+      <th>median</th>
+      <th>p75</th>
+      <th>p95</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>body</td>
+      <td>463181</td>
+      <td>1.014395</td>
+      <td>2.145061e-07</td>
+      <td>91.747909</td>
+      <td>0.005767</td>
+      <td>0.153993</td>
+      <td>0.533922</td>
+      <td>1.290197</td>
+      <td>3.455853</td>
+    </tr>
+    <tr>
+      <td>body_bps</td>
+      <td>463181</td>
+      <td>2.245573</td>
+      <td>4.590218e-07</td>
+      <td>175.801513</td>
+      <td>0.013103</td>
+      <td>0.348360</td>
+      <td>1.203780</td>
+      <td>2.894373</td>
+      <td>7.611432</td>
+    </tr>
+    <tr>
+      <td>range</td>
+      <td>463181</td>
+      <td>2.109136</td>
+      <td>4.882435e-05</td>
+      <td>152.582909</td>
+      <td>0.013088</td>
+      <td>0.500000</td>
+      <td>1.443359</td>
+      <td>2.710000</td>
+      <td>6.405533</td>
+    </tr>
+    <tr>
+      <td>range_bps</td>
+      <td>463181</td>
+      <td>4.662071</td>
+      <td>1.061346e-04</td>
+      <td>316.795940</td>
+      <td>0.029722</td>
+      <td>1.134978</td>
+      <td>3.269785</td>
+      <td>6.063905</td>
+      <td>13.912046</td>
+    </tr>
+    <tr>
+      <td>upper_wick</td>
+      <td>463181</td>
+      <td>0.537867</td>
+      <td>0.000000e+00</td>
+      <td>49.627500</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.170594</td>
+      <td>0.742500</td>
+      <td>2.100000</td>
+    </tr>
+    <tr>
+      <td>upper_wick_bps</td>
+      <td>463181</td>
+      <td>1.187924</td>
+      <td>0.000000e+00</td>
+      <td>91.053410</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.385750</td>
+      <td>1.670855</td>
+      <td>4.619525</td>
+    </tr>
+    <tr>
+      <td>lower_wick</td>
+      <td>463181</td>
+      <td>0.556874</td>
+      <td>0.000000e+00</td>
+      <td>94.192500</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.172500</td>
+      <td>0.747500</td>
+      <td>2.145000</td>
+    </tr>
+    <tr>
+      <td>lower_wick_bps</td>
+      <td>463181</td>
+      <td>1.228574</td>
+      <td>0.000000e+00</td>
+      <td>196.335304</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.391064</td>
+      <td>1.683579</td>
+      <td>4.712119</td>
+    </tr>
+    <tr>
+      <td>body_ratio</td>
+      <td>463181</td>
+      <td>0.506971</td>
+      <td>3.803901e-06</td>
+      <td>1.000000</td>
+      <td>0.055811</td>
+      <td>0.284972</td>
+      <td>0.533022</td>
+      <td>0.704998</td>
+      <td>0.962042</td>
+    </tr>
+    <tr>
+      <td>body_ratio_two_wick_cohort_NOT_defined_Doji</td>
+      <td>192247</td>
+      <td>0.246184</td>
+      <td>3.803901e-06</td>
+      <td>0.749947</td>
+      <td>0.022767</td>
+      <td>0.116676</td>
+      <td>0.235343</td>
+      <td>0.364226</td>
+      <td>0.496854</td>
+    </tr>
+    <tr>
+      <td>body_ratio_same_color_two_wicks_NOT_defined_Doji</td>
+      <td>92717</td>
+      <td>0.253021</td>
+      <td>3.803901e-06</td>
+      <td>0.749899</td>
+      <td>0.024475</td>
+      <td>0.121960</td>
+      <td>0.244150</td>
+      <td>0.372316</td>
+      <td>0.502502</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Population: 463,181 nến đủ warm-up. Body ratio có cohort hai wick để nghiên cứu ngưỡng còn thiếu;
+chưa có phân bố Doji chính thức. Bps chuẩn hóa theo HA Close; số liệu giá gốc chỉ so trong cùng sản phẩm.</p></section>
+<section><h2>Pullback và intermediate — quy ước mô tả</h2>
+<p id="run-count">37,968 đoạn clean liên tiếp; 30,866 terminal hai wick;
+13,110 terminal cùng màu, trong đó 4,394 có impulse đứng trước.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>measure</th>
+      <th>n</th>
+      <th>mean</th>
+      <th>min</th>
+      <th>max</th>
+      <th>p05</th>
+      <th>p25</th>
+      <th>median</th>
+      <th>p75</th>
+      <th>p95</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pullback_length</td>
+      <td>37968</td>
+      <td>2.262089</td>
+      <td>1.000000</td>
+      <td>24.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <td>impulse_count</td>
+      <td>37968</td>
+      <td>1.528656</td>
+      <td>0.000000</td>
+      <td>48.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>8.000000</td>
+    </tr>
+    <tr>
+      <td>intermediate_count</td>
+      <td>30866</td>
+      <td>0.134031</td>
+      <td>0.000000</td>
+      <td>25.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>terminal_body_ratio</td>
+      <td>30866</td>
+      <td>0.256021</td>
+      <td>0.000004</td>
+      <td>0.749947</td>
+      <td>0.024596</td>
+      <td>0.123684</td>
+      <td>0.248401</td>
+      <td>0.376854</td>
+      <td>0.507945</td>
+    </tr>
+  </tbody>
+</table></div><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Trạng thái</th>
+      <th>Số đoạn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>observed_two_wick_terminal</td>
+      <td>30866</td>
+    </tr>
+    <tr>
+      <td>censored_ema_zone_lost</td>
+      <td>6957</td>
+    </tr>
+    <tr>
+      <td>censored_replaced_by_clean_run</td>
+      <td>145</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Đếm run liên tiếp tối đại, không giới hạn số nến; lấy terminal hai wick đầu tiên cùng vùng EMA, chưa giới hạn thân.
+Intermediate không giới hạn hình dạng/số lượng, censor khi mất vùng EMA, gap/split, run mới hoặc hết dữ liệu.
+Đây là convention ghép chuỗi, không phải xác nhận continuity hoặc số tối thiểu của tác giả. Pattern hoàn chỉnh: chưa xác định.</p></section>
+<section><h2>Giá thị trường thật sau quan sát</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Horizon (phút)</th>
+      <th>Quan sát cohort</th>
+      <th>Đủ cửa sổ</th>
+      <th>Censored</th>
+      <th>Mean return (bps)</th>
+      <th>Median return (bps)</th>
+      <th>P05 (bps)</th>
+      <th>P95 (bps)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4394</td>
+      <td>4394</td>
+      <td>0</td>
+      <td>-0.001708</td>
+      <td>0.000000</td>
+      <td>-4.769071</td>
+      <td>4.815792</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>4394</td>
+      <td>4394</td>
+      <td>0</td>
+      <td>0.010151</td>
+      <td>-0.042807</td>
+      <td>-10.498574</td>
+      <td>10.860597</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>4394</td>
+      <td>4394</td>
+      <td>0</td>
+      <td>0.274169</td>
+      <td>-0.130981</td>
+      <td>-18.129941</td>
+      <td>20.652092</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>4394</td>
+      <td>4394</td>
+      <td>0</td>
+      <td>-0.044305</td>
+      <td>-0.757904</td>
+      <td>-36.883117</td>
+      <td>38.335294</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Cohort = terminal hai wick đúng màu, sau clean run có impulse mô tả; chưa có tiêu chuẩn Doji.
+Return có dấu theo hướng xu hướng, neo Open thật nến kế tiếp và Close thật sau h nến.
+Các horizon 1/5/15/60 phút là cửa sổ mô tả cố định, không phải thời hạn trade của tác giả.
+Loại khỏi phép đo nếu cửa sổ vượt gap/partition/cuối dữ liệu, giữ lý do censoring. Mean/quantile không phải CI hoặc win rate.</p></section>
+<section><h2>Theo thời kỳ</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Partition</th>
+      <th>Nến đủ warm-up</th>
+      <th>Clean runs</th>
+      <th>Cohort theo quy ước</th>
+      <th>Win rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>in_sample</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Chưa xác định</td>
+    </tr>
+    <tr>
+      <td>validation</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Chưa xác định</td>
+    </tr>
+    <tr>
+      <td>out_of_sample</td>
+      <td>463181</td>
+      <td>37968</td>
+      <td>4394</td>
+      <td>Chưa xác định</td>
+    </tr>
+  </tbody>
+</table></div><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Năm</th>
+      <th>Nến đủ warm-up</th>
+      <th>Clean runs theo năm bắt đầu</th>
+      <th>Terminal cùng màu của các run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026</td>
+      <td>463181</td>
+      <td>37968</td>
+      <td>13110</td>
+    </tr>
+  </tbody>
+</table></div><p>Chi tiết phân bố và forward behavior cho từng năm/partition trong JSON.
+Không gộp sản phẩm. Partition rỗng không phải tỷ lệ thắng 0%.</p></section>
+<section><h2>Quy tắc đã xác nhận</h2><p>M1, HA, EMA 100 trên HA Close; không bắt buộc EMA slope, volume, session hoặc đa khung.
+Toàn nến kể cả wick phải trên EMA cho bullish, dưới EMA cho bearish. Bullish clean pullback là nến giảm không wick trên;
+bearish là nến tăng không wick dưới. Impulse được có wick; không quy định pullback tối đa. Doji cùng màu xu hướng,
+thân nhỏ/gần 0, hai wick, toàn nến cùng phía EMA. Được có intermediate, không cần nến xác nhận sau Doji.
+Chạm/cắt EMA hoặc Doji sai màu làm mẫu không hợp lệ. RR công bố 1:1, win rate 75% chưa xác minh.</p></section>
+<section><h2>Định nghĩa còn thiếu và thống kê chưa khả dụng</h2><ul><li>minimum_pullback_candles: chưa xác định</li><li>minimum_impulse_candles: chưa xác định</li><li>pullback_color_continuity: chưa xác định</li><li>maximum_doji_body_ratio: chưa xác định</li><li>doji_wick_ratio: chưa xác định</li><li>intermediate_characteristics: chưa xác định</li><li>maximum_intermediate_candles: chưa xác định</li><li>entry_price: chưa xác định</li><li>stop_loss: chưa xác định</li><li>outcome_labeling: chưa xác định</li><li>maximum_observation_period: chưa xác định</li><li>ambiguous_intrabar_handling: chưa xác định</li></ul>
+<p>Sample size outcome, observed win proportion, CI win rate, số quan sát độc lập và p-value 75% đều chưa xác định.
+Cỡ mẫu hình thái và số cửa sổ đo giá được báo riêng, không thay thế cỡ mẫu giao dịch.</p></section>
+<section><h2>Giới hạn</h2><p>Không có Forex hoặc vàng giao ngay; chỉ ba perpetual còn trong mẫu hiện có nên có selection/survivorship bias.
+Lịch đóng cửa chưa xác minh; zero-volume không đồng nghĩa thanh khoản thực thi. OOS hồi cứu từng được xem ở nghiên cứu trước.
+Chuỗi có thể phụ thuộc và cửa sổ tương lai có thể overlap. Không shuffle hoặc tối ưu tham số/horizon theo kết quả.
+Các phân bố nhiều chiều là exploratory, không phải kiểm định significance. Chi phí, spread, funding, slippage và
+thứ tự intrabar chưa đủ để tính outcome. HA tổng hợp không dùng làm giá khớp lệnh.</p></section>
+<section><h2>Bằng chứng tái lập</h2><p>233 tests, 0 failures,
+0 errors. Xem audit.json, browser_qa.json và execution.json cạnh báo cáo.</p>
+<details><summary>Snapshot cấu hình</summary><pre>{
+  &quot;base_config&quot;: &quot;config/ha_ema_research.json&quot;,
+  &quot;symbols&quot;: [
+    &quot;BTCUSDT&quot;,
+    &quot;ZECUSDT&quot;,
+    &quot;XAUUSDT&quot;
+  ],
+  &quot;floating_point_ulps&quot;: 32,
+  &quot;body_ratio_bin_edges&quot;: [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.75,
+    1
+  ],
+  &quot;forward_horizons_minutes&quot;: [
+    1,
+    5,
+    15,
+    60
+  ],
+  &quot;sequence_convention&quot;: &quot;maximal contiguous clean run; first subsequent two-wick candle in same EMA zone; no Doji threshold&quot;,
+  &quot;impulse_count_convention&quot;: &quot;immediately preceding contiguous same-zone trend-color candles; recorded, not an author minimum&quot;,
+  &quot;intermediate_policy&quot;: &quot;unrestricted shape until first two-wick candle; censor at another clean run, zone loss, gap, warmup, split or end&quot;,
+  &quot;outcome_status&quot;: &quot;unavailable; no entry/SL/TP or win/loss labels&quot;,
+  &quot;network&quot;: false
+}</pre></details></section>
+<footer>Nguồn: Binance Vision USD-M perpetual, snapshot cục bộ. Dữ liệu/phân tích phái sinh theo CC BY-NC-SA 4.0.
+Chỉ nghiên cứu lịch sử offline; không tài khoản hoặc đặt lệnh thật.</footer></main></html>

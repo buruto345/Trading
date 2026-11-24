@@ -1,0 +1,19 @@
+2026-11-24 14:04:16,894 BTCUSDT: verify existing dataset and cached features/geometry
+2026-11-24 14:04:26,126 BTCUSDT D01: detect, label H1, bootstrap
+2026-11-24 14:04:50,448 BTCUSDT D02: detect, label H1, bootstrap
+2026-11-24 14:05:19,710 BTCUSDT D03: detect, label H1, bootstrap
+2026-11-24 14:05:51,518 BTCUSDT D04: detect, label H1, bootstrap
+2026-11-24 14:06:24,781 BTCUSDT D05: detect, label H1, bootstrap
+2026-11-24 14:07:00,224 ZECUSDT: verify existing dataset and cached features/geometry
+2026-11-24 14:07:08,348 ZECUSDT D01: detect, label H1, bootstrap
+2026-11-24 14:07:32,492 ZECUSDT D02: detect, label H1, bootstrap
+2026-11-24 14:07:57,308 ZECUSDT D03: detect, label H1, bootstrap
+2026-11-24 14:08:23,532 ZECUSDT D04: detect, label H1, bootstrap
+2026-11-24 14:08:51,513 ZECUSDT D05: detect, label H1, bootstrap
+2026-11-24 14:09:22,795 XAUUSDT: verify existing dataset and cached features/geometry
+2026-11-24 14:09:23,644 XAUUSDT D01: detect, label H1, bootstrap
+2026-11-24 14:09:26,370 XAUUSDT D02: detect, label H1, bootstrap
+2026-11-24 14:09:29,288 XAUUSDT D03: detect, label H1, bootstrap
+2026-11-24 14:09:32,745 XAUUSDT D04: detect, label H1, bootstrap
+2026-11-24 14:09:36,237 XAUUSDT D05: detect, label H1, bootstrap
+2026-11-24 14:10:06,033 Completed 15 combinations and 45 H1 reporting rows

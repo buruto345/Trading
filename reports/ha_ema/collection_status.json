@@ -1,0 +1,17 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "status": "collected",
+    "candles": 3627360
+  },
+  {
+    "symbol": "ZECUSDT",
+    "status": "collected",
+    "candles": 3575039
+  },
+  {
+    "symbol": "XAUUSDT",
+    "status": "collected",
+    "candles": 499195
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "base_config": "config/ha_ema_research.json",
+  "symbols": ["BTCUSDT", "ZECUSDT", "XAUUSDT"],
+  "floating_point_ulps": 32,
+  "body_ratio_bin_edges": [0, 0.05, 0.1, 0.2, 0.3, 0.5, 0.75, 1],
+  "forward_horizons_minutes": [1, 5, 15, 60],
+  "sequence_convention": "maximal contiguous clean run; first subsequent two-wick candle in same EMA zone; no Doji threshold",
+  "impulse_count_convention": "immediately preceding contiguous same-zone trend-color candles; recorded, not an author minimum",
+  "intermediate_policy": "unrestricted shape until first two-wick candle; censor at another clean run, zone loss, gap, warmup, split or end",
+  "outcome_status": "unavailable; no entry/SL/TP or win/loss labels",
+  "network": false
+}

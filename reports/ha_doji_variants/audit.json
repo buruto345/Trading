@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "symbol": "BTCUSDT",
+      "counts": "passed",
+      "first_passages_and_morphology_audited": 183
+    },
+    {
+      "symbol": "ZECUSDT",
+      "counts": "passed",
+      "first_passages_and_morphology_audited": 180
+    },
+    {
+      "symbol": "XAUUSDT",
+      "counts": "passed",
+      "first_passages_and_morphology_audited": 180
+    }
+  ],
+  "full_history_rows": 45
+}

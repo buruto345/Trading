@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "offline": true,
+  "views": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "remote_requests": [],
+  "checks": [
+    "total and market rows",
+    "unverified claim banner",
+    "detail disclosure"
+  ]
+}

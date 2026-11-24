@@ -1,0 +1,49 @@
+{
+  "completed_at": "2026-11-24T02:21:03.161339+00:00",
+  "network_requests": 0,
+  "python": "3.14.4",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "duckdb": "2.0.1",
+    "pytest": "9.2.0",
+    "playwright": "1.65.2"
+  },
+  "source_hashes": {
+    "src/ha_research/data.py": "f5663e54c8d67a113ab2119a0349d294184119744d9a4146fcadc78436900cae",
+    "src/ha_research/descriptive.py": "15b9ec962db293d9a4247be4e0a3d9da5543526708f1c36d286ac27e3a3a5ed9",
+    "src/ha_research/descriptive_report.py": "0291512da18f2f931e3ec4cbab79be873ee663477f5f085bdb3f61ab93725253",
+    "src/ha_research/indicators.py": "76171bf4a83f9524fccccf83ffbda083b3643970dc531ae7000c68727d1c8c73",
+    "src/ha_research/report.py": "0308548c6b1646acff17cf4eb0e9e523cbf71b0ff568d0ba6f95fa1496b7aa1f",
+    "src/ha_research/statistics.py": "35e5fda3f81007b02b67e8bc719542c4a54b6d35a9971df886bf2ee094f6b93c",
+    "src/ha_research/__init__.py": "407b3c24cbaf85d32815b57e3043aa878c238ca57e66355500c92d8eb1ca8ca1",
+    "scripts/collect_ha_m1.py": "8e982b4b1661b5936ae017415f908f62f5b4eda851a430f5fc7facca99d4cd99",
+    "scripts/qa_ha_descriptive.py": "291d3ef3b3faa9603b6334c527a57386113536513a3de8593f1673622247c9a6",
+    "scripts/qa_ha_research.py": "9b7af6a764ba8ab052245b25e25a69540b265eb0f048fc3f550f414a22eaa876",
+    "scripts/run_ha_descriptive.py": "8487ef0728eaff6c19fe1c1d49d165fa51acf79e724e45a47b3e5a1e195d705d",
+    "scripts/run_ha_research.py": "811d5615d25ac93c8e3cd0bed4331bc957b41e8e730fb61583c651e6eaa0d822",
+    "tests/test_ha_descriptive.py": "2b077b57dec6919aa9340404ad9ae90b045f696156b10b125c6b686796699d7c",
+    "tests/test_ha_research.py": "ff599bb5f0afb6f76f6799f1d018563560b8c94674f827b51da0785dd96cce1c",
+    "docs/HA_CHANGE_SUMMARY.md": "c6fad7ea72a2df82627b7fb06a0369a82b50e094ba1df7edfccd5bb9b5d004c3",
+    "docs/HA_DESCRIPTIVE_CHANGES.md": "f980b2e53a364c76e8641b45ae091f4c8daa6c087b405e523e41571122285822",
+    "docs/HA_DESCRIPTIVE_PROTOCOL.md": "e38a7e166ae10f5db5adc03f6c161134a7fc155904afbaa28b86b7526433e05c",
+    "docs/HA_ORIGINAL_METHOD.md": "e7e22f630801f59a47174c884457bbe3b1255449ca4fc830b99c1f1d791b2ff4",
+    "docs/HA_RESEARCH_PROTOCOL.md": "ac3dd916bb4a5f88a1d111cda2430e4dc6f48afacfa307a8a2cf93897f4f2494",
+    "docs/HA_UNRESOLVED_METHOD.md": "89df0d3522e75fd1cefaddc589370adfe3cc62f44a67dfa5b8f67385be65c419",
+    "config/ha_descriptive.json": "033b14dc31847e2b3a38b4485c12ca52b63dd52673bc9eb0e5a13528fd929f81",
+    "config/ha_ema_research.json": "0cfecbd3aee22ac55662d89e1732cb793ab61c6f7596e352dd658cfc48cd8d6c",
+    "src/data_validation/validator.py": "fa8f0e32d0b0363433bd24583bf9abbb73195b6b5835b5f3d3f32fb001aad3ba"
+  },
+  "artifacts": {
+    "reports/ha_descriptive/BTCUSDT_geometry.parquet": "256f2c93c645f053eed0851479efc1b12e9e415e31e2c6eabbc751ef18d6e109",
+    "reports/ha_descriptive/BTCUSDT_sequences.parquet": "0b323417e02f9cc633e2702018d68dd2ff34387bda3099c725dd98e0e5b378d9",
+    "reports/ha_descriptive/BTCUSDT_forward.parquet": "532d93c93cfeca33ae13081b9f0c6259c900cd590bd2d303573aaaa559f0b8e9",
+    "reports/ha_descriptive/ZECUSDT_geometry.parquet": "37a33f4a6a36e5f0753f16cc94662724c4504a8c14847a779995dbf6d3418bc8",
+    "reports/ha_descriptive/ZECUSDT_sequences.parquet": "cba36f082132f9bb4aad94bc78620693953cadb799f2d1f70ae188c802217e61",
+    "reports/ha_descriptive/ZECUSDT_forward.parquet": "fc1fdbab7db51f013770372b910c25787ecd12f8824f7718f7c57a8364d05844",
+    "reports/ha_descriptive/XAUUSDT_geometry.parquet": "0125734e9a78e317b4b3c75912007b5923d225a9e6a228e2839803d185adae9d",
+    "reports/ha_descriptive/XAUUSDT_sequences.parquet": "eef545bab80b420ddcd715a32f8f167399e6007fec992547700b554960de5f73",
+    "reports/ha_descriptive/XAUUSDT_forward.parquet": "44b8209805b535a224e389baffdfbadfb52d9159384368121115aeb2b4fb803e"
+  }
+}

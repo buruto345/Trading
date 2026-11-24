@@ -1,0 +1,16 @@
+2026-11-24 09:19:42,887 BTCUSDT: verify existing raw/processed hashes and revalidate M1
+2026-11-24 09:19:47,071 BTCUSDT: recompute HA/EMA and geometry
+2026-11-24 09:19:53,291 BTCUSDT: count causal clean runs and terminal observations
+2026-11-24 09:20:03,501 BTCUSDT: measure separate real-price markouts
+2026-11-24 09:20:11,856 BTCUSDT: distributions by year and chronological partition
+2026-11-24 09:20:21,756 ZECUSDT: verify existing raw/processed hashes and revalidate M1
+2026-11-24 09:20:25,424 ZECUSDT: recompute HA/EMA and geometry
+2026-11-24 09:20:31,346 ZECUSDT: count causal clean runs and terminal observations
+2026-11-24 09:20:40,627 ZECUSDT: measure separate real-price markouts
+2026-11-24 09:20:49,523 ZECUSDT: distributions by year and chronological partition
+2026-11-24 09:20:58,719 XAUUSDT: verify existing raw/processed hashes and revalidate M1
+2026-11-24 09:20:59,135 XAUUSDT: recompute HA/EMA and geometry
+2026-11-24 09:20:59,796 XAUUSDT: count causal clean runs and terminal observations
+2026-11-24 09:21:00,795 XAUUSDT: measure separate real-price markouts
+2026-11-24 09:21:01,909 XAUUSDT: distributions by year and chronological partition
+2026-11-24 09:21:13,370 Finished all three instruments; original-method win rates remain unavailable

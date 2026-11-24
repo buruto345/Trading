@@ -1,0 +1,22 @@
+{
+  "symbols": ["BTCUSDT", "ZECUSDT", "XAUUSDT"],
+  "variants": {"D01": 0.05, "D02": 0.10, "D03": 0.20, "D04": 0.30, "D05": 0.40},
+  "minimum_pullback": 2,
+  "minimum_impulse": null,
+  "maximum_pullback": null,
+  "maximum_intermediate": null,
+  "maximum_observation_bars": null,
+  "outcome_interpretation": "H1_HA_reference_real_OHLC_first_passage",
+  "reference": "Doji HA close; not an executable fill",
+  "adverse_boundary": "bullish HA low; bearish HA high of Doji",
+  "favorable_boundary": "symmetric distance from reference, RR 1:1",
+  "buffer": 0,
+  "future_path": "original market OHLC, starting next candle",
+  "opposite_doji_policy": "invalidate before accepting as intermediate; uses variant threshold, both wicks and range expansion",
+  "floating_point_ulps": 32,
+  "scenarios": ["conservative", "optimistic", "excluded"],
+  "bootstrap_block_days": 7,
+  "bootstrap_repetitions": 2000,
+  "seed": 20261124,
+  "network": false
+}

@@ -1,0 +1,4589 @@
+{
+  "symbol": "ZECUSDT",
+  "source": "Binance Vision USD-M perpetual",
+  "source_manifest": "data/manifests/ha_m1/ZECUSDT.json",
+  "source_sha256": "47f4a9bd1188de2872b7ed4d4c5e04f96e58abddc830b74cfa57a4184b190e35",
+  "quality": {
+    "raw_candles": 3575039,
+    "validated_candles": 3575039,
+    "invalid_candles": 0,
+    "duplicate_candles": 0,
+    "conflicting_duplicate_timestamps": 0,
+    "missing_candles": 0,
+    "gap_count": 0,
+    "completeness": 1.0,
+    "gap_ranges": [],
+    "earliest_timestamp": "2020-02-05T08:01:00+00:00",
+    "latest_timestamp": "2026-11-22T23:59:00+00:00",
+    "zero_volume_candles": 20166,
+    "missing_policy": "No imputation. Segment id increments after every temporal gap.",
+    "missing_definition": "Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.",
+    "input_monotonic": true,
+    "source_duplicate_rows": 0,
+    "quarantined_conflict_rows": 0,
+    "missing_volume_rows": 0,
+    "timezone": "UTC",
+    "timestamp_role": "candle open; indicators available one minute later",
+    "closure_policy": "No inferred closure calendar. All gaps remain unclassified; no imputation.",
+    "volume_policy": "Optional, missing retained as null; never a pattern filter"
+  },
+  "source_quality": {
+    "raw_candles": 3575039,
+    "validated_candles": 3575039,
+    "invalid_candles": 0,
+    "duplicate_candles": 0,
+    "conflicting_duplicate_timestamps": 0,
+    "missing_candles": 0,
+    "gap_count": 0,
+    "completeness": 1.0,
+    "gap_ranges": [],
+    "earliest_timestamp": "2020-02-05T08:01:00+00:00",
+    "latest_timestamp": "2026-11-22T23:59:00+00:00",
+    "zero_volume_candles": 20166,
+    "missing_policy": "No imputation. Segment id increments after every temporal gap.",
+    "missing_definition": "Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.",
+    "input_monotonic": false,
+    "source_duplicate_rows": 0,
+    "quarantined_conflict_rows": 0,
+    "missing_volume_rows": 0,
+    "timezone": "UTC",
+    "timestamp_role": "candle open; indicators available one minute later",
+    "closure_policy": "No inferred closure calendar. All gaps remain unclassified; no imputation.",
+    "volume_policy": "Optional, missing retained as null; never a pattern filter"
+  },
+  "trailing_missing_minutes": 1440,
+  "excluded_before_research": 0,
+  "descriptive": {
+    "overall": {
+      "candles": {
+        "candles": 3575039,
+        "ready_candles": 3574540,
+        "warmup_excluded": 499,
+        "counts": {
+          "no_upper_wick": 1003705,
+          "no_lower_wick": 1015226,
+          "no_upper_exact": 1003704,
+          "no_lower_exact": 1015226,
+          "both_wicks": 1654699,
+          "same_color_two_wicks": 797360,
+          "above_ema": 1549228,
+          "below_ema": 1534732,
+          "ema_touch_or_straddle": 490580,
+          "bullish_clean_component": 289879,
+          "bearish_clean_component": 297705,
+          "zero_range": 0
+        },
+        "frequencies": {
+          "no_upper_wick": 0.28079277333586977,
+          "no_lower_wick": 0.28401584539549146,
+          "no_upper_exact": 0.28079249357959346,
+          "no_lower_exact": 0.28401584539549146,
+          "both_wicks": 0.4629124306903825,
+          "same_color_two_wicks": 0.22306646449613096,
+          "above_ema": 0.43340625646936387,
+          "below_ema": 0.42935090948765436,
+          "ema_touch_or_straddle": 0.13724283404298177,
+          "bullish_clean_component": 0.08109546962686108,
+          "bearish_clean_component": 0.08328484224543578,
+          "zero_range": 0.0
+        },
+        "distributions": {
+          "body": {
+            "n": 3574540,
+            "mean": 0.18567192670353488,
+            "min": 7.105427357601002e-15,
+            "max": 61.7712703586667,
+            "p05": 0.002621227476013033,
+            "p25": 0.015073741548681241,
+            "median": 0.04316782073759384,
+            "p75": 0.14057287785367123,
+            "p95": 0.8288391676946044
+          },
+          "body_bps": {
+            "n": 3574540,
+            "mean": 10.634621458215273,
+            "min": 1.1540404998539878e-12,
+            "max": 1579.2158184764198,
+            "p05": 0.5485479878324326,
+            "p25": 2.9014919678196573,
+            "median": 6.745075918399716,
+            "p75": 13.472528973116557,
+            "p95": 32.90512468539282
+          },
+          "range": {
+            "n": 3574540,
+            "mean": 0.4137893439525138,
+            "min": 7.105427357601002e-15,
+            "max": 137.0787703586667,
+            "p05": 0.013702097370806677,
+            "p25": 0.04361569340709881,
+            "median": 0.10999999999999943,
+            "p75": 0.3594718672337791,
+            "p95": 1.863820575664855
+          },
+          "range_bps": {
+            "n": 3574540,
+            "mean": 22.87171338570404,
+            "min": 1.1540404998539878e-12,
+            "max": 3625.22338524381,
+            "p05": 4.107009724390798,
+            "p25": 10.117190793356759,
+            "median": 16.85662704219692,
+            "p75": 27.824423662323778,
+            "p95": 60.052615302448494
+          },
+          "upper_wick": {
+            "n": 3574540,
+            "mean": 0.11458254405933987,
+            "min": 0.0,
+            "max": 45.48500000000013,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.018067327736584815,
+            "p75": 0.07750000000001478,
+            "p95": 0.5489780872790103
+          },
+          "upper_wick_bps": {
+            "n": 3574540,
+            "mean": 6.086478619641348,
+            "min": 0.0,
+            "max": 2601.4807250446765,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 3.7105751391467083,
+            "p75": 8.342427538338793,
+            "p95": 20.611105761500983
+          },
+          "lower_wick": {
+            "n": 3574540,
+            "mean": 0.11353487318963902,
+            "min": 0.0,
+            "max": 75.3075,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.01885558653485475,
+            "p75": 0.0799999999999983,
+            "p95": 0.5475000000000136
+          },
+          "lower_wick_bps": {
+            "n": 3574540,
+            "mean": 6.150613307847421,
+            "min": 0.0,
+            "max": 1352.456176817017,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 3.712228079294036,
+            "p75": 8.460657940577113,
+            "p95": 20.9024960039348
+          },
+          "body_ratio": {
+            "n": 3574540,
+            "mean": 0.45788271898220345,
+            "min": 1.7714828467179013e-07,
+            "max": 1.0,
+            "p05": 0.049481152506928534,
+            "p25": 0.25077785847236866,
+            "median": 0.4871316919365891,
+            "p75": 0.6433645561742425,
+            "p95": 0.8344751956953919
+          }
+        },
+        "two_wick_body_ratio": {
+          "n": 1654699,
+          "mean": 0.24227398845601872,
+          "min": 1.7714828467179013e-07,
+          "max": 0.7499831796317906,
+          "p05": 0.02297399148860568,
+          "p25": 0.11471604971271901,
+          "median": 0.23177523522263332,
+          "p75": 0.3563014650365681,
+          "p95": 0.49571280930314404
+        },
+        "same_color_two_wick_body_ratio": {
+          "n": 797360,
+          "mean": 0.25070967554084533,
+          "min": 2.4058208509813993e-07,
+          "max": 0.7499831796317906,
+          "p05": 0.025231397919035572,
+          "p25": 0.12325258854039442,
+          "median": 0.24314579781982823,
+          "p75": 0.3657346015056342,
+          "p95": 0.5017126526338099
+        },
+        "body_ratio_histogram": {
+          "edges": [
+            0,
+            0.05,
+            0.1,
+            0.2,
+            0.3,
+            0.5,
+            0.75,
+            1
+          ],
+          "counts": [
+            180576,
+            180019,
+            355684,
+            349152,
+            783263,
+            1334992,
+            390854
+          ],
+          "zero_range_excluded": 0
+        }
+      },
+      "sequences": {
+        "clean_runs": 315826,
+        "statuses": {
+          "observed_two_wick_terminal": 254124,
+          "censored_ema_zone_lost": 58343,
+          "censored_replaced_by_clean_run": 3358,
+          "censored_split": 1
+        },
+        "observed_terminals": 254124,
+        "same_color_terminals": 100982,
+        "with_impulse_same_color": 37200,
+        "pullback_length": {
+          "n": 315826,
+          "mean": 1.8604674725956698,
+          "min": 1.0,
+          "max": 32.0,
+          "p05": 1.0,
+          "p25": 1.0,
+          "median": 1.0,
+          "p75": 2.0,
+          "p95": 4.0
+        },
+        "impulse_count": {
+          "n": 315826,
+          "mean": 1.492670014501656,
+          "min": 0.0,
+          "max": 40.0,
+          "p05": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 2.0,
+          "p95": 7.0
+        },
+        "intermediate_count": {
+          "n": 254124,
+          "mean": 0.16776455588610284,
+          "min": 0.0,
+          "max": 18.0,
+          "p05": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "p95": 1.0
+        },
+        "terminal_body_ratio": {
+          "n": 254124,
+          "mean": 0.24598010475362683,
+          "min": 2.1687749293422906e-06,
+          "max": 0.749964837618105,
+          "p05": 0.022898389442592572,
+          "p25": 0.11535550301826432,
+          "median": 0.23401604247216135,
+          "p75": 0.36192978805191073,
+          "p95": 0.506493279807267
+        },
+        "exact_pattern_count": null,
+        "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+      },
+      "forward": [
+        {
+          "horizon_minutes": 1,
+          "sample_size": 37200,
+          "observed": 37200,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 37200,
+            "mean": -0.2706001432151889,
+            "min": -255.99128540304994,
+            "max": 334.34650455927084,
+            "p05": -20.435910360532606,
+            "p25": -5.936479667556505,
+            "median": 0.0,
+            "p75": 4.80365098247254,
+            "p95": 20.194616436717435
+          },
+          "favorable_excursion_bps": {
+            "n": 37200,
+            "mean": 7.9463961864532235,
+            "min": 0.0,
+            "max": 795.0746601292624,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 3.9399162863340553,
+            "p75": 9.986684420772995,
+            "p95": 28.98696339782045
+          },
+          "adverse_excursion_bps": {
+            "n": 37200,
+            "mean": -7.794981423594134,
+            "min": -599.1285403050117,
+            "max": 0.0,
+            "p05": -26.963212716361316,
+            "p25": -10.349191364702747,
+            "median": -4.363001745200101,
+            "p75": 0.0,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 5,
+          "sample_size": 37200,
+          "observed": 37200,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 37200,
+            "mean": -0.6154861654648789,
+            "min": -1007.6252723311563,
+            "max": 556.4063297600819,
+            "p05": -45.01780987890569,
+            "p25": -14.224751066855834,
+            "median": 0.0,
+            "p75": 11.802891708467822,
+            "p95": 45.882308622198536
+          },
+          "favorable_excursion_bps": {
+            "n": 37200,
+            "mean": 20.36831182363342,
+            "min": 0.0,
+            "max": 1368.0449208779987,
+            "p05": 0.0,
+            "p25": 3.974562798092496,
+            "median": 11.515209778811819,
+            "p75": 25.50555656768011,
+            "p95": 68.76453200194669
+          },
+          "adverse_excursion_bps": {
+            "n": 37200,
+            "mean": -19.768393028747674,
+            "min": -2598.264420622767,
+            "max": 0.0,
+            "p05": -61.054311592355575,
+            "p25": -25.8141845253515,
+            "median": -12.797235804434814,
+            "p75": -4.842029022873728,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 15,
+          "sample_size": 37200,
+          "observed": 37200,
+          "censored": 0,
+          "censor_reasons": {},
+          "directional_return_bps": {
+            "n": 37200,
+            "mean": -1.0806494752390086,
+            "min": -3916.1220043572985,
+            "max": 1917.8486997635935,
+            "p05": -77.5054320428719,
+            "p25": -25.309175273744433,
+            "median": -2.271955118162694,
+            "p75": 21.009506975725458,
+            "p95": 79.95694955642053
+          },
+          "favorable_excursion_bps": {
+            "n": 37200,
+            "mean": 37.465838470740046,
+            "min": 0.0,
+            "max": 2263.593380614658,
+            "p05": 0.0,
+            "p25": 8.653504610763306,
+            "median": 22.336130287121115,
+            "p75": 46.91841389073137,
+            "p95": 121.85095421870683
+          },
+          "adverse_excursion_bps": {
+            "n": 37200,
+            "mean": -35.64694568527213,
+            "min": -3916.1220043572985,
+            "max": 0.0,
+            "p05": -105.97502353728949,
+            "p25": -46.23639270331687,
+            "median": -24.200799522388074,
+            "p75": -10.24240355069983,
+            "p95": 0.0
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        },
+        {
+          "horizon_minutes": 60,
+          "sample_size": 37200,
+          "observed": 37199,
+          "censored": 1,
+          "censor_reasons": {
+            "censored_split": 1
+          },
+          "directional_return_bps": {
+            "n": 37199,
+            "mean": -1.3949410910203919,
+            "min": -3884.0054372451305,
+            "max": 4265.944645006017,
+            "p05": -150.74170546912768,
+            "p25": -49.5894385564788,
+            "median": -3.963535473643365,
+            "p75": 41.55072609479893,
+            "p95": 159.74548804828822
+          },
+          "favorable_excursion_bps": {
+            "n": 37199,
+            "mean": 77.71250076659656,
+            "min": 0.0,
+            "max": 5109.306056959486,
+            "p05": 2.9487219366591826,
+            "p25": 20.110159104977377,
+            "median": 48.3481063658342,
+            "p75": 97.13727847088794,
+            "p95": 245.19462406798968
+          },
+          "adverse_excursion_bps": {
+            "n": 37199,
+            "mean": -73.10762956256147,
+            "min": -5275.9401903035805,
+            "max": 0.0,
+            "p05": -214.4244483594897,
+            "p25": -94.57568824743467,
+            "median": -50.45550105115648,
+            "p75": -23.301205961069883,
+            "p95": -3.70066897302324
+          },
+          "independent_observations": null,
+          "independence_reason": "Potential serial and overlapping-window dependence"
+        }
+      ]
+    },
+    "partitions": {
+      "in_sample": {
+        "candles": {
+          "candles": 2052959,
+          "ready_candles": 2052460,
+          "warmup_excluded": 499,
+          "counts": {
+            "no_upper_wick": 583397,
+            "no_lower_wick": 600091,
+            "no_upper_exact": 583396,
+            "no_lower_exact": 600091,
+            "both_wicks": 944926,
+            "same_color_two_wicks": 456353,
+            "above_ema": 901586,
+            "below_ema": 872605,
+            "ema_touch_or_straddle": 278269,
+            "bullish_clean_component": 167281,
+            "bearish_clean_component": 171881,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.2842428110657455,
+            "no_lower_wick": 0.292376465314793,
+            "no_upper_exact": 0.2842423238455317,
+            "no_lower_exact": 0.292376465314793,
+            "both_wicks": 0.46038704773783656,
+            "same_color_two_wicks": 0.22234440622472545,
+            "above_ema": 0.4392709236720813,
+            "below_ema": 0.4251507946561687,
+            "ema_touch_or_straddle": 0.13557828167174998,
+            "bullish_clean_component": 0.08150268458337799,
+            "bearish_clean_component": 0.08374389756682225,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 2052460,
+              "mean": 0.09938555901800378,
+              "min": 1.4210854715202004e-14,
+              "max": 21.546868093086943,
+              "p05": 0.0024272056803042127,
+              "p25": 0.014053172743977882,
+              "median": 0.03952626047542296,
+              "p75": 0.10697956425312505,
+              "p95": 0.38258717329906555
+            },
+            "body_bps": {
+              "n": 2052460,
+              "mean": 10.203963917523637,
+              "min": 1.1540404998539878e-12,
+              "max": 1579.2158184764198,
+              "p05": 0.502445247001467,
+              "p25": 2.687629087593889,
+              "median": 6.3378641879631274,
+              "p75": 12.91244015654275,
+              "p95": 31.924801512209186
+            },
+            "range": {
+              "n": 2052460,
+              "mean": 0.2158033424321358,
+              "min": 1.4210854715202004e-14,
+              "max": 38.57186809308695,
+              "p05": 0.011512797780016905,
+              "p25": 0.04211319092259469,
+              "median": 0.10999999999999943,
+              "p75": 0.2575625566648121,
+              "p95": 0.75
+            },
+            "range_bps": {
+              "n": 2052460,
+              "mean": 21.818146719435,
+              "min": 1.1540404998539878e-12,
+              "max": 3625.22338524381,
+              "p05": 3.6567627454157448,
+              "p25": 9.386950830910123,
+              "median": 16.010639247431733,
+              "p75": 26.77829187361492,
+              "p95": 57.77271036785209
+            },
+            "upper_wick": {
+              "n": 2052460,
+              "mean": 0.05789659082182569,
+              "min": 0.0,
+              "max": 16.05295779427317,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.017500000000001847,
+              "p75": 0.06500000000000483,
+              "p95": 0.23750000000001137
+            },
+            "upper_wick_bps": {
+              "n": 2052460,
+              "mean": 5.752602521106117,
+              "min": 0.0,
+              "max": 2601.4807250446765,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.4435261707994367,
+              "p75": 7.949156220327938,
+              "p95": 19.543246776058815
+            },
+            "lower_wick": {
+              "n": 2052460,
+              "mean": 0.05852119259230634,
+              "min": 0.0,
+              "max": 19.52000000000001,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.017499999999998295,
+              "p75": 0.06695472665505164,
+              "p95": 0.24264119405272266
+            },
+            "lower_wick_bps": {
+              "n": 2052460,
+              "mean": 5.861580280805245,
+              "min": 0.0,
+              "max": 1352.456176817017,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.385240352064323,
+              "p75": 8.088924618257792,
+              "p95": 20.20528570273875
+            },
+            "body_ratio": {
+              "n": 2052460,
+              "mean": 0.46289346767994066,
+              "min": 5.80275706273481e-07,
+              "max": 1.0,
+              "p05": 0.049805775825692886,
+              "p25": 0.2519465739891361,
+              "median": 0.49087293504908075,
+              "p75": 0.6484540049475345,
+              "p95": 0.8607374443038518
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 944926,
+            "mean": 0.24255455506532214,
+            "min": 5.80275706273481e-07,
+            "max": 0.7499831796317906,
+            "p05": 0.022951581116471553,
+            "p25": 0.11467727717119575,
+            "median": 0.23161856936361339,
+            "p75": 0.35669500354983735,
+            "p95": 0.497157041065043
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 456353,
+            "mean": 0.25091389077766163,
+            "min": 1.8604099594199793e-06,
+            "max": 0.7499831796317906,
+            "p05": 0.025201894333618382,
+            "p25": 0.12305382253019251,
+            "median": 0.24296396350253208,
+            "p75": 0.36600709604898324,
+            "p95": 0.5037208300126141
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              103019,
+              102973,
+              203216,
+              199386,
+              442321,
+              758745,
+              242800
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 180662,
+          "statuses": {
+            "observed_two_wick_terminal": 144961,
+            "censored_ema_zone_lost": 33380,
+            "censored_replaced_by_clean_run": 2320,
+            "censored_split": 1
+          },
+          "observed_terminals": 144961,
+          "same_color_terminals": 58043,
+          "with_impulse_same_color": 22017,
+          "pullback_length": {
+            "n": 180662,
+            "mean": 1.8773289346957303,
+            "min": 1.0,
+            "max": 32.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 5.0
+          },
+          "impulse_count": {
+            "n": 180662,
+            "mean": 1.50610532375375,
+            "min": 0.0,
+            "max": 40.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 144961,
+            "mean": 0.18209725374411048,
+            "min": 0.0,
+            "max": 18.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 144961,
+            "mean": 0.24751474890137343,
+            "min": 2.1687749293422906e-06,
+            "max": 0.7497685220948895,
+            "p05": 0.022938201421856107,
+            "p25": 0.11609574973886906,
+            "median": 0.2352437510993542,
+            "p75": 0.36413318356752394,
+            "p95": 0.5094072676730271
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 22017,
+            "observed": 22017,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 22017,
+              "mean": -0.15231038622168236,
+              "min": -255.99128540304994,
+              "max": 328.99246058944567,
+              "p05": -19.15808927693652,
+              "p25": -5.332859301395709,
+              "median": 0.0,
+              "p75": 4.275331338177146,
+              "p95": 19.54215560139572
+            },
+            "favorable_excursion_bps": {
+              "n": 22017,
+              "mean": 7.444856782918399,
+              "min": 0.0,
+              "max": 551.8803806071581,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.66300366300476,
+              "p75": 9.423294383716918,
+              "p95": 27.667666309092457
+            },
+            "adverse_excursion_bps": {
+              "n": 22017,
+              "mean": -7.299003162902312,
+              "min": -599.1285403050117,
+              "max": 0.0,
+              "p05": -26.005683686866288,
+              "p25": -9.64320154291265,
+              "median": -3.8978756577656704,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 22017,
+            "observed": 22017,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 22017,
+              "mean": -0.3299275725446698,
+              "min": -1007.6252723311563,
+              "max": 556.4063297600819,
+              "p05": -43.03111769221402,
+              "p25": -13.140604467805073,
+              "median": 0.0,
+              "p75": 11.352885525071077,
+              "p95": 45.066428717725145
+            },
+            "favorable_excursion_bps": {
+              "n": 22017,
+              "mean": 19.360391855269118,
+              "min": 0.0,
+              "max": 1368.0449208779987,
+              "p05": 0.0,
+              "p25": 3.74251497005873,
+              "median": 10.720986330741145,
+              "p75": 23.956194387406704,
+              "p95": 65.85122788758736
+            },
+            "adverse_excursion_bps": {
+              "n": 22017,
+              "mean": -18.596965874961054,
+              "min": -2598.264420622767,
+              "max": 0.0,
+              "p05": -58.15612596425312,
+              "p25": -24.10364567640988,
+              "median": -11.641443538998875,
+              "p75": -4.042037186741121,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 22017,
+            "observed": 22017,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 22017,
+              "mean": -0.976745344082982,
+              "min": -3916.1220043572985,
+              "max": 1917.8486997635935,
+              "p05": -74.05187340428299,
+              "p25": -23.66863905325478,
+              "median": -1.9912385503784158,
+              "p75": 19.795447047178392,
+              "p95": 77.35144428693319
+            },
+            "favorable_excursion_bps": {
+              "n": 22017,
+              "mean": 35.47423828789722,
+              "min": 0.0,
+              "max": 2263.593380614658,
+              "p05": 0.0,
+              "p25": 7.822277847309156,
+              "median": 20.408163265306367,
+              "p75": 44.15325452214569,
+              "p95": 118.81630543090776
+            },
+            "adverse_excursion_bps": {
+              "n": 22017,
+              "mean": -33.591108837429154,
+              "min": -3916.1220043572985,
+              "max": 0.0,
+              "p05": -101.68782230710337,
+              "p25": -43.52488487983308,
+              "median": -22.013501614324138,
+              "p75": -9.174311926603007,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 22017,
+            "observed": 22016,
+            "censored": 1,
+            "censor_reasons": {
+              "censored_split": 1
+            },
+            "directional_return_bps": {
+              "n": 22016,
+              "mean": -1.8545721286303207,
+              "min": -3884.0054372451305,
+              "max": 4265.944645006017,
+              "p05": -144.56618146443307,
+              "p25": -46.39464246356362,
+              "median": -4.015258142163192,
+              "p75": 38.44569763021166,
+              "p95": 151.4935858183003
+            },
+            "favorable_excursion_bps": {
+              "n": 22016,
+              "mean": 73.64472567339855,
+              "min": 0.0,
+              "max": 5109.306056959486,
+              "p05": 2.570085856229143,
+              "p25": 18.575029852726523,
+              "median": 44.279275994398844,
+              "p75": 91.6968063684312,
+              "p95": 237.62124957279556
+            },
+            "adverse_excursion_bps": {
+              "n": 22016,
+              "mean": -69.20530489789694,
+              "min": -5275.9401903035805,
+              "max": 0.0,
+              "p05": -204.27031180869636,
+              "p25": -88.67439503783325,
+              "median": -46.987749769447085,
+              "p75": -20.935101186321248,
+              "p95": -3.3668616819598762
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "validation": {
+        "candles": {
+          "candles": 527040,
+          "ready_candles": 527040,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 152750,
+            "no_lower_wick": 153887,
+            "no_upper_exact": 152750,
+            "no_lower_exact": 153887,
+            "both_wicks": 234572,
+            "same_color_two_wicks": 112644,
+            "above_ema": 228120,
+            "below_ema": 224229,
+            "ema_touch_or_straddle": 74691,
+            "bullish_clean_component": 44395,
+            "bearish_clean_component": 45022,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.28982619914996965,
+            "no_lower_wick": 0.2919835306618094,
+            "no_upper_exact": 0.28982619914996965,
+            "no_lower_exact": 0.2919835306618094,
+            "both_wicks": 0.4450743776563449,
+            "same_color_two_wicks": 0.21372950819672132,
+            "above_ema": 0.43283242258652094,
+            "below_ema": 0.42544968123861565,
+            "ema_touch_or_straddle": 0.14171789617486338,
+            "bullish_clean_component": 0.08423459319975714,
+            "bearish_clean_component": 0.08542425622343655,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 527040,
+              "mean": 0.03450818335853504,
+              "min": 7.105427357601002e-15,
+              "max": 5.233560340834146,
+              "p05": 0.0015824940652990449,
+              "p25": 0.0083738242066147,
+              "median": 0.019693124581037225,
+              "p75": 0.040866317665218865,
+              "p95": 0.11565966006440609
+            },
+            "body_bps": {
+              "n": 527040,
+              "mean": 10.048396407834696,
+              "min": 1.8664111787762025e-12,
+              "max": 1345.1467758522406,
+              "p05": 0.5716009588356414,
+              "p25": 2.9680039531611757,
+              "median": 6.745362373872194,
+              "p75": 13.041154017391234,
+              "p95": 30.089345475500814
+            },
+            "range": {
+              "n": 527040,
+              "mean": 0.07267494643656001,
+              "min": 7.105427357601002e-15,
+              "max": 7.428560340834153,
+              "p05": 0.010000000000001563,
+              "p25": 0.02991849259339574,
+              "median": 0.0489100498476045,
+              "p75": 0.08478955341029337,
+              "p95": 0.21993579432116575
+            },
+            "range_bps": {
+              "n": 527040,
+              "mean": 21.029391235288983,
+              "min": 1.8664111787762025e-12,
+              "max": 1700.7881802381069,
+              "p05": 4.489841733079611,
+              "p25": 9.9391228724063,
+              "median": 16.12441044174971,
+              "p75": 25.8843830888707,
+              "p95": 52.752082899446215
+            },
+            "upper_wick": {
+              "n": 527040,
+              "mean": 0.018948941704894817,
+              "min": 0.0,
+              "max": 2.122499999999995,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.00999999999999801,
+              "p75": 0.02365350210572359,
+              "p95": 0.07000000000000028
+            },
+            "upper_wick_bps": {
+              "n": 527040,
+              "mean": 5.42813796346801,
+              "min": 0.0,
+              "max": 500.7372456502495,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.475842891900594,
+              "p75": 7.68961901432962,
+              "p95": 18.070112034693587
+            },
+            "lower_wick": {
+              "n": 527040,
+              "mean": 0.019217821373130165,
+              "min": 0.0,
+              "max": 3.5675000000000097,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.00999999999999801,
+              "p75": 0.02499999999999858,
+              "p95": 0.07249999999999801
+            },
+            "lower_wick_bps": {
+              "n": 527040,
+              "mean": 5.5528568639862765,
+              "min": 0.0,
+              "max": 891.8722031428875,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.4966922644028666,
+              "p75": 7.78210116731413,
+              "p95": 18.512819721904844
+            },
+            "body_ratio": {
+              "n": 527040,
+              "mean": 0.4678427836929779,
+              "min": 3.570125173268799e-06,
+              "max": 1.0,
+              "p05": 0.050944589371842465,
+              "p25": 0.26138090666924024,
+              "median": 0.5012060493808301,
+              "p75": 0.655683565104919,
+              "p95": 0.8413455529829841
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 234572,
+            "mean": 0.2431865149384803,
+            "min": 3.570125173268799e-06,
+            "max": 0.749977943936269,
+            "p05": 0.02285604484459074,
+            "p25": 0.11414936857603988,
+            "median": 0.23165041609088488,
+            "p75": 0.35768850265428354,
+            "p95": 0.49724221224503345
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 112644,
+            "mean": 0.2524188073830294,
+            "min": 5.257726121143825e-06,
+            "max": 0.7497781230642424,
+            "p05": 0.025030556074451125,
+            "p25": 0.12318759388236128,
+            "median": 0.24395344186441348,
+            "p75": 0.36896634846143106,
+            "p95": 0.5045489449536774
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              25921,
+              25393,
+              50306,
+              49489,
+              111457,
+              200383,
+              64091
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 48501,
+          "statuses": {
+            "observed_two_wick_terminal": 38747,
+            "censored_ema_zone_lost": 9157,
+            "censored_replaced_by_clean_run": 597
+          },
+          "observed_terminals": 38747,
+          "same_color_terminals": 16029,
+          "with_impulse_same_color": 6234,
+          "pullback_length": {
+            "n": 48501,
+            "mean": 1.8436114719284138,
+            "min": 1.0,
+            "max": 14.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 48501,
+            "mean": 1.5743799096925837,
+            "min": 0.0,
+            "max": 30.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 38747,
+            "mean": 0.20205435259503962,
+            "min": 0.0,
+            "max": 16.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 38747,
+            "mean": 0.24671337733140355,
+            "min": 5.257726121143825e-06,
+            "max": 0.7495980682654385,
+            "p05": 0.023408165288181324,
+            "p25": 0.11480284889759346,
+            "median": 0.23405670716397042,
+            "p75": 0.36196045605935256,
+            "p95": 0.5112483278135258
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.49206689982076385,
+              "min": -125.49914432401499,
+              "max": 140.93668690372985,
+              "p05": -20.710896261275312,
+              "p25": -6.459956397378008,
+              "median": 0.0,
+              "p75": 4.793576658971843,
+              "p95": 18.847181639411787
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 7.4486234596063134,
+              "min": 0.0,
+              "max": 199.64419845819316,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.271678769757203,
+              "p75": 9.655229075133942,
+              "p95": 26.00780234070177
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -7.476992271768314,
+              "min": -150.43808894032117,
+              "max": 0.0,
+              "p05": -25.61774817361373,
+              "p25": -10.028414679386922,
+              "median": -4.419889718623171,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.7392754316726791,
+              "min": -289.6551724137941,
+              "max": 436.8452263293121,
+              "p05": -42.14696817556168,
+              "p25": -14.419613167811207,
+              "median": 0.0,
+              "p75": 11.390010116168469,
+              "p95": 43.32092124260538
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 19.047573239541894,
+              "min": 0.0,
+              "max": 573.1775180856969,
+              "p05": 0.0,
+              "p25": 4.334633723448444,
+              "median": 11.32844957749124,
+              "p75": 25.003733195414213,
+              "p95": 62.580719557195394
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -18.87844961101318,
+              "min": -334.48275862068886,
+              "max": 0.0,
+              "p05": -56.84916890503288,
+              "p25": -25.719047802880148,
+              "median": -13.198418744657104,
+              "p75": -4.850248789232403,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.8427329664186052,
+              "min": -555.1724137931036,
+              "max": 1151.6626115166262,
+              "p05": -74.49931589696767,
+              "p25": -25.149851329266948,
+              "median": 0.0,
+              "p75": 21.301541162764003,
+              "p95": 72.8581958695462
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 35.74672467370592,
+              "min": 0.0,
+              "max": 1923.4576047509067,
+              "p05": 0.0,
+              "p25": 8.90538048110956,
+              "median": 22.480329711502822,
+              "p75": 45.22683257389026,
+              "p95": 109.13842750562111
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -33.896577734536535,
+              "min": -617.2413793103449,
+              "max": 0.0,
+              "p05": -97.2140613940851,
+              "p25": -45.33128325120567,
+              "median": -25.093204487488528,
+              "p75": -10.733932708992256,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -1.6549159071554036,
+              "min": -1307.3659853451613,
+              "max": 1346.9518033833383,
+              "p05": -144.03319400992584,
+              "p25": -50.2467486337313,
+              "median": -4.408199464758233,
+              "p75": 41.13470351242266,
+              "p95": 151.03710538446538
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 74.35246254382292,
+              "min": 0.0,
+              "max": 2073.6086175942546,
+              "p05": 3.353454057679617,
+              "p25": 21.272072661308037,
+              "median": 48.61024856480711,
+              "p75": 91.44325420369691,
+              "p95": 224.25680991770645
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -70.31064591113683,
+              "min": -1396.0663324334744,
+              "max": 0.0,
+              "p05": -198.70117763561956,
+              "p25": -93.0155321959017,
+              "median": -51.3022888713488,
+              "p75": -24.785078157239237,
+              "p95": -4.2740529392297795
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "out_of_sample": {
+        "candles": {
+          "candles": 995040,
+          "ready_candles": 995040,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 267558,
+            "no_lower_wick": 261248,
+            "no_upper_exact": 267558,
+            "no_lower_exact": 261248,
+            "both_wicks": 475201,
+            "same_color_two_wicks": 228363,
+            "above_ema": 419522,
+            "below_ema": 437898,
+            "ema_touch_or_straddle": 137620,
+            "bullish_clean_component": 78203,
+            "bearish_clean_component": 80802,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.26889170284611674,
+            "no_lower_wick": 0.2625502492362116,
+            "no_upper_exact": 0.26889170284611674,
+            "no_lower_exact": 0.2625502492362116,
+            "both_wicks": 0.47756974593986173,
+            "same_color_two_wicks": 0.229501326579836,
+            "above_ema": 0.4216132014793375,
+            "below_ema": 0.44008080077182826,
+            "ema_touch_or_straddle": 0.13830599774883423,
+            "bullish_clean_component": 0.07859282038913008,
+            "bearish_clean_component": 0.08120477568740955,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 995040,
+              "mean": 0.4437205051650981,
+              "min": 7.617376240887097e-08,
+              "max": 61.7712703586667,
+              "p05": 0.005355779307742026,
+              "p25": 0.03144108760353603,
+              "median": 0.12599638521277967,
+              "p75": 0.5039928604499124,
+              "p95": 1.8796110050916552
+            },
+            "body_bps": {
+              "n": 995040,
+              "mean": 11.833439019841471,
+              "min": 1.7047498203212832e-06,
+              "max": 1189.6218119055784,
+              "p05": 0.6529528530288973,
+              "p25": 3.383966079255279,
+              "median": 7.615615156361427,
+              "p75": 14.849891674443477,
+              "p95": 36.401253994318864
+            },
+            "range": {
+              "n": 995040,
+              "mean": 1.0028503673760174,
+              "min": 2.351703827230267e-07,
+              "max": 137.0787703586667,
+              "p05": 0.027910271080900807,
+              "p25": 0.0799999999999983,
+              "median": 0.46999999999997044,
+              "p75": 1.296015560190682,
+              "p95": 3.75
+            },
+            "range_bps": {
+              "n": 995040,
+              "mean": 26.020713331440202,
+              "min": 5.5648457814251474e-05,
+              "max": 2344.1857247444705,
+              "p05": 5.681872404892754,
+              "p25": 11.922023118109573,
+              "median": 19.028012412011698,
+              "p75": 31.10081162441735,
+              "p95": 68.35784213040759
+            },
+            "upper_wick": {
+              "n": 995040,
+              "mean": 0.28216212414331143,
+              "min": 0.0,
+              "max": 45.48500000000013,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.0400000000000027,
+              "p75": 0.3210117383467832,
+              "p95": 1.2974999999999
+            },
+            "upper_wick_bps": {
+              "n": 995040,
+              "mean": 7.123863244007419,
+              "min": 0.0,
+              "max": 1178.1801922646982,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.405149281133079,
+              "p75": 9.540865972821635,
+              "p95": 24.103523680145067
+            },
+            "lower_wick": {
+              "n": 995040,
+              "mean": 0.2769677380676079,
+              "min": 0.0,
+              "max": 75.3075,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.04274885756899138,
+              "p75": 0.32557969544974696,
+              "p95": 1.2525000000000546
+            },
+            "lower_wick_bps": {
+              "n": 995040,
+              "mean": 7.063411067591314,
+              "min": 0.0,
+              "max": 1176.8516519110335,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.510015126042781,
+              "p75": 9.562806321010527,
+              "p95": 23.5271206947519
+            },
+            "body_ratio": {
+              "n": 995040,
+              "mean": 0.44227157392539745,
+              "min": 1.7714828467179013e-07,
+              "max": 1.0,
+              "p05": 0.04823098402774256,
+              "p25": 0.2431276960635687,
+              "median": 0.4730613824694744,
+              "p75": 0.6266607496633232,
+              "p95": 0.7931770372751294
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 475201,
+            "mean": 0.241265640733883,
+            "min": 1.7714828467179013e-07,
+            "max": 0.749964837618105,
+            "p05": 0.023057841398326673,
+            "p25": 0.11507432509216911,
+            "median": 0.23219540219730692,
+            "p75": 0.3548047130065486,
+            "p95": 0.4915915364139118
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 228363,
+            "mean": 0.24945851977919473,
+            "min": 2.4058208509813993e-07,
+            "max": 0.7496829722311829,
+            "p05": 0.025376828076637385,
+            "p25": 0.12368563098873236,
+            "median": 0.24305297049907668,
+            "p75": 0.36367069597134577,
+            "p95": 0.49746994175731307
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              51636,
+              51653,
+              102162,
+              100277,
+              229485,
+              375864,
+              83963
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 86663,
+          "statuses": {
+            "observed_two_wick_terminal": 70416,
+            "censored_ema_zone_lost": 15806,
+            "censored_replaced_by_clean_run": 441
+          },
+          "observed_terminals": 70416,
+          "same_color_terminals": 26910,
+          "with_impulse_same_color": 8949,
+          "pullback_length": {
+            "n": 86663,
+            "mean": 1.8347507009911959,
+            "min": 1.0,
+            "max": 14.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 86663,
+            "mean": 1.4189331087084454,
+            "min": 0.0,
+            "max": 38.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 7.0
+          },
+          "intermediate_count": {
+            "n": 70416,
+            "mean": 0.11939047943649171,
+            "min": 0.0,
+            "max": 16.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 70416,
+            "mean": 0.2424173397162404,
+            "min": 2.0916849052810726e-05,
+            "max": 0.749964837618105,
+            "p05": 0.02262675855730466,
+            "p25": 0.11387902705333572,
+            "median": 0.23131945671700693,
+            "p75": 0.35735323015507187,
+            "p95": 0.49897436915790033
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 8949,
+            "observed": 8949,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 8949,
+              "mean": -0.40734858651018047,
+              "min": -167.37774860518527,
+              "max": 334.34650455927084,
+              "p05": -22.601003087482585,
+              "p25": -7.216742843396684,
+              "median": 0.0,
+              "p75": 5.870410684147842,
+              "p95": 22.638982657869015
+            },
+            "favorable_excursion_bps": {
+              "n": 8949,
+              "mean": 9.527076511270506,
+              "min": 0.0,
+              "max": 795.0746601292624,
+              "p05": 0.0,
+              "p25": 0.8991997122564932,
+              "median": 4.999166805532695,
+              "p75": 11.837821840781082,
+              "p95": 33.33791899585316
+            },
+            "adverse_excursion_bps": {
+              "n": 8949,
+              "mean": -9.23674002658151,
+              "min": -229.73416475221552,
+              "max": 0.0,
+              "p05": -30.15114576854749,
+              "p25": -12.315270935961964,
+              "median": -5.7504312823475345,
+              "p75": -1.8850141376058893,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 8949,
+            "observed": 8949,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 8949,
+              "mean": -1.2318054474835196,
+              "min": -448.82914137033936,
+              "max": 399.7653369091525,
+              "p05": -51.98840130772942,
+              "p25": -16.875602700096024,
+              "median": -2.147934077951774,
+              "p75": 13.138223168577268,
+              "p95": 50.24610273942012
+            },
+            "favorable_excursion_bps": {
+              "n": 8949,
+              "mean": 23.768117195932383,
+              "min": 0.0,
+              "max": 795.0746601292624,
+              "p05": 0.0,
+              "p25": 5.156274789781534,
+              "median": 13.750932576545027,
+              "p75": 29.718678077448324,
+              "p95": 79.78071104051867
+            },
+            "adverse_excursion_bps": {
+              "n": 8949,
+              "mean": -23.270373016576137,
+              "min": -675.2313221686923,
+              "max": 0.0,
+              "p05": -70.60638295567533,
+              "p25": -30.239694045448573,
+              "median": -15.901411250247577,
+              "p75": -6.561064767081071,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 8949,
+            "observed": 8949,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 8949,
+              "mean": -1.502018206007656,
+              "min": -1262.4674761491783,
+              "max": 960.0194434317655,
+              "p05": -85.50601722349072,
+              "p25": -29.902815848492637,
+              "median": -2.7662517289073207,
+              "p75": 24.585783003741035,
+              "p95": 89.20055165992527
+            },
+            "favorable_excursion_bps": {
+              "n": 8949,
+              "mean": 43.56328138462556,
+              "min": 0.0,
+              "max": 1573.1699796493092,
+              "p05": 0.0,
+              "p25": 10.931948619841148,
+              "median": 27.007120058925025,
+              "p75": 54.270882491740394,
+              "p95": 139.6567614290155
+            },
+            "adverse_excursion_bps": {
+              "n": 8949,
+              "mean": -41.924200538757944,
+              "min": -1437.5542064180413,
+              "max": 0.0,
+              "p05": -121.35212919978366,
+              "p25": -53.9167345538738,
+              "median": -29.437373025416047,
+              "p75": -13.056656563301683,
+              "p95": -1.9465201127077914
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 8949,
+            "observed": 8949,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 8949,
+              "mean": -0.08307161646392168,
+              "min": -3320.1431049436246,
+              "max": 1757.4556111015338,
+              "p05": -168.26344375105506,
+              "p25": -57.30659025787954,
+              "median": -2.7404768429706294,
+              "p75": 50.25125628140836,
+              "p95": 182.0101000025797
+            },
+            "favorable_excursion_bps": {
+              "n": 8949,
+              "mean": 90.06054129990963,
+              "min": 0.0,
+              "max": 3650.232718496811,
+              "p05": 3.399809405806309,
+              "p25": 24.779735682818327,
+              "median": 58.430717863104945,
+              "p75": 114.51382616043615,
+              "p95": 280.325765604955
+            },
+            "adverse_excursion_bps": {
+              "n": 8949,
+              "mean": -84.65640326914718,
+              "min": -3694.709453599305,
+              "max": 0.0,
+              "p05": -247.16543305217863,
+              "p25": -108.97885559675302,
+              "median": -59.379850557703676,
+              "p75": -28.188297829502275,
+              "p95": -5.236699129776977
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      }
+    },
+    "years": {
+      "2020": {
+        "candles": {
+          "candles": 476159,
+          "ready_candles": 475660,
+          "warmup_excluded": 499,
+          "counts": {
+            "no_upper_wick": 161907,
+            "no_lower_wick": 164395,
+            "no_upper_exact": 161907,
+            "no_lower_exact": 164395,
+            "both_wicks": 192515,
+            "same_color_two_wicks": 92054,
+            "above_ema": 205671,
+            "below_ema": 206676,
+            "ema_touch_or_straddle": 63313,
+            "bullish_clean_component": 43959,
+            "bearish_clean_component": 46463,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.34038388765084304,
+            "no_lower_wick": 0.34561451456923015,
+            "no_upper_exact": 0.34038388765084304,
+            "no_lower_exact": 0.34561451456923015,
+            "both_wicks": 0.4047323718622545,
+            "same_color_two_wicks": 0.19352899129630408,
+            "above_ema": 0.43239078333263253,
+            "below_ema": 0.43450363705167555,
+            "ema_touch_or_straddle": 0.1331055796156919,
+            "bullish_clean_component": 0.09241685237354413,
+            "bearish_clean_component": 0.09768111676407518,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 475660,
+              "mean": 0.05787291970379688,
+              "min": 9.196671868494377e-09,
+              "max": 5.7500403170468815,
+              "p05": 0.0027623188099127564,
+              "p25": 0.0153248785868918,
+              "median": 0.03641302162362692,
+              "p75": 0.07387649738022617,
+              "p95": 0.18083382938217618
+            },
+            "body_bps": {
+              "n": 475660,
+              "mean": 10.057744403136796,
+              "min": 3.0676023577366167e-06,
+              "max": 1008.8896302822316,
+              "p05": 0.5184068437070475,
+              "p25": 2.82032592770147,
+              "median": 6.526848845778746,
+              "p75": 12.81830750598764,
+              "p95": 30.187915707708118
+            },
+            "range": {
+              "n": 475660,
+              "mean": 0.11925088217723183,
+              "min": 9.196671868494377e-09,
+              "max": 7.980020158523445,
+              "p05": 0.011740213097439778,
+              "p25": 0.04999999999999716,
+              "median": 0.0899999999999963,
+              "p75": 0.15000000000000568,
+              "p95": 0.32136996315176974
+            },
+            "range_bps": {
+              "n": 475660,
+              "mean": 20.689270301022567,
+              "min": 3.0676023577366167e-06,
+              "max": 3625.22338524381,
+              "p05": 2.4103641580057746,
+              "p25": 9.027317540834678,
+              "median": 15.554396453950655,
+              "p75": 25.569197020032433,
+              "p95": 53.68821618384137
+            },
+            "upper_wick": {
+              "n": 475660,
+              "mean": 0.030047817776413896,
+              "min": 0.0,
+              "max": 5.094999999999999,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.015000000000000568,
+              "p75": 0.04250000000000398,
+              "p95": 0.10750000000001592
+            },
+            "upper_wick_bps": {
+              "n": 475660,
+              "mean": 5.220521521737176,
+              "min": 0.0,
+              "max": 2601.4807250446765,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 2.886002886002312,
+              "p75": 7.493131296311998,
+              "p95": 18.120381559360453
+            },
+            "lower_wick": {
+              "n": 475660,
+              "mean": 0.03133014469702106,
+              "min": 0.0,
+              "max": 3.2781300396308666,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.015000000000000568,
+              "p75": 0.044749267824856886,
+              "p95": 0.11499999999999488
+            },
+            "lower_wick_bps": {
+              "n": 475660,
+              "mean": 5.4110043761485915,
+              "min": 0.0,
+              "max": 591.3906396674262,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 2.8784834034047564,
+              "p75": 7.664429383539822,
+              "p95": 18.957661761204907
+            },
+            "body_ratio": {
+              "n": 475660,
+              "mean": 0.5114784905852758,
+              "min": 9.522653480568143e-07,
+              "max": 1.0,
+              "p05": 0.057227929521124196,
+              "p25": 0.28899218794901416,
+              "median": 0.533280834325093,
+              "p75": 0.7012993297322404,
+              "p95": 1.0
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 192515,
+            "mean": 0.24420655371792443,
+            "min": 9.522653480568143e-07,
+            "max": 0.7497685220948895,
+            "p05": 0.023062372554393504,
+            "p25": 0.1159491614850229,
+            "median": 0.2333156098540299,
+            "p75": 0.35892083390106094,
+            "p95": 0.498508593314567
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 92054,
+            "mean": 0.2526260987824072,
+            "min": 3.668525907743167e-06,
+            "max": 0.7497685220948895,
+            "p05": 0.025107319294193846,
+            "p25": 0.12382209020896306,
+            "median": 0.24501799327968282,
+            "p75": 0.3682532478791466,
+            "p95": 0.5072473101920637
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              20783,
+              20737,
+              41260,
+              40610,
+              92295,
+              168147,
+              91828
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 45213,
+          "statuses": {
+            "observed_two_wick_terminal": 34762,
+            "censored_ema_zone_lost": 9128,
+            "censored_replaced_by_clean_run": 1323
+          },
+          "observed_terminals": 34762,
+          "same_color_terminals": 15358,
+          "with_impulse_same_color": 6622,
+          "pullback_length": {
+            "n": 45213,
+            "mean": 1.9999115298697276,
+            "min": 1.0,
+            "max": 21.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 5.0
+          },
+          "impulse_count": {
+            "n": 45213,
+            "mean": 1.671045938115144,
+            "min": 0.0,
+            "max": 29.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 34762,
+            "mean": 0.3206374777055405,
+            "min": 0.0,
+            "max": 17.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 2.0
+          },
+          "terminal_body_ratio": {
+            "n": 34762,
+            "mean": 0.24737787915189344,
+            "min": 4.5233331480429015e-05,
+            "max": 0.7497685220948895,
+            "p05": 0.02336859757760273,
+            "p25": 0.11736939698128226,
+            "median": 0.23582688804982657,
+            "p75": 0.3641509476757532,
+            "p95": 0.49901172143000255
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 6622,
+            "observed": 6622,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6622,
+              "mean": 0.1634888456265971,
+              "min": -255.99128540304994,
+              "max": 301.1740684022457,
+              "p05": -18.087708194438058,
+              "p25": -4.8919698951366275,
+              "median": -0.0,
+              "p75": 4.530524582519735,
+              "p95": 19.13590812422189
+            },
+            "favorable_excursion_bps": {
+              "n": 6622,
+              "mean": 6.913114651443936,
+              "min": 0.0,
+              "max": 301.1740684022457,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.156317541534448,
+              "p75": 9.343612834543102,
+              "p95": 26.208349648253137
+            },
+            "adverse_excursion_bps": {
+              "n": 6622,
+              "mean": -6.256676308106695,
+              "min": -599.1285403050117,
+              "max": 0.0,
+              "p05": -23.201709030344684,
+              "p25": -8.717701897223984,
+              "median": -3.178387149224138,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 6622,
+            "observed": 6622,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6622,
+              "mean": -0.023209038084706115,
+              "min": -1007.6252723311563,
+              "max": 556.4063297600819,
+              "p05": -40.5051579028961,
+              "p25": -13.579928254994766,
+              "median": -1.4789635885120722,
+              "p75": 11.552347292878295,
+              "p95": 44.424479649122986
+            },
+            "favorable_excursion_bps": {
+              "n": 6622,
+              "mean": 19.167877684201645,
+              "min": 0.0,
+              "max": 1368.0449208779987,
+              "p05": 0.0,
+              "p25": 3.632730995362654,
+              "median": 11.071745449882098,
+              "p75": 24.331382497992383,
+              "p95": 62.729820653598914
+            },
+            "adverse_excursion_bps": {
+              "n": 6622,
+              "mean": -17.76539702537864,
+              "min": -2598.264420622767,
+              "max": 0.0,
+              "p05": -54.55022577041463,
+              "p25": -23.33495447789824,
+              "median": -11.492601874873998,
+              "p75": -3.8954085369230507,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 6622,
+            "observed": 6622,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6622,
+              "mean": -1.206878676398374,
+              "min": -3916.1220043572985,
+              "max": 1917.8486997635935,
+              "p05": -69.86342347885909,
+              "p25": -24.918330938150934,
+              "median": -3.0845169049031895,
+              "p75": 19.07152661733108,
+              "p95": 75.07198562866931
+            },
+            "favorable_excursion_bps": {
+              "n": 6622,
+              "mean": 35.338652082487926,
+              "min": 0.0,
+              "max": 2263.593380614658,
+              "p05": 0.0,
+              "p25": 7.874015748031981,
+              "median": 20.830051759244128,
+              "p75": 43.64646493266066,
+              "p95": 111.8115588009345
+            },
+            "adverse_excursion_bps": {
+              "n": 6622,
+              "mean": -33.27542132884193,
+              "min": -3916.1220043572985,
+              "max": 0.0,
+              "p05": -92.41402077836591,
+              "p25": -43.730571638703196,
+              "median": -23.260322641729946,
+              "p75": -9.537889850952663,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 6622,
+            "observed": 6622,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6622,
+              "mean": -4.127833097186189,
+              "min": -3453.159041394336,
+              "max": 2089.2434988179675,
+              "p05": -139.12640435286372,
+              "p25": -49.999999999998934,
+              "median": -5.802148150763076,
+              "p75": 39.348995023761326,
+              "p95": 145.89346259960925
+            },
+            "favorable_excursion_bps": {
+              "n": 6622,
+              "mean": 72.35345193306182,
+              "min": 0.0,
+              "max": 2765.957446808511,
+              "p05": 1.950534502876744,
+              "p25": 19.240032607084622,
+              "median": 46.330886780842626,
+              "p75": 93.39275970144361,
+              "p95": 222.75734360766404
+            },
+            "adverse_excursion_bps": {
+              "n": 6622,
+              "mean": -70.34611768556834,
+              "min": -3937.9084967320255,
+              "max": 0.0,
+              "p05": -193.2689673810017,
+              "p25": -90.23068016399682,
+              "median": -49.56858645535078,
+              "p75": -23.298709522054374,
+              "p95": -3.152162811173698
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2021": {
+        "candles": {
+          "candles": 525600,
+          "ready_candles": 525600,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 128531,
+            "no_lower_wick": 130378,
+            "no_upper_exact": 128531,
+            "no_lower_exact": 130378,
+            "both_wicks": 266886,
+            "same_color_two_wicks": 129883,
+            "above_ema": 235064,
+            "below_ema": 218120,
+            "ema_touch_or_straddle": 72416,
+            "bullish_clean_component": 38250,
+            "bearish_clean_component": 37162,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.24454147640791477,
+            "no_lower_wick": 0.24805555555555556,
+            "no_upper_exact": 0.24454147640791477,
+            "no_lower_exact": 0.24805555555555556,
+            "both_wicks": 0.5077739726027397,
+            "same_color_two_wicks": 0.24711377473363774,
+            "above_ema": 0.4472298325722983,
+            "below_ema": 0.4149923896499239,
+            "ema_touch_or_straddle": 0.13777777777777778,
+            "bullish_clean_component": 0.07277397260273973,
+            "bearish_clean_component": 0.07070395738203958,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 525600,
+              "mean": 0.2200425053224353,
+              "min": 1.4210854715202004e-14,
+              "max": 21.546868093086943,
+              "p05": 0.010233676925230384,
+              "p25": 0.053669982575932806,
+              "median": 0.12642190066041792,
+              "p75": 0.2653759419813042,
+              "p95": 0.7303963284819985
+            },
+            "body_bps": {
+              "n": 525600,
+              "mean": 14.133778319879644,
+              "min": 1.1540404998539878e-12,
+              "max": 1579.2158184764198,
+              "p05": 0.7582554095876648,
+              "p25": 3.9503766282486357,
+              "median": 9.101893763666252,
+              "p75": 18.078967808578554,
+              "p95": 43.12657497076216
+            },
+            "range": {
+              "n": 525600,
+              "mean": 0.48154033516454703,
+              "min": 1.4210854715202004e-14,
+              "max": 38.57186809308695,
+              "p05": 0.09999999999999432,
+              "p25": 0.19851742631412606,
+              "median": 0.3236034198179638,
+              "p75": 0.5676359489685652,
+              "p95": 1.3624609512057544
+            },
+            "range_bps": {
+              "n": 525600,
+              "mean": 30.893521342792276,
+              "min": 1.1540404998539878e-12,
+              "max": 2327.2545054315733,
+              "p05": 8.133364591832569,
+              "p25": 14.977235025253076,
+              "median": 23.177906103562485,
+              "p75": 37.00377616106124,
+              "p95": 77.0347304607874
+            },
+            "upper_wick": {
+              "n": 525600,
+              "mean": 0.13051694047025336,
+              "min": 0.0,
+              "max": 16.05295779427317,
+              "p05": 0.0,
+              "p25": 0.0028664049828428517,
+              "median": 0.07750000000001478,
+              "p75": 0.16500000000000625,
+              "p95": 0.4574999999999818
+            },
+            "upper_wick_bps": {
+              "n": 525600,
+              "mean": 8.354103714138038,
+              "min": 0.0,
+              "max": 1343.6810742674454,
+              "p05": 0.0,
+              "p25": 0.21528491497091637,
+              "median": 5.822919778346792,
+              "p75": 11.356804061727207,
+              "p95": 26.492656791921064
+            },
+            "lower_wick": {
+              "n": 525600,
+              "mean": 0.13098088937185837,
+              "min": 0.0,
+              "max": 19.52000000000001,
+              "p05": 0.0,
+              "p25": 0.0009748104832816296,
+              "median": 0.07750000000000057,
+              "p75": 0.16750000000000398,
+              "p95": 0.4550000000000125
+            },
+            "lower_wick_bps": {
+              "n": 525600,
+              "mean": 8.405639308774596,
+              "min": 0.0,
+              "max": 1352.456176817017,
+              "p05": 0.0,
+              "p25": 0.07263506734777586,
+              "median": 5.7731958762880975,
+              "p75": 11.478750928534968,
+              "p95": 26.61682952861661
+            },
+            "body_ratio": {
+              "n": 525600,
+              "mean": 0.42660454700346934,
+              "min": 5.80275706273481e-07,
+              "max": 1.0,
+              "p05": 0.04519906070978446,
+              "p25": 0.22840317040309396,
+              "median": 0.45948929880250555,
+              "p75": 0.6154433410240463,
+              "p95": 0.7593991655758346
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 266886,
+            "mean": 0.24192078507873485,
+            "min": 5.80275706273481e-07,
+            "max": 0.7467558172170232,
+            "p05": 0.02304842938149003,
+            "p25": 0.11455150210076151,
+            "median": 0.23188677904702254,
+            "p75": 0.35637070969654977,
+            "p95": 0.49660718021481093
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 129883,
+            "mean": 0.2501713786122575,
+            "min": 4.972446479964004e-06,
+            "max": 0.7349614552732021,
+            "p05": 0.025246694063874576,
+            "p25": 0.12311301328569543,
+            "median": 0.24362608995560542,
+            "p75": 0.36544874809282357,
+            "p95": 0.5018715735956901
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              29078,
+              29123,
+              57114,
+              55920,
+              120304,
+              203465,
+              30596
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 41180,
+          "statuses": {
+            "observed_two_wick_terminal": 33927,
+            "censored_ema_zone_lost": 7216,
+            "censored_replaced_by_clean_run": 37
+          },
+          "observed_terminals": 33927,
+          "same_color_terminals": 11953,
+          "with_impulse_same_color": 3589,
+          "pullback_length": {
+            "n": 41180,
+            "mean": 1.8312773190869354,
+            "min": 1.0,
+            "max": 16.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 41180,
+            "mean": 1.3099562894609034,
+            "min": 0.0,
+            "max": 36.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 1.0,
+            "p95": 7.0
+          },
+          "intermediate_count": {
+            "n": 33927,
+            "mean": 0.05379196510154154,
+            "min": 0.0,
+            "max": 11.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 0.0
+          },
+          "terminal_body_ratio": {
+            "n": 33927,
+            "mean": 0.2446697701138221,
+            "min": 2.1687749293422906e-06,
+            "max": 0.7315432195585111,
+            "p05": 0.021491363119857696,
+            "p25": 0.1127983935117671,
+            "median": 0.23336945451083782,
+            "p75": 0.3613729148813295,
+            "p95": 0.5117099431105676
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 3589,
+            "observed": 3589,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3589,
+              "mean": -0.4131286803749248,
+              "min": -176.5435159930573,
+              "max": 290.156268734264,
+              "p05": -30.88228127889403,
+              "p25": -10.087182073635903,
+              "median": -0.7708911501691507,
+              "p75": 8.239171374766485,
+              "p95": 32.7895241961893
+            },
+            "favorable_excursion_bps": {
+              "n": 3589,
+              "mean": 13.259971067917357,
+              "min": 0.0,
+              "max": 551.8803806071581,
+              "p05": 0.0,
+              "p25": 2.4017292450562167,
+              "median": 7.261578182991002,
+              "p75": 16.629053331749244,
+              "p95": 44.00122392718075
+            },
+            "adverse_excursion_bps": {
+              "n": 3589,
+              "mean": -13.427171886112127,
+              "min": -367.014046216585,
+              "max": 0.0,
+              "p05": -41.05915108654301,
+              "p25": -17.418666067314792,
+              "median": -8.631437613886295,
+              "p75": -3.2479395883222573,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 3589,
+            "observed": 3589,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3589,
+              "mean": -0.4845912799343587,
+              "min": -413.4261154318453,
+              "max": 349.5368159679113,
+              "p05": -67.55415865636216,
+              "p25": -21.78352620830548,
+              "median": -1.1731581417184778,
+              "p75": 20.97712816348629,
+              "p95": 72.65227499545234
+            },
+            "favorable_excursion_bps": {
+              "n": 3589,
+              "mean": 31.84075527987302,
+              "min": 0.0,
+              "max": 667.3187696989457,
+              "p05": 0.0,
+              "p25": 7.284382284382662,
+              "median": 18.756394225303286,
+              "p75": 40.82494544942472,
+              "p95": 105.21433735559336
+            },
+            "adverse_excursion_bps": {
+              "n": 3589,
+              "mean": -30.800834013037615,
+              "min": -1017.671046669688,
+              "max": 0.0,
+              "p05": -92.69956990316963,
+              "p25": -39.60999390615561,
+              "median": -20.466838848007818,
+              "p75": -9.41287210259989,
+              "p95": -0.6165251894714177
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 3589,
+            "observed": 3589,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3589,
+              "mean": -2.6193127368730287,
+              "min": -2650.657000453105,
+              "max": 748.7346003247053,
+              "p05": -119.9758845302068,
+              "p25": -39.2429900626623,
+              "median": -2.4344721252944623,
+              "p75": 34.26098455250326,
+              "p95": 116.05811305137468
+            },
+            "favorable_excursion_bps": {
+              "n": 3589,
+              "mean": 55.835475463482986,
+              "min": 0.0,
+              "max": 975.0740139432712,
+              "p05": 1.3767665305748356,
+              "p25": 13.920733704553268,
+              "median": 35.885167464113636,
+              "p75": 72.63574253865701,
+              "p95": 173.24409272985773
+            },
+            "adverse_excursion_bps": {
+              "n": 3589,
+              "mean": -54.19970770852129,
+              "min": -2650.657000453105,
+              "max": 0.0,
+              "p05": -156.79973318704253,
+              "p25": -69.37307297019579,
+              "median": -37.45318352059934,
+              "p75": -16.55433368806691,
+              "p95": -2.2621674123883895
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 3589,
+            "observed": 3589,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3589,
+              "mean": -3.583669642270582,
+              "min": -3884.0054372451305,
+              "max": 4265.944645006017,
+              "p05": -231.80430440526578,
+              "p25": -80.80808080808133,
+              "median": -5.881858667339257,
+              "p75": 66.74128425154579,
+              "p95": 222.32441189823055
+            },
+            "favorable_excursion_bps": {
+              "n": 3589,
+              "mean": 117.54245530973725,
+              "min": 0.0,
+              "max": 5109.306056959486,
+              "p05": 4.826754868677119,
+              "p25": 33.67543296985298,
+              "median": 76.32093933463868,
+              "p75": 150.52356020942347,
+              "p95": 351.63044239314064
+            },
+            "adverse_excursion_bps": {
+              "n": 3589,
+              "mean": -108.72781207347711,
+              "min": -5275.9401903035805,
+              "max": 0.0,
+              "p05": -296.86034694631223,
+              "p25": -143.35983318128575,
+              "median": -78.39372850171999,
+              "p75": -36.24009060022804,
+              "p95": -6.705447867215498
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2022": {
+        "candles": {
+          "candles": 525600,
+          "ready_candles": 525600,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 130909,
+            "no_lower_wick": 133739,
+            "no_upper_exact": 130908,
+            "no_lower_exact": 133739,
+            "both_wicks": 262683,
+            "same_color_two_wicks": 126429,
+            "above_ema": 227062,
+            "below_ema": 224389,
+            "ema_touch_or_straddle": 74149,
+            "bullish_clean_component": 38519,
+            "bearish_clean_component": 39714,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.24906582952815828,
+            "no_lower_wick": 0.2544501522070015,
+            "no_upper_exact": 0.24906392694063928,
+            "no_lower_exact": 0.2544501522070015,
+            "both_wicks": 0.499777397260274,
+            "same_color_two_wicks": 0.24054223744292239,
+            "above_ema": 0.43200532724505325,
+            "below_ema": 0.4269197108066971,
+            "ema_touch_or_straddle": 0.14107496194824962,
+            "bullish_clean_component": 0.07328576864535769,
+            "bearish_clean_component": 0.0755593607305936,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 525600,
+              "mean": 0.093462521193689,
+              "min": 5.826450433232822e-13,
+              "max": 5.661177897255527,
+              "p05": 0.0032036190203449167,
+              "p25": 0.018062923381219065,
+              "median": 0.0488919503723082,
+              "p75": 0.11744019091775826,
+              "p95": 0.32968395700896946
+            },
+            "body_bps": {
+              "n": 525600,
+              "mean": 10.029449411026135,
+              "min": 6.612700525743755e-11,
+              "max": 405.48496938417304,
+              "p05": 0.5006514502258425,
+              "p25": 2.679430012191141,
+              "median": 6.3643722490065375,
+              "p75": 13.055937668546001,
+              "p95": 31.38214751384697
+            },
+            "range": {
+              "n": 525600,
+              "mean": 0.20749613214341847,
+              "min": 5.826450433232822e-13,
+              "max": 12.02000000000001,
+              "p05": 0.02164418925723375,
+              "p25": 0.06511114452708355,
+              "median": 0.14000000000000057,
+              "p75": 0.27000000000001023,
+              "p95": 0.6099999999999994
+            },
+            "range_bps": {
+              "n": 525600,
+              "mean": 22.118878083064157,
+              "min": 6.612700525743755e-11,
+              "max": 620.0674424875277,
+              "p05": 4.7407355215648455,
+              "p25": 10.183947552669888,
+              "median": 16.81913228657151,
+              "p75": 27.50713423042178,
+              "p95": 56.63274789961815
+            },
+            "upper_wick": {
+              "n": 525600,
+              "mean": 0.05686462855586849,
+              "min": 0.0,
+              "max": 6.285000000000025,
+              "p05": 0.0,
+              "p25": 0.0001705161268166222,
+              "median": 0.027499999999996305,
+              "p75": 0.07624478061564588,
+              "p95": 0.21000000000000796
+            },
+            "upper_wick_bps": {
+              "n": 525600,
+              "mean": 6.021645801695713,
+              "min": 0.0,
+              "max": 356.7011651370187,
+              "p05": 0.0,
+              "p25": 0.026097195169621546,
+              "median": 3.9565657009710815,
+              "p75": 8.394963022186436,
+              "p95": 19.67213114754173
+            },
+            "lower_wick": {
+              "n": 525600,
+              "mean": 0.05716898239386095,
+              "min": 0.0,
+              "max": 2.9650000000000034,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.027312516786174967,
+              "p75": 0.07750000000000057,
+              "p95": 0.2150000000000034
+            },
+            "lower_wick_bps": {
+              "n": 525600,
+              "mean": 6.067782870342308,
+              "min": 0.0,
+              "max": 336.0562506462621,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.885758694384306,
+              "p75": 8.50720073780486,
+              "p95": 20.211531064118656
+            },
+            "body_ratio": {
+              "n": 525600,
+              "mean": 0.42804791765205863,
+              "min": 4.375184801120007e-06,
+              "max": 1.0,
+              "p05": 0.04522883828143831,
+              "p25": 0.23000259023743969,
+              "median": 0.4574553051734448,
+              "p75": 0.6130842484920292,
+              "p95": 0.7716640705447054
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 262683,
+            "mean": 0.24020317020101517,
+            "min": 4.375184801120007e-06,
+            "max": 0.7499831796317906,
+            "p05": 0.02257303058693854,
+            "p25": 0.11352846704114701,
+            "median": 0.22986379593050318,
+            "p75": 0.35336232973894766,
+            "p95": 0.49392295024523647
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 126429,
+            "mean": 0.24893513962758923,
+            "min": 4.375184801120007e-06,
+            "max": 0.7499831796317906,
+            "p05": 0.025004920263374513,
+            "p25": 0.12228325183761023,
+            "median": 0.2412700696989896,
+            "p75": 0.36379452182667416,
+            "p95": 0.4998122643520133
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              29041,
+              28845,
+              56812,
+              55537,
+              123731,
+              196140,
+              35494
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 43283,
+          "statuses": {
+            "observed_two_wick_terminal": 35422,
+            "censored_ema_zone_lost": 7784,
+            "censored_replaced_by_clean_run": 77
+          },
+          "observed_terminals": 35422,
+          "same_color_terminals": 13158,
+          "with_impulse_same_color": 4170,
+          "pullback_length": {
+            "n": 43283,
+            "mean": 1.8075456876833862,
+            "min": 1.0,
+            "max": 32.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 43283,
+            "mean": 1.3395328419933923,
+            "min": 0.0,
+            "max": 30.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 7.0
+          },
+          "intermediate_count": {
+            "n": 35422,
+            "mean": 0.09273897577776523,
+            "min": 0.0,
+            "max": 15.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 0.0
+          },
+          "terminal_body_ratio": {
+            "n": 35422,
+            "mean": 0.2425767458493581,
+            "min": 7.75424595644439e-06,
+            "max": 0.748629219166802,
+            "p05": 0.02238659184176239,
+            "p25": 0.11392928632936514,
+            "median": 0.23006807124048512,
+            "p75": 0.3561280454138403,
+            "p95": 0.5051246001738919
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 4169,
+            "observed": 4169,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4169,
+              "mean": -0.33571182933427096,
+              "min": -148.13389765294227,
+              "max": 156.40116091583334,
+              "p05": -20.714979110832754,
+              "p25": -6.151953245157049,
+              "median": 0.0,
+              "p75": 5.154639175257714,
+              "p95": 20.891142932537132
+            },
+            "favorable_excursion_bps": {
+              "n": 4169,
+              "mean": 8.385260003777699,
+              "min": 0.0,
+              "max": 167.51930986056874,
+              "p05": 0.0,
+              "p25": 1.6239038648913073,
+              "median": 4.656360588564112,
+              "p75": 10.860979462874454,
+              "p95": 30.234315948601374
+            },
+            "adverse_excursion_bps": {
+              "n": 4169,
+              "mean": -8.5212796849677,
+              "min": -153.9053482108499,
+              "max": 0.0,
+              "p05": -29.209167281663007,
+              "p25": -11.060199083583466,
+              "median": -5.241776962391365,
+              "p75": -1.825817053131562,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 4169,
+            "observed": 4169,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4169,
+              "mean": -0.9423856303066894,
+              "min": -211.71909944833533,
+              "max": 261.62994053864907,
+              "p05": -48.953282305365775,
+              "p25": -14.478764478764727,
+              "median": -1.6545334215756213,
+              "p75": 12.50625312656295,
+              "p95": 49.114250894667585
+            },
+            "favorable_excursion_bps": {
+              "n": 4169,
+              "mean": 20.748151265331277,
+              "min": 0.0,
+              "max": 275.6208464498078,
+              "p05": 0.0,
+              "p25": 4.509921828022012,
+              "median": 11.993022241605367,
+              "p75": 26.794861691228355,
+              "p95": 70.20771616065245
+            },
+            "adverse_excursion_bps": {
+              "n": 4169,
+              "mean": -21.09660857306907,
+              "min": -296.8827313211264,
+              "max": 0.0,
+              "p05": -65.78927779713294,
+              "p25": -27.670171555063128,
+              "median": -13.34379905808536,
+              "p75": -5.610885117126596,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 4169,
+            "observed": 4169,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4169,
+              "mean": 0.08267642130524139,
+              "min": -349.0328006728327,
+              "max": 412.0321790835946,
+              "p05": -83.88443149090641,
+              "p25": -26.729034413632835,
+              "median": -1.9316206297093075,
+              "p75": 24.63812750230998,
+              "p95": 89.86127354830549
+            },
+            "favorable_excursion_bps": {
+              "n": 4169,
+              "mean": 39.18403933870698,
+              "min": 0.0,
+              "max": 439.3144456103537,
+              "p05": 0.6982867008693551,
+              "p25": 9.14578379367148,
+              "median": 23.852116875371365,
+              "p75": 51.118210862619584,
+              "p95": 133.60288045453035
+            },
+            "adverse_excursion_bps": {
+              "n": 4169,
+              "mean": -36.62899092244126,
+              "min": -384.6153846153855,
+              "max": 0.0,
+              "p05": -112.50807038940836,
+              "p25": -48.60804242156513,
+              "median": -24.73498233215521,
+              "p75": -10.938924339106704,
+              "p95": -1.6292483582744932
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 4169,
+            "observed": 4169,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 4169,
+              "mean": 0.5276559008764742,
+              "min": -524.7359644246808,
+              "max": 787.5703187784633,
+              "p05": -165.35139805252496,
+              "p25": -51.413881748072484,
+              "median": -2.1598272138223518,
+              "p75": 46.685340802988804,
+              "p95": 178.8123354733169
+            },
+            "favorable_excursion_bps": {
+              "n": 4169,
+              "mean": 79.88988905623056,
+              "min": 0.0,
+              "max": 1214.5289443813856,
+              "p05": 3.160080100682805,
+              "p25": 21.121039805035437,
+              "median": 50.85077254058268,
+              "p75": 105.83840619811768,
+              "p95": 258.4918208673512
+            },
+            "adverse_excursion_bps": {
+              "n": 4169,
+              "mean": -74.27670358787421,
+              "min": -658.6599241466517,
+              "max": 0.0,
+              "p05": -223.24591428246654,
+              "p25": -99.61356805495925,
+              "median": -50.82800459091486,
+              "p75": -22.984102662324535,
+              "p95": -3.750966264685742
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2023": {
+        "candles": {
+          "candles": 525600,
+          "ready_candles": 525600,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 162050,
+            "no_lower_wick": 171579,
+            "no_upper_exact": 162050,
+            "no_lower_exact": 171579,
+            "both_wicks": 222842,
+            "same_color_two_wicks": 107987,
+            "above_ema": 233789,
+            "below_ema": 223420,
+            "ema_touch_or_straddle": 68391,
+            "bullish_clean_component": 46553,
+            "bearish_clean_component": 48542,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.3083143074581431,
+            "no_lower_wick": 0.32644406392694064,
+            "no_upper_exact": 0.3083143074581431,
+            "no_lower_exact": 0.32644406392694064,
+            "both_wicks": 0.4239764079147641,
+            "same_color_two_wicks": 0.20545471841704718,
+            "above_ema": 0.4448040334855403,
+            "below_ema": 0.425076103500761,
+            "ema_touch_or_straddle": 0.13011986301369863,
+            "bullish_clean_component": 0.08857115677321156,
+            "bearish_clean_component": 0.09235540334855404,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 525600,
+              "mean": 0.022219957265808755,
+              "min": 8.469886125794801e-09,
+              "max": 2.439585627331919,
+              "p05": 0.0011511323552360509,
+              "p25": 0.006050925730663792,
+              "median": 0.01421758094934411,
+              "p75": 0.028757630716847338,
+              "p95": 0.06836640385913952
+            },
+            "body_bps": {
+              "n": 525600,
+              "mean": 6.580990456621834,
+              "min": 3.385246253315268e-06,
+              "max": 920.8589703998939,
+              "p05": 0.37161548114324067,
+              "p25": 1.9360816038040867,
+              "median": 4.450656884626781,
+              "p75": 8.681038750638196,
+              "p95": 19.300977795916754
+            },
+            "range": {
+              "n": 525600,
+              "mean": 0.04575206692308357,
+              "min": 8.469886125794801e-09,
+              "max": 3.8120856273319177,
+              "p05": 0.00999999999999801,
+              "p25": 0.019999999999999574,
+              "median": 0.032420211050501635,
+              "p75": 0.05916006898360138,
+              "p95": 0.120000000000001
+            },
+            "range_bps": {
+              "n": 525600,
+              "mean": 13.463656708822336,
+              "min": 3.385246253315268e-06,
+              "max": 1438.930122612784,
+              "p05": 3.017956843216542,
+              "p25": 6.385181848006901,
+              "median": 10.433076533628629,
+              "p75": 16.75144655077663,
+              "p95": 33.29173699865969
+            },
+            "upper_wick": {
+              "n": 525600,
+              "mean": 0.011510919167628756,
+              "min": 0.0,
+              "max": 1.335000000000008,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.006740611582912948,
+              "p75": 0.01570466696706152,
+              "p95": 0.0400000000000027
+            },
+            "upper_wick_bps": {
+              "n": 525600,
+              "mean": 3.363583253268146,
+              "min": 0.0,
+              "max": 283.04887098484215,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 2.0222446916072823,
+              "p75": 4.921571090548032,
+              "p95": 11.2812248186935
+            },
+            "lower_wick": {
+              "n": 525600,
+              "mean": 0.01202119048964606,
+              "min": 0.0,
+              "max": 1.384999999999998,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.005537849947449658,
+              "p75": 0.016394900050861416,
+              "p95": 0.04250000000000398
+            },
+            "lower_wick_bps": {
+              "n": 525600,
+              "mean": 3.5190829989323578,
+              "min": 0.0,
+              "max": 518.07115221289,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 1.9580967299766803,
+              "p75": 4.9545829892652575,
+              "p95": 12.105560487449937
+            },
+            "body_ratio": {
+              "n": 525600,
+              "mean": 0.49005923215303127,
+              "min": 1.8604099594199793e-06,
+              "max": 1.0,
+              "p05": 0.054467525759737484,
+              "p25": 0.2740939287402203,
+              "median": 0.5168518376887697,
+              "p75": 0.6795073345110967,
+              "p95": 1.0
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 222842,
+            "mean": 0.24465819193065894,
+            "min": 1.8604099594199793e-06,
+            "max": 0.749977907824622,
+            "p05": 0.023295185493353743,
+            "p25": 0.11516325375561488,
+            "median": 0.2318083009757273,
+            "p75": 0.35892779441233486,
+            "p95": 0.4995096908011315
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 107987,
+            "mean": 0.2526640610857806,
+            "min": 1.8604099594199793e-06,
+            "max": 0.749977907824622,
+            "p05": 0.025434757893748605,
+            "p25": 0.12334316561592536,
+            "median": 0.24247325395283337,
+            "p75": 0.36725746059912084,
+            "p95": 0.5100247514632916
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              24117,
+              24268,
+              48030,
+              47319,
+              105991,
+              190993,
+              84882
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 50986,
+          "statuses": {
+            "observed_two_wick_terminal": 40850,
+            "censored_ema_zone_lost": 9252,
+            "censored_replaced_by_clean_run": 883,
+            "censored_split": 1
+          },
+          "observed_terminals": 40850,
+          "same_color_terminals": 17574,
+          "with_impulse_same_color": 7636,
+          "pullback_length": {
+            "n": 50986,
+            "mean": 1.865060997136469,
+            "min": 1.0,
+            "max": 14.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 50986,
+            "mean": 1.6596712823127917,
+            "min": 0.0,
+            "max": 40.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 40850,
+            "mean": 0.24824969400244798,
+            "min": 0.0,
+            "max": 18.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 2.0
+          },
+          "terminal_body_ratio": {
+            "n": 40850,
+            "mean": 0.2542759093827726,
+            "min": 4.48767139005249e-06,
+            "max": 0.7496763094457286,
+            "p05": 0.02451636963479106,
+            "p25": 0.12020774075530385,
+            "median": 0.2411811918277715,
+            "p75": 0.37395391670885497,
+            "p95": 0.5226107822379129
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 7637,
+            "observed": 7637,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 7637,
+              "mean": -0.20344892743510878,
+              "min": -62.370062370062925,
+              "max": 328.99246058944567,
+              "p05": -12.782547584936133,
+              "p25": -3.869969040248833,
+              "median": 0.0,
+              "p75": 3.5260930888569852,
+              "p95": 12.817226562821027
+            },
+            "favorable_excursion_bps": {
+              "n": 7637,
+              "mean": 4.659759257450311,
+              "min": 0.0,
+              "max": 356.40849897189855,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.1387319522924173,
+              "p75": 6.455777921239303,
+              "p95": 17.208940567128735
+            },
+            "adverse_excursion_bps": {
+              "n": 7637,
+              "mean": -4.655637975572986,
+              "min": -80.56133056133064,
+              "max": 0.0,
+              "p05": -16.371978213625127,
+              "p25": -6.727211570803915,
+              "median": -3.322259136211425,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 7637,
+            "observed": 7637,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 7637,
+              "mean": -0.18885967239571408,
+              "min": -129.74683544303645,
+              "max": 531.1857436600409,
+              "p05": -28.94449101832519,
+              "p25": -9.661835748790981,
+              "median": 0.0,
+              "p75": 7.993605115907965,
+              "p95": 28.114708734496173
+            },
+            "favorable_excursion_bps": {
+              "n": 7637,
+              "mean": 12.904615441671671,
+              "min": 0.0,
+              "max": 1014.3934201507888,
+              "p05": 0.0,
+              "p25": 3.3266799733877583,
+              "median": 7.7101002313018085,
+              "p75": 16.281341582546904,
+              "p95": 41.42336084092442
+            },
+            "adverse_excursion_bps": {
+              "n": 7637,
+              "mean": -12.21827735407138,
+              "min": -160.33954256071902,
+              "max": 0.0,
+              "p05": -37.7486974012009,
+              "p25": -16.54715940430096,
+              "median": -8.035355564484092,
+              "p75": -3.44234079173944,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 7637,
+            "observed": 7637,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 7637,
+              "mean": -0.5836082536793554,
+              "min": -242.5196850393707,
+              "max": 476.9577827908478,
+              "p05": -50.331807985148686,
+              "p25": -17.018379850238794,
+              "median": 0.0,
+              "p75": 15.174506828529166,
+              "p95": 49.00960589276781
+            },
+            "favorable_excursion_bps": {
+              "n": 7637,
+              "mean": 23.9979008580448,
+              "min": 0.0,
+              "max": 1014.3934201507888,
+              "p05": 0.0,
+              "p25": 6.263701847792902,
+              "median": 15.36570374923274,
+              "p75": 30.547676194632167,
+              "p95": 74.78245166602781
+            },
+            "adverse_excursion_bps": {
+              "n": 7637,
+              "mean": -22.521486069470473,
+              "min": -280.3149606299216,
+              "max": 0.0,
+              "p05": -65.86245273630587,
+              "p25": -31.290743155151233,
+              "median": -15.789473684211242,
+              "p75": -6.795786612300292,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 7637,
+            "observed": 7636,
+            "censored": 1,
+            "censor_reasons": {
+              "censored_split": 1
+            },
+            "directional_return_bps": {
+              "n": 7636,
+              "mean": -0.37110480866986745,
+              "min": -478.35990888382753,
+              "max": 1568.8405797101457,
+              "p05": -93.3980718549704,
+              "p25": -34.33869402249795,
+              "median": -3.783579265985715,
+              "p75": 27.640674507016794,
+              "p95": 96.89005629651776
+            },
+            "favorable_excursion_bps": {
+              "n": 7636,
+              "mean": 50.722485875161745,
+              "min": 0.0,
+              "max": 2257.2463768115945,
+              "p05": 0.0,
+              "p25": 13.591573224600584,
+              "median": 32.068413631434204,
+              "p75": 62.617833840028226,
+              "p95": 150.28403195683714
+            },
+            "adverse_excursion_bps": {
+              "n": 7636,
+              "mean": -46.87117686337199,
+              "min": -805.6338028169008,
+              "max": 0.0,
+              "p05": -128.80473901228206,
+              "p25": -63.816692507320525,
+              "median": -35.36444547085627,
+              "p75": -15.697355285733405,
+              "p95": -2.9779757196776724
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2024": {
+        "candles": {
+          "candles": 527040,
+          "ready_candles": 527040,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 152750,
+            "no_lower_wick": 153887,
+            "no_upper_exact": 152750,
+            "no_lower_exact": 153887,
+            "both_wicks": 234572,
+            "same_color_two_wicks": 112644,
+            "above_ema": 228120,
+            "below_ema": 224229,
+            "ema_touch_or_straddle": 74691,
+            "bullish_clean_component": 44395,
+            "bearish_clean_component": 45022,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.28982619914996965,
+            "no_lower_wick": 0.2919835306618094,
+            "no_upper_exact": 0.28982619914996965,
+            "no_lower_exact": 0.2919835306618094,
+            "both_wicks": 0.4450743776563449,
+            "same_color_two_wicks": 0.21372950819672132,
+            "above_ema": 0.43283242258652094,
+            "below_ema": 0.42544968123861565,
+            "ema_touch_or_straddle": 0.14171789617486338,
+            "bullish_clean_component": 0.08423459319975714,
+            "bearish_clean_component": 0.08542425622343655,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 527040,
+              "mean": 0.03450818335853504,
+              "min": 7.105427357601002e-15,
+              "max": 5.233560340834146,
+              "p05": 0.0015824940652990449,
+              "p25": 0.0083738242066147,
+              "median": 0.019693124581037225,
+              "p75": 0.040866317665218865,
+              "p95": 0.11565966006440609
+            },
+            "body_bps": {
+              "n": 527040,
+              "mean": 10.048396407834696,
+              "min": 1.8664111787762025e-12,
+              "max": 1345.1467758522406,
+              "p05": 0.5716009588356414,
+              "p25": 2.9680039531611757,
+              "median": 6.745362373872194,
+              "p75": 13.041154017391234,
+              "p95": 30.089345475500814
+            },
+            "range": {
+              "n": 527040,
+              "mean": 0.07267494643656001,
+              "min": 7.105427357601002e-15,
+              "max": 7.428560340834153,
+              "p05": 0.010000000000001563,
+              "p25": 0.02991849259339574,
+              "median": 0.0489100498476045,
+              "p75": 0.08478955341029337,
+              "p95": 0.21993579432116575
+            },
+            "range_bps": {
+              "n": 527040,
+              "mean": 21.029391235288983,
+              "min": 1.8664111787762025e-12,
+              "max": 1700.7881802381069,
+              "p05": 4.489841733079611,
+              "p25": 9.9391228724063,
+              "median": 16.12441044174971,
+              "p75": 25.8843830888707,
+              "p95": 52.752082899446215
+            },
+            "upper_wick": {
+              "n": 527040,
+              "mean": 0.018948941704894817,
+              "min": 0.0,
+              "max": 2.122499999999995,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.00999999999999801,
+              "p75": 0.02365350210572359,
+              "p95": 0.07000000000000028
+            },
+            "upper_wick_bps": {
+              "n": 527040,
+              "mean": 5.42813796346801,
+              "min": 0.0,
+              "max": 500.7372456502495,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.475842891900594,
+              "p75": 7.68961901432962,
+              "p95": 18.070112034693587
+            },
+            "lower_wick": {
+              "n": 527040,
+              "mean": 0.019217821373130165,
+              "min": 0.0,
+              "max": 3.5675000000000097,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.00999999999999801,
+              "p75": 0.02499999999999858,
+              "p95": 0.07249999999999801
+            },
+            "lower_wick_bps": {
+              "n": 527040,
+              "mean": 5.5528568639862765,
+              "min": 0.0,
+              "max": 891.8722031428875,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.4966922644028666,
+              "p75": 7.78210116731413,
+              "p95": 18.512819721904844
+            },
+            "body_ratio": {
+              "n": 527040,
+              "mean": 0.4678427836929779,
+              "min": 3.570125173268799e-06,
+              "max": 1.0,
+              "p05": 0.050944589371842465,
+              "p25": 0.26138090666924024,
+              "median": 0.5012060493808301,
+              "p75": 0.655683565104919,
+              "p95": 0.8413455529829841
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 234572,
+            "mean": 0.2431865149384803,
+            "min": 3.570125173268799e-06,
+            "max": 0.749977943936269,
+            "p05": 0.02285604484459074,
+            "p25": 0.11414936857603988,
+            "median": 0.23165041609088488,
+            "p75": 0.35768850265428354,
+            "p95": 0.49724221224503345
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 112644,
+            "mean": 0.2524188073830294,
+            "min": 5.257726121143825e-06,
+            "max": 0.7497781230642424,
+            "p05": 0.025030556074451125,
+            "p25": 0.12318759388236128,
+            "median": 0.24395344186441348,
+            "p75": 0.36896634846143106,
+            "p95": 0.5045489449536774
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              25921,
+              25393,
+              50306,
+              49489,
+              111457,
+              200383,
+              64091
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 48501,
+          "statuses": {
+            "observed_two_wick_terminal": 38747,
+            "censored_ema_zone_lost": 9157,
+            "censored_replaced_by_clean_run": 597
+          },
+          "observed_terminals": 38747,
+          "same_color_terminals": 16029,
+          "with_impulse_same_color": 6234,
+          "pullback_length": {
+            "n": 48501,
+            "mean": 1.8436114719284138,
+            "min": 1.0,
+            "max": 14.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 48501,
+            "mean": 1.5743799096925837,
+            "min": 0.0,
+            "max": 30.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 8.0
+          },
+          "intermediate_count": {
+            "n": 38747,
+            "mean": 0.20205435259503962,
+            "min": 0.0,
+            "max": 16.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 38747,
+            "mean": 0.24671337733140355,
+            "min": 5.257726121143825e-06,
+            "max": 0.7495980682654385,
+            "p05": 0.023408165288181324,
+            "p25": 0.11480284889759346,
+            "median": 0.23405670716397042,
+            "p75": 0.36196045605935256,
+            "p95": 0.5112483278135258
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.49206689982076385,
+              "min": -125.49914432401499,
+              "max": 140.93668690372985,
+              "p05": -20.710896261275312,
+              "p25": -6.459956397378008,
+              "median": 0.0,
+              "p75": 4.793576658971843,
+              "p95": 18.847181639411787
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 7.4486234596063134,
+              "min": 0.0,
+              "max": 199.64419845819316,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.271678769757203,
+              "p75": 9.655229075133942,
+              "p95": 26.00780234070177
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -7.476992271768314,
+              "min": -150.43808894032117,
+              "max": 0.0,
+              "p05": -25.61774817361373,
+              "p25": -10.028414679386922,
+              "median": -4.419889718623171,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.7392754316726791,
+              "min": -289.6551724137941,
+              "max": 436.8452263293121,
+              "p05": -42.14696817556168,
+              "p25": -14.419613167811207,
+              "median": 0.0,
+              "p75": 11.390010116168469,
+              "p95": 43.32092124260538
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 19.047573239541894,
+              "min": 0.0,
+              "max": 573.1775180856969,
+              "p05": 0.0,
+              "p25": 4.334633723448444,
+              "median": 11.32844957749124,
+              "p75": 25.003733195414213,
+              "p95": 62.580719557195394
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -18.87844961101318,
+              "min": -334.48275862068886,
+              "max": 0.0,
+              "p05": -56.84916890503288,
+              "p25": -25.719047802880148,
+              "median": -13.198418744657104,
+              "p75": -4.850248789232403,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -0.8427329664186052,
+              "min": -555.1724137931036,
+              "max": 1151.6626115166262,
+              "p05": -74.49931589696767,
+              "p25": -25.149851329266948,
+              "median": 0.0,
+              "p75": 21.301541162764003,
+              "p95": 72.8581958695462
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 35.74672467370592,
+              "min": 0.0,
+              "max": 1923.4576047509067,
+              "p05": 0.0,
+              "p25": 8.90538048110956,
+              "median": 22.480329711502822,
+              "p75": 45.22683257389026,
+              "p95": 109.13842750562111
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -33.896577734536535,
+              "min": -617.2413793103449,
+              "max": 0.0,
+              "p05": -97.2140613940851,
+              "p25": -45.33128325120567,
+              "median": -25.093204487488528,
+              "p75": -10.733932708992256,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 6234,
+            "observed": 6234,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 6234,
+              "mean": -1.6549159071554036,
+              "min": -1307.3659853451613,
+              "max": 1346.9518033833383,
+              "p05": -144.03319400992584,
+              "p25": -50.2467486337313,
+              "median": -4.408199464758233,
+              "p75": 41.13470351242266,
+              "p95": 151.03710538446538
+            },
+            "favorable_excursion_bps": {
+              "n": 6234,
+              "mean": 74.35246254382292,
+              "min": 0.0,
+              "max": 2073.6086175942546,
+              "p05": 3.353454057679617,
+              "p25": 21.272072661308037,
+              "median": 48.61024856480711,
+              "p75": 91.44325420369691,
+              "p95": 224.25680991770645
+            },
+            "adverse_excursion_bps": {
+              "n": 6234,
+              "mean": -70.31064591113683,
+              "min": -1396.0663324334744,
+              "max": 0.0,
+              "p05": -198.70117763561956,
+              "p25": -93.0155321959017,
+              "median": -51.3022888713488,
+              "p75": -24.785078157239237,
+              "p95": -4.2740529392297795
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2025": {
+        "candles": {
+          "candles": 525600,
+          "ready_candles": 525600,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 150583,
+            "no_lower_wick": 149205,
+            "no_upper_exact": 150583,
+            "no_lower_exact": 149205,
+            "both_wicks": 234779,
+            "same_color_two_wicks": 113155,
+            "above_ema": 226632,
+            "below_ema": 228757,
+            "ema_touch_or_straddle": 70211,
+            "bullish_clean_component": 44303,
+            "bearish_clean_component": 45618,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.2864973363774734,
+            "no_lower_wick": 0.2838755707762557,
+            "no_upper_exact": 0.2864973363774734,
+            "no_lower_exact": 0.2838755707762557,
+            "both_wicks": 0.44668759512937595,
+            "same_color_two_wicks": 0.21528729071537292,
+            "above_ema": 0.43118721461187215,
+            "below_ema": 0.43523021308980214,
+            "ema_touch_or_straddle": 0.13358257229832574,
+            "bullish_clean_component": 0.08429033485540335,
+            "bearish_clean_component": 0.08679223744292237,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 525600,
+              "mean": 0.2322336739368633,
+              "min": 7.617376240887097e-08,
+              "max": 35.83377207503588,
+              "p05": 0.003092644226547492,
+              "p25": 0.016463498952371758,
+              "median": 0.04057552696156819,
+              "p75": 0.12288022730574966,
+              "p95": 1.1910938844628332
+            },
+            "body_bps": {
+              "n": 525600,
+              "mean": 12.634326696458324,
+              "min": 1.7047498203212832e-06,
+              "max": 1189.6218119055784,
+              "p05": 0.6676789254166663,
+              "p25": 3.474039816044855,
+              "median": 7.873466227848535,
+              "p75": 15.614234295228197,
+              "p95": 39.960255752807946
+            },
+            "range": {
+              "n": 525600,
+              "mean": 0.528251022599772,
+              "min": 2.351703827230267e-07,
+              "max": 74.95127207503583,
+              "p05": 0.01999999999999602,
+              "p25": 0.04792361764729769,
+              "median": 0.08790360159006028,
+              "p75": 0.3724346514136325,
+              "p95": 2.6000000000000227
+            },
+            "range_bps": {
+              "n": 525600,
+              "mean": 27.26811512409118,
+              "min": 5.5648457814251474e-05,
+              "max": 2344.1857247444705,
+              "p05": 4.913703089491586,
+              "p25": 11.170781703637857,
+              "median": 18.893670620342156,
+              "p75": 32.9108075406768,
+              "p95": 76.32871513115045
+            },
+            "upper_wick": {
+              "n": 525600,
+              "mean": 0.14950451592419148,
+              "min": 0.0,
+              "max": 39.11749999999995,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.017499999999998295,
+              "p75": 0.05536066008768792,
+              "p95": 0.8400000000000034
+            },
+            "upper_wick_bps": {
+              "n": 525600,
+              "mean": 7.33259107843147,
+              "min": 0.0,
+              "max": 1178.1801922646982,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 3.929072078347361,
+              "p75": 9.489743776919768,
+              "p95": 26.900785014661828
+            },
+            "lower_wick": {
+              "n": 525600,
+              "mean": 0.14651283273871712,
+              "min": 0.0,
+              "max": 21.799999999999983,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 0.0175000000000054,
+              "p75": 0.05750000000000455,
+              "p95": 0.8202299569365701
+            },
+            "lower_wick_bps": {
+              "n": 525600,
+              "mean": 7.301197349201385,
+              "min": 0.0,
+              "max": 1176.8516519110335,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.051316677920478,
+              "p75": 9.645859170455171,
+              "p95": 26.14610058090234
+            },
+            "body_ratio": {
+              "n": 525600,
+              "mean": 0.4638760320197345,
+              "min": 1.7714828467179013e-07,
+              "max": 1.0,
+              "p05": 0.051767494058561306,
+              "p25": 0.26168661237557467,
+              "median": 0.4967951078380566,
+              "p75": 0.6502924020905336,
+              "p95": 0.8297017617422786
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 234779,
+            "mean": 0.24278343514568188,
+            "min": 1.7714828467179013e-07,
+            "max": 0.749964837618105,
+            "p05": 0.02306222493350476,
+            "p25": 0.1160196490242449,
+            "median": 0.2335666192477476,
+            "p75": 0.3568597459212798,
+            "p95": 0.49328898045712805
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 113155,
+            "mean": 0.2513250367584846,
+            "min": 2.129951148788268e-06,
+            "max": 0.7494780410299099,
+            "p05": 0.025459264224946147,
+            "p25": 0.12468716804877136,
+            "median": 0.2447535598777422,
+            "p75": 0.366075193314599,
+            "p95": 0.499791752091278
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              25353,
+              25260,
+              50300,
+              49473,
+              114762,
+              199982,
+              60470
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 48091,
+          "statuses": {
+            "observed_two_wick_terminal": 38649,
+            "censored_ema_zone_lost": 9018,
+            "censored_replaced_by_clean_run": 424
+          },
+          "observed_terminals": 38649,
+          "same_color_terminals": 15693,
+          "with_impulse_same_color": 5726,
+          "pullback_length": {
+            "n": 48091,
+            "mean": 1.8698093198311534,
+            "min": 1.0,
+            "max": 14.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 48091,
+            "mean": 1.5177060156786093,
+            "min": 0.0,
+            "max": 38.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 7.0
+          },
+          "intermediate_count": {
+            "n": 38649,
+            "mean": 0.17620119537374834,
+            "min": 0.0,
+            "max": 16.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 1.0
+          },
+          "terminal_body_ratio": {
+            "n": 38649,
+            "mean": 0.24225832117314708,
+            "min": 4.0290509180823985e-05,
+            "max": 0.749964837618105,
+            "p05": 0.022371253038873877,
+            "p25": 0.11395369685282412,
+            "median": 0.23195181868512477,
+            "p75": 0.3573343357624838,
+            "p95": 0.4972832313081741
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 5726,
+            "observed": 5726,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 5726,
+              "mean": -0.25090761194833927,
+              "min": -167.37774860518527,
+              "max": 334.34650455927084,
+              "p05": -22.04099625302991,
+              "p25": -6.5432184120123305,
+              "median": 0.0,
+              "p75": 5.6131159902203525,
+              "p95": 21.9681935858404
+            },
+            "favorable_excursion_bps": {
+              "n": 5726,
+              "mean": 9.090689024150697,
+              "min": 0.0,
+              "max": 795.0746601292624,
+              "p05": 0.0,
+              "p25": 0.0,
+              "median": 4.620538354365156,
+              "p75": 11.116515133520743,
+              "p95": 33.10257502775971
+            },
+            "adverse_excursion_bps": {
+              "n": 5726,
+              "mean": -8.707880223635057,
+              "min": -229.73416475221552,
+              "max": 0.0,
+              "p05": -30.301890165904123,
+              "p25": -11.205739025266226,
+              "median": -5.069708491761693,
+              "p75": 0.0,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 5726,
+            "observed": 5726,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 5726,
+              "mean": -0.9099611990506882,
+              "min": -448.82914137033936,
+              "max": 399.7653369091525,
+              "p05": -51.56359544368855,
+              "p25": -16.129222757653714,
+              "median": 0.0,
+              "p75": 13.676105424886288,
+              "p95": 49.35661103992683
+            },
+            "favorable_excursion_bps": {
+              "n": 5726,
+              "mean": 22.993602261956692,
+              "min": 0.0,
+              "max": 795.0746601292624,
+              "p05": 0.0,
+              "p25": 4.998125937032693,
+              "median": 13.178704131144304,
+              "p75": 28.986370458354283,
+              "p95": 77.290022462492
+            },
+            "adverse_excursion_bps": {
+              "n": 5726,
+              "mean": -22.527128635523106,
+              "min": -502.4934952298365,
+              "max": 0.0,
+              "p05": -71.07957064564962,
+              "p25": -28.562949891622893,
+              "median": -14.76053838401381,
+              "p75": -5.784528369106312,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 5726,
+            "observed": 5726,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 5726,
+              "mean": -1.3492477062624402,
+              "min": -1262.4674761491783,
+              "max": 960.0194434317655,
+              "p05": -84.65805975635621,
+              "p25": -29.036607801680717,
+              "median": -2.3998080153597723,
+              "p75": 25.103552284450604,
+              "p95": 87.18632268691906
+            },
+            "favorable_excursion_bps": {
+              "n": 5726,
+              "mean": 42.73261645272212,
+              "min": 0.0,
+              "max": 1352.5337222019673,
+              "p05": 0.0,
+              "p25": 10.823089433978916,
+              "median": 26.555781129632415,
+              "p75": 52.71987788931426,
+              "p95": 137.17869384801156
+            },
+            "adverse_excursion_bps": {
+              "n": 5726,
+              "mean": -41.39851669481168,
+              "min": -1437.5542064180413,
+              "max": 0.0,
+              "p05": -122.49659025173027,
+              "p25": -52.50656359393313,
+              "median": -27.813188460216743,
+              "p75": -11.927176073275037,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 5726,
+            "observed": 5726,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 5726,
+              "mean": -0.10258224398506789,
+              "min": -3320.1431049436246,
+              "max": 1757.4556111015338,
+              "p05": -165.80175312261414,
+              "p25": -54.41067128319488,
+              "median": -1.4090862495885759,
+              "p75": 50.08063873399471,
+              "p95": 172.94210788424192
+            },
+            "favorable_excursion_bps": {
+              "n": 5726,
+              "mean": 88.48317510463664,
+              "min": 0.0,
+              "max": 3650.232718496811,
+              "p05": 3.2294589332224066,
+              "p25": 24.95710877825491,
+              "median": 57.7454216665757,
+              "p75": 112.43906807002713,
+              "p95": 271.02325038243447
+            },
+            "adverse_excursion_bps": {
+              "n": 5726,
+              "mean": -83.96627889588734,
+              "min": -3694.709453599305,
+              "max": 0.0,
+              "p05": -248.23669475695448,
+              "p25": -107.4770364539357,
+              "median": -57.72178280620044,
+              "p75": -26.924405240959793,
+              "p95": -4.8455963250057525
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      },
+      "2026": {
+        "candles": {
+          "candles": 469440,
+          "ready_candles": 469440,
+          "warmup_excluded": 0,
+          "counts": {
+            "no_upper_wick": 116975,
+            "no_lower_wick": 112043,
+            "no_upper_exact": 116975,
+            "no_lower_exact": 112043,
+            "both_wicks": 240422,
+            "same_color_two_wicks": 115208,
+            "above_ema": 192890,
+            "below_ema": 209141,
+            "ema_touch_or_straddle": 67409,
+            "bullish_clean_component": 33900,
+            "bearish_clean_component": 35184,
+            "zero_range": 0
+          },
+          "frequencies": {
+            "no_upper_wick": 0.2491798738922972,
+            "no_lower_wick": 0.23867373892297206,
+            "no_upper_exact": 0.2491798738922972,
+            "no_lower_exact": 0.23867373892297206,
+            "both_wicks": 0.5121463871847307,
+            "same_color_two_wicks": 0.24541581458759373,
+            "above_ema": 0.4108938309475119,
+            "below_ema": 0.44551167348329923,
+            "ema_touch_or_straddle": 0.14359449556918882,
+            "bullish_clean_component": 0.07221370143149285,
+            "bearish_clean_component": 0.07494887525562373,
+            "zero_range": 0.0
+          },
+          "distributions": {
+            "body": {
+              "n": 469440,
+              "mean": 0.6805079082273855,
+              "min": 3.0072760637267493e-07,
+              "max": 61.7712703586667,
+              "p05": 0.02775133107189163,
+              "p25": 0.14774894754151546,
+              "median": 0.3608828189711062,
+              "p75": 0.813681243210425,
+              "p95": 2.3855034095920926
+            },
+            "body_bps": {
+              "n": 469440,
+              "mean": 10.936739627310331,
+              "min": 2.439555017767083e-06,
+              "max": 820.6543758188499,
+              "p05": 0.6381328557423278,
+              "p25": 3.291858094609978,
+              "median": 7.347086415565229,
+              "p75": 14.073565059544578,
+              "p95": 32.51689973803163
+            },
+            "range": {
+              "n": 469440,
+              "mean": 1.534226934380096,
+              "min": 0.009999999999990905,
+              "max": 137.0787703586667,
+              "p05": 0.2484647403485468,
+              "p25": 0.5299999999999727,
+              "median": 0.9691779469252424,
+              "p75": 1.9200000000000728,
+              "p95": 4.542793224621722
+            },
+            "range_bps": {
+              "n": 469440,
+              "mean": 24.62408248997515,
+              "min": 0.18221491337941984,
+              "max": 1821.1426132816093,
+              "p05": 6.888008800505643,
+              "p25": 12.648680353057834,
+              "median": 19.147917663953994,
+              "p75": 29.52502128965844,
+              "p95": 58.96822157403758
+            },
+            "upper_wick": {
+              "n": 469440,
+              "mean": 0.4306898143272955,
+              "min": 0.0,
+              "max": 45.48500000000013,
+              "p05": 0.0,
+              "p25": 0.0012046006769281803,
+              "median": 0.21358266960162098,
+              "p75": 0.5375000000000227,
+              "p95": 1.6225000000000591
+            },
+            "upper_wick_bps": {
+              "n": 469440,
+              "mean": 6.890164901784172,
+              "min": 0.0,
+              "max": 848.5096183819508,
+              "p05": 0.0,
+              "p25": 0.026349647499673046,
+              "median": 4.886384692997002,
+              "p75": 9.58462500831801,
+              "p95": 21.316283766076
+            },
+            "lower_wick": {
+              "n": 469440,
+              "mean": 0.4230292118254152,
+              "min": 0.0,
+              "max": 75.3075,
+              "p05": 0.0,
+              "p25": 0.014924050558128954,
+              "median": 0.21999999999997044,
+              "p75": 0.5399999999999636,
+              "p95": 1.5600000000000591
+            },
+            "lower_wick_bps": {
+              "n": 469440,
+              "mean": 6.797177960880654,
+              "min": 0.0,
+              "max": 1000.4882374627596,
+              "p05": 0.0,
+              "p25": 0.3455294018609689,
+              "median": 4.939139346500044,
+              "p75": 9.49706861986747,
+              "p95": 20.7603516143052
+            },
+            "body_ratio": {
+              "n": 469440,
+              "mean": 0.4180825334210017,
+              "min": 2.4058208509813993e-07,
+              "max": 0.9976271635871419,
+              "p05": 0.04471971789291056,
+              "p25": 0.2252460873754224,
+              "median": 0.44786382033802585,
+              "p75": 0.6009992231041019,
+              "p95": 0.7500524120762337
+            }
+          },
+          "two_wick_body_ratio": {
+            "n": 240422,
+            "mean": 0.23978347082344334,
+            "min": 2.4058208509813993e-07,
+            "max": 0.7496829722311829,
+            "p05": 0.023055766106730616,
+            "p25": 0.11418255001976801,
+            "median": 0.2307464803851684,
+            "p75": 0.35279213458155445,
+            "p95": 0.4899029469377227
+          },
+          "same_color_two_wick_body_ratio": {
+            "n": 115208,
+            "mean": 0.24762526402619545,
+            "min": 2.4058208509813993e-07,
+            "max": 0.7496829722311829,
+            "p05": 0.025297393047960883,
+            "p25": 0.12282533254576901,
+            "median": 0.24165957352346146,
+            "p75": 0.36136800829134186,
+            "p95": 0.49457469010167643
+          },
+          "body_ratio_histogram": {
+            "edges": [
+              0,
+              0.05,
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              0.75,
+              1
+            ],
+            "counts": [
+              26283,
+              26393,
+              51862,
+              50804,
+              114723,
+              175882,
+              23493
+            ],
+            "zero_range_excluded": 0
+          }
+        },
+        "sequences": {
+          "clean_runs": 38572,
+          "statuses": {
+            "observed_two_wick_terminal": 31767,
+            "censored_ema_zone_lost": 6788,
+            "censored_replaced_by_clean_run": 17
+          },
+          "observed_terminals": 31767,
+          "same_color_terminals": 11217,
+          "with_impulse_same_color": 3223,
+          "pullback_length": {
+            "n": 38572,
+            "mean": 1.7910401327387742,
+            "min": 1.0,
+            "max": 13.0,
+            "p05": 1.0,
+            "p25": 1.0,
+            "median": 1.0,
+            "p75": 2.0,
+            "p95": 4.0
+          },
+          "impulse_count": {
+            "n": 38572,
+            "mean": 1.2957845068961942,
+            "min": 0.0,
+            "max": 28.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 2.0,
+            "p95": 7.0
+          },
+          "intermediate_count": {
+            "n": 31767,
+            "mean": 0.05027229514905405,
+            "min": 0.0,
+            "max": 11.0,
+            "p05": 0.0,
+            "p25": 0.0,
+            "median": 0.0,
+            "p75": 0.0,
+            "p95": 0.0
+          },
+          "terminal_body_ratio": {
+            "n": 31767,
+            "mean": 0.24261080802209278,
+            "min": 2.0916849052810726e-05,
+            "max": 0.7263031774813481,
+            "p05": 0.023012730707152273,
+            "p25": 0.1137802565363843,
+            "median": 0.23054547085585625,
+            "p75": 0.35738494394074627,
+            "p95": 0.5019426964811555
+          },
+          "exact_pattern_count": null,
+          "exact_pattern_count_reason": "Doji and sequence definitions unresolved; runs are descriptive conventions"
+        },
+        "forward": [
+          {
+            "horizon_minutes": 1,
+            "sample_size": 3223,
+            "observed": 3223,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3223,
+              "mean": -0.6852825053252916,
+              "min": -120.74241008446451,
+              "max": 162.02261194694367,
+              "p05": -23.316540416315036,
+              "p25": -8.393554317873697,
+              "median": -0.9686543453824026,
+              "p75": 6.121671058023637,
+              "p95": 23.64751440796297
+            },
+            "favorable_excursion_bps": {
+              "n": 3223,
+              "mean": 10.302364985129651,
+              "min": 0.0,
+              "max": 235.91204486780094,
+              "p05": 0.0,
+              "p25": 1.7388896451869806,
+              "median": 5.730440097799772,
+              "p75": 13.01848238037917,
+              "p95": 34.105662308363314
+            },
+            "adverse_excursion_bps": {
+              "n": 3223,
+              "mean": -10.176315338921375,
+              "min": -127.52157423184806,
+              "max": 0.0,
+              "p05": -29.912870086028498,
+              "p25": -13.915857036037039,
+              "median": -7.22879124283704,
+              "p75": -2.6227490090952044,
+              "p95": 0.0
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 5,
+            "sample_size": 3223,
+            "observed": 3223,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3223,
+              "mean": -1.8035957566756986,
+              "min": -409.87994188269374,
+              "max": 379.0392567257128,
+              "p05": -52.281892562053955,
+              "p25": -18.27976761486383,
+              "median": -3.5514166206296327,
+              "p75": 12.503127618641585,
+              "p95": 52.00374896114375
+            },
+            "favorable_excursion_bps": {
+              "n": 3223,
+              "mean": 25.144124801251895,
+              "min": 0.0,
+              "max": 434.7826086956519,
+              "p05": 0.0,
+              "p25": 5.482288583013584,
+              "median": 14.936708860758818,
+              "p75": 31.07665216541877,
+              "p95": 83.19639815758593
+            },
+            "adverse_excursion_bps": {
+              "n": 3223,
+              "mean": -24.590825180991178,
+              "min": -675.2313221686923,
+              "max": 0.0,
+              "p05": -69.48033544538367,
+              "p25": -32.54687917805921,
+              "median": -17.67304860088359,
+              "p75": -8.302460020226942,
+              "p95": -0.919394114738964
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 15,
+            "sample_size": 3223,
+            "observed": 3223,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3223,
+              "mean": -1.7734311385366988,
+              "min": -392.8016109709165,
+              "max": 548.0296832281529,
+              "p05": -86.1514176657111,
+              "p25": -31.0312305995758,
+              "median": -4.4595488166809805,
+              "p75": 22.9995600844074,
+              "p95": 93.11506647139393
+            },
+            "favorable_excursion_bps": {
+              "n": 3223,
+              "mean": 45.03904539333767,
+              "min": 0.0,
+              "max": 1573.1699796493092,
+              "p05": 0.98384428351217,
+              "p25": 11.20978005106743,
+              "median": 27.9805352798046,
+              "p75": 57.73123139521108,
+              "p95": 143.6500958283736
+            },
+            "adverse_excursion_bps": {
+              "n": 3223,
+              "mean": -42.85813342440371,
+              "min": -675.2313221686923,
+              "max": 0.0,
+              "p05": -118.37192932957583,
+              "p25": -56.3510634586506,
+              "median": -32.17214249244926,
+              "p75": -15.752504762521768,
+              "p95": -2.8149591495969686
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          },
+          {
+            "horizon_minutes": 60,
+            "sample_size": 3223,
+            "observed": 3223,
+            "censored": 0,
+            "censor_reasons": {},
+            "directional_return_bps": {
+              "n": 3223,
+              "mean": -0.04840892543504145,
+              "min": -814.2272477954515,
+              "max": 914.0797331468242,
+              "p05": -173.6287180307804,
+              "p25": -61.59145515799547,
+              "median": -6.145374990781383,
+              "p75": 50.497013365347065,
+              "p95": 198.74470409336652
+            },
+            "favorable_excursion_bps": {
+              "n": 3223,
+              "mean": 92.86289898968097,
+              "min": 0.0,
+              "max": 1573.1699796493092,
+              "p05": 3.498060397460701,
+              "p25": 24.29679500065507,
+              "median": 59.6653357857424,
+              "p75": 118.59098243544696,
+              "p95": 295.8276712433364
+            },
+            "adverse_excursion_bps": {
+              "n": 3223,
+              "mean": -85.88248212775277,
+              "min": -833.2137884477453,
+              "max": 0.0,
+              "p05": -241.41481416013764,
+              "p25": -111.34433531414967,
+              "median": -62.01996927803211,
+              "p75": -31.171666940917888,
+              "p95": -6.662099109825521
+            },
+            "independent_observations": null,
+            "independence_reason": "Potential serial and overlapping-window dependence"
+          }
+        ]
+      }
+    },
+    "year_assignment": "candles by candle open, sequences by run start, markouts by terminal time"
+  },
+  "unavailable_metrics": {
+    "original_pattern_count": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "outcome_sample_size": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "observed_win_proportion": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "win_rate_confidence_interval": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "independent_observations": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    },
+    "p_value_075": {
+      "value": null,
+      "reason": "Original outcome/Doji definitions unresolved"
+    }
+  },
+  "unresolved_definitions": {
+    "minimum_pullback_candles": null,
+    "minimum_impulse_candles": null,
+    "pullback_color_continuity": null,
+    "maximum_doji_body_ratio": null,
+    "doji_wick_ratio": null,
+    "intermediate_characteristics": null,
+    "maximum_intermediate_candles": null,
+    "entry_price": null,
+    "stop_loss": null,
+    "outcome_labeling": null,
+    "maximum_observation_period": null,
+    "ambiguous_intrabar_handling": null
+  }
+}

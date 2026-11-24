@@ -1,0 +1,67 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>So sánh ba sản phẩm · HA / EMA 100 · M1</title><style>body{font:16px/1.6 system-ui,sans-serif;color:#193042;background:#f2f5f7;margin:0}
+main{max-width:1180px;margin:auto;padding:24px}section{background:white;padding:20px;margin:20px 0;border-radius:8px}
+h1{line-height:1.2}h2{line-height:1.3}a{color:#175c99}.notice{background:#fff2d3;border-left:5px solid #b37a10;padding:14px}
+.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:10px;border-bottom:1px solid #d5dfe7}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}li{overflow-wrap:anywhere}.metric{font-size:26px;font-weight:700}
+@media(max-width:500px){main{padding:12px}section{padding:12px}h1{font-size:27px}}</style><main><h1>So sánh ba sản phẩm · HA / EMA 100 · M1</h1>
+<p class="notice" id="status">Win rate 75%: chưa thể kiểm chứng. Chưa có định nghĩa Doji, entry, SL và outcome đầy đủ.
+Số chuỗi hình thái và biến động sau sự kiện không phải số lệnh hoặc tỷ lệ thắng.</p><p><a href="BTCUSDT.html">BTCUSDT</a> · <a href="ZECUSDT.html">ZECUSDT</a> · <a href="XAUUSDT.html">XAUUSDT</a></p><section><h2>So sánh trên snapshot hiện có</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sản phẩm</th>
+      <th>M1 hợp lệ</th>
+      <th>Nến nghiên cứu</th>
+      <th>Đủ warm-up</th>
+      <th>Clean runs (quy ước)</th>
+      <th>Terminal cùng màu</th>
+      <th>Có impulse + cùng màu</th>
+      <th>Win rate gốc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BTCUSDT</td>
+      <td>3627360</td>
+      <td>3627360</td>
+      <td>3626861</td>
+      <td>325916</td>
+      <td>107002</td>
+      <td>36564</td>
+      <td>Chưa xác định</td>
+    </tr>
+    <tr>
+      <td>ZECUSDT</td>
+      <td>3575039</td>
+      <td>3575039</td>
+      <td>3574540</td>
+      <td>315826</td>
+      <td>100982</td>
+      <td>37200</td>
+      <td>Chưa xác định</td>
+    </tr>
+    <tr>
+      <td>XAUUSDT</td>
+      <td>499195</td>
+      <td>463680</td>
+      <td>463181</td>
+      <td>37968</td>
+      <td>13110</td>
+      <td>4394</td>
+      <td>Chưa xác định</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>Clean runs là các đoạn theo convention mô tả. Không diễn giải số lượng đó là tín hiệu đã xác nhận hoặc số trade.</p></section>
+<section><h2>Phạm vi và kết luận</h2><p>Ba sản phẩm đã được kiểm tra lại dữ liệu, tái tính HA/EMA và phân tích riêng.
+Không tải lại; không có mô phỏng entry/SL/TP. Chưa thể chấp nhận hoặc bác bỏ win rate 75% của tác giả.</p>
+<p>Không có Forex hoặc vàng giao ngay; chỉ ba perpetual còn trong mẫu hiện có nên có selection/survivorship bias.
+Lịch đóng cửa chưa xác minh; zero-volume không đồng nghĩa thanh khoản thực thi. OOS hồi cứu từng được xem ở nghiên cứu trước.
+Chuỗi có thể phụ thuộc và cửa sổ tương lai có thể overlap. Không shuffle hoặc tối ưu tham số/horizon theo kết quả.
+Các phân bố nhiều chiều là exploratory, không phải kiểm định significance. Chi phí, spread, funding, slippage và
+thứ tự intrabar chưa đủ để tính outcome. HA tổng hợp không dùng làm giá khớp lệnh.</p></section><section><h2>Những định nghĩa cần bổ sung</h2><ul><li>minimum_pullback_candles: chưa xác định</li><li>minimum_impulse_candles: chưa xác định</li><li>pullback_color_continuity: chưa xác định</li><li>maximum_doji_body_ratio: chưa xác định</li><li>doji_wick_ratio: chưa xác định</li><li>intermediate_characteristics: chưa xác định</li><li>maximum_intermediate_candles: chưa xác định</li><li>entry_price: chưa xác định</li><li>stop_loss: chưa xác định</li><li>outcome_labeling: chưa xác định</li><li>maximum_observation_period: chưa xác định</li><li>ambiguous_intrabar_handling: chưa xác định</li></ul></section>
+<section><h2>Kiểm thử</h2><p>233 tests passed nếu failures/errors bằng 0:
+failures=0, errors=0.</p>
+<p><a href="summary.json">JSON so sánh</a> · <a href="audit.json">Đối chiếu số liệu</a> · <a href="browser_qa.json">Browser QA</a></p></section>
+<footer>Nguồn: Binance Vision USD-M perpetual, snapshot cục bộ. Dữ liệu/phân tích phái sinh theo CC BY-NC-SA 4.0.
+Chỉ nghiên cứu lịch sử offline; không tài khoản hoặc đặt lệnh thật.</footer></main></html>

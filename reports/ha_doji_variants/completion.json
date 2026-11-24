@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "combinations": 15,
+  "scenarios": 45,
+  "tests": {
+    "tests": 259,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

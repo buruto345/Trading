@@ -1,0 +1,1061 @@
+<!doctype html><html lang="vi"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nghiên cứu HA – EMA 100 M1</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;margin:0;color:#172b3a;background:#f5f7f9}
+main{max-width:1200px;margin:auto;padding:24px}h1{line-height:1.2}section{background:white;padding:20px;margin:20px 0;border-radius:8px}
+.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:10px;text-align:left;border-bottom:1px solid #ccd5df}
+.status{border-left:5px solid #b07816;padding:14px;background:#fff4d9}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}li{overflow-wrap:anywhere}
+@media(max-width:500px){main{padding:12px}section{padding:12px}h1{font-size:27px}}</style>
+<main><h1>Heikin Ashi · EMA 100 · M1</h1>
+<p>Nghiên cứu lịch sử offline — cutoff trước 24/11/2026 00:00 UTC.</p>
+<p class="status" id="status">Chưa thể kiểm chứng win rate 75%. Định nghĩa mô hình và outcome chưa đầy đủ.
+Không có số tín hiệu, nhãn thắng/thua, win rate hoặc CI thực nghiệm.</p>
+<section><h2>Dữ liệu đã kiểm định</h2><p id="total">Tổng 7,701,594 nến M1 hợp lệ.</p>
+<div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Thị trường</th>
+      <th>Nến hợp lệ</th>
+      <th>Nến nghiên cứu</th>
+      <th>Đủ warm-up</th>
+      <th>Phút thiếu nội bộ</th>
+      <th>Completeness nội bộ</th>
+      <th>Đầu UTC</th>
+      <th>Cuối UTC</th>
+      <th>Phút thiếu đến cutoff</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BTCUSDT</td>
+      <td>3627360</td>
+      <td>3627360</td>
+      <td>3626861</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>2019-12-31T00:00:00+00:00</td>
+      <td>2026-11-22T23:59:00+00:00</td>
+      <td>1440</td>
+    </tr>
+    <tr>
+      <td>ZECUSDT</td>
+      <td>3575039</td>
+      <td>3575039</td>
+      <td>3574540</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>2020-02-05T08:01:00+00:00</td>
+      <td>2026-11-22T23:59:00+00:00</td>
+      <td>1440</td>
+    </tr>
+    <tr>
+      <td>XAUUSDT</td>
+      <td>499195</td>
+      <td>463680</td>
+      <td>463181</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>2025-12-11T08:05:00+00:00</td>
+      <td>2026-11-22T23:59:00+00:00</td>
+      <td>1440</td>
+    </tr>
+  </tbody>
+</table></div><p>Phút thiếu theo lưới 24/7 gồm cả khả năng đóng cửa thị trường; chưa có calendar xác minh.
+Không nội suy M1 từ M5. XAU trước 05/01/2026 được giữ trong dữ liệu nguồn nhưng loại khỏi nghiên cứu.</p></section>
+<section><h2>Phân chia thời gian và thống kê mô tả</h2><div class="scroll"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>symbol</th>
+      <th>partition</th>
+      <th>candles</th>
+      <th>indicator_ready</th>
+      <th>both_wicks</th>
+      <th>bullish</th>
+      <th>bearish</th>
+      <th>neutral</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BTCUSDT</td>
+      <td>in_sample</td>
+      <td>2105280</td>
+      <td>2104781</td>
+      <td>971913</td>
+      <td>1053815</td>
+      <td>1050966</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BTCUSDT</td>
+      <td>validation</td>
+      <td>527040</td>
+      <td>527040</td>
+      <td>234263</td>
+      <td>265098</td>
+      <td>261911</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>BTCUSDT</td>
+      <td>out_of_sample</td>
+      <td>995040</td>
+      <td>995040</td>
+      <td>409793</td>
+      <td>496138</td>
+      <td>498902</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ZECUSDT</td>
+      <td>in_sample</td>
+      <td>2052959</td>
+      <td>2052460</td>
+      <td>944927</td>
+      <td>1033488</td>
+      <td>1018972</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ZECUSDT</td>
+      <td>validation</td>
+      <td>527040</td>
+      <td>527040</td>
+      <td>234572</td>
+      <td>264348</td>
+      <td>262692</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ZECUSDT</td>
+      <td>out_of_sample</td>
+      <td>995040</td>
+      <td>995040</td>
+      <td>475201</td>
+      <td>494140</td>
+      <td>500900</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>XAUUSDT</td>
+      <td>in_sample</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>XAUUSDT</td>
+      <td>validation</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>XAUUSDT</td>
+      <td>out_of_sample</td>
+      <td>463680</td>
+      <td>463181</td>
+      <td>192247</td>
+      <td>231969</td>
+      <td>231212</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+<p>IS trước 2024; validation năm 2024; OOS từ 2025. OOS hồi cứu, không phải mẫu chưa từng xem.
+Các số hình học chỉ tính trên nến đủ 500 nến warm-up. Hai wick không đồng nghĩa Doji hay tín hiệu.</p></section>
+<section><h2>Đã xác minh và giới hạn</h2><p>Archive checksum SHA-256, OHLC, timestamp UTC,
+trùng lặp, khoảng trống; công thức HA/EMA có kiểm thử thủ công, reset sau gap và prefix invariance.
+HA là giá tổng hợp của chỉ báo, không phải giá khớp lệnh.</p>
+<p>Chỉ có Binance USD-M perpetual BTCUSDT/ZECUSDT/XAUUSDT; chưa có Forex hoặc vàng giao ngay.
+Chưa xác minh nguồn công bố 75%, cỡ mẫu, thời kỳ, chi phí hoặc independence.
+Selection bias, look-ahead, multiple testing và overfitting phải được xử lý trước kiểm định kết luận.</p></section>
+<section><h2>Định nghĩa còn thiếu</h2><ul><li>minimum_pullback_candles: unresolved</li><li>minimum_impulse_candles: unresolved</li><li>pullback_color_continuity: unresolved</li><li>maximum_doji_body_ratio: unresolved</li><li>doji_wick_ratio: unresolved</li><li>intermediate_characteristics: unresolved</li><li>maximum_intermediate_candles: unresolved</li><li>entry_price: unresolved</li><li>stop_loss: unresolved</li><li>outcome_labeling: unresolved</li></ul></section>
+<section><h2>Dấu vết tái lập</h2><p>212 tests; 0 failures; 0 errors.</p><p>Config, hash dữ liệu/code, manifest, tests.xml, audit và browser_qa.json
+được lưu tại reports/ha_ema. Các trường thống kê outcome không xác định giữ null.</p>
+<details><summary>JSON chi tiết: quality, phân bố, partitions và limitations</summary><pre>{
+  &quot;config&quot;: {
+    &quot;symbols&quot;: [
+      &quot;BTCUSDT&quot;,
+      &quot;ZECUSDT&quot;,
+      &quot;XAUUSDT&quot;
+    ],
+    &quot;cutoff_exclusive&quot;: &quot;2026-11-24T00:00:00Z&quot;,
+    &quot;ema_span&quot;: 100,
+    &quot;warmup_bars&quot;: 500,
+    &quot;train_end_exclusive&quot;: &quot;2024-01-01T00:00:00Z&quot;,
+    &quot;validation_end_exclusive&quot;: &quot;2025-01-01T00:00:00Z&quot;,
+    &quot;research_start_by_symbol&quot;: {
+      &quot;XAUUSDT&quot;: &quot;2026-01-05T00:00:00Z&quot;
+    },
+    &quot;workers&quot;: 4,
+    &quot;minimum_free_disk_gb&quot;: 3,
+    &quot;seed&quot;: 20261124,
+    &quot;pattern_definition_status&quot;: &quot;unresolved&quot;,
+    &quot;outcome_definition_status&quot;: &quot;unresolved&quot;
+  },
+  &quot;tests&quot;: {
+    &quot;tests&quot;: 212,
+    &quot;failures&quot;: 0,
+    &quot;errors&quot;: 0,
+    &quot;skipped&quot;: 0
+  },
+  &quot;markets&quot;: [
+    {
+      &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+      &quot;quality&quot;: {
+        &quot;raw_candles&quot;: 3627360,
+        &quot;validated_candles&quot;: 3627360,
+        &quot;invalid_candles&quot;: 0,
+        &quot;duplicate_candles&quot;: 0,
+        &quot;conflicting_duplicate_timestamps&quot;: 0,
+        &quot;missing_candles&quot;: 0,
+        &quot;gap_count&quot;: 0,
+        &quot;completeness&quot;: 1.0,
+        &quot;gap_ranges&quot;: [],
+        &quot;earliest_timestamp&quot;: &quot;2019-12-31T00:00:00+00:00&quot;,
+        &quot;latest_timestamp&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+        &quot;zero_volume_candles&quot;: 369,
+        &quot;missing_policy&quot;: &quot;No imputation. Segment id increments after every temporal gap.&quot;,
+        &quot;missing_definition&quot;: &quot;Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.&quot;,
+        &quot;input_monotonic&quot;: false,
+        &quot;source_duplicate_rows&quot;: 0,
+        &quot;quarantined_conflict_rows&quot;: 0,
+        &quot;missing_volume_rows&quot;: 0,
+        &quot;timezone&quot;: &quot;UTC&quot;,
+        &quot;timestamp_role&quot;: &quot;candle open; indicators available one minute later&quot;,
+        &quot;closure_policy&quot;: &quot;No inferred closure calendar. All gaps remain unclassified; no imputation.&quot;,
+        &quot;volume_policy&quot;: &quot;Optional, missing retained as null; never a pattern filter&quot;
+      },
+      &quot;failures&quot;: [],
+      &quot;trailing_missing_minutes&quot;: 1440,
+      &quot;pre_research_excluded&quot;: 0,
+      &quot;feature_path&quot;: &quot;data/processed/ha_m1/BTCUSDT_features.parquet&quot;,
+      &quot;feature_sha256&quot;: &quot;f12811a7b7b0250f23cfae7ff5d235c2a5ccf43298243e00950ef241e3f4dccd&quot;,
+      &quot;descriptive&quot;: {
+        &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+        &quot;overall&quot;: {
+          &quot;candles&quot;: 3627360,
+          &quot;indicator_ready&quot;: 3626861,
+          &quot;warmup_excluded&quot;: 499,
+          &quot;first&quot;: &quot;2019-12-31T00:00:00+00:00&quot;,
+          &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+          &quot;body_ratio_quantiles&quot;: {
+            &quot;0.05&quot;: 0.053058809157000376,
+            &quot;0.25&quot;: 0.267246232744991,
+            &quot;0.5&quot;: 0.502601170945774,
+            &quot;0.75&quot;: 0.6490899350870876,
+            &quot;0.95&quot;: 0.8262019802994918
+          },
+          &quot;both_wicks&quot;: 1615969,
+          &quot;bullish&quot;: 1815051,
+          &quot;bearish&quot;: 1811779,
+          &quot;neutral&quot;: 31,
+          &quot;ha_close_above_ema&quot;: 1858766,
+          &quot;ha_close_below_ema&quot;: 1768095,
+          &quot;zero_range&quot;: 31,
+          &quot;upper_wick_mean&quot;: 13.65438667326712,
+          &quot;lower_wick_mean&quot;: 13.786504211462352
+        },
+        &quot;groups&quot;: [
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2019,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 1440,
+            &quot;indicator_ready&quot;: 941,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2019-12-31T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2019-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05840960275746872,
+              &quot;0.25&quot;: 0.2783930217253025,
+              &quot;0.5&quot;: 0.5350235789591532,
+              &quot;0.75&quot;: 0.6927014362321434,
+              &quot;0.95&quot;: 0.8680794019593602
+            },
+            &quot;both_wicks&quot;: 384,
+            &quot;bullish&quot;: 462,
+            &quot;bearish&quot;: 479,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 449,
+            &quot;ha_close_below_ema&quot;: 492,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 1.1737023419170571,
+            &quot;lower_wick_mean&quot;: 1.3186432354103546
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2020,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 527040,
+            &quot;indicator_ready&quot;: 527040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2020-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2020-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.052021909900675754,
+              &quot;0.25&quot;: 0.2595879840780986,
+              &quot;0.5&quot;: 0.4869004422587707,
+              &quot;0.75&quot;: 0.6322778887162517,
+              &quot;0.95&quot;: 0.79976476336
+            },
+            &quot;both_wicks&quot;: 241938,
+            &quot;bullish&quot;: 265916,
+            &quot;bearish&quot;: 261124,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 278098,
+            &quot;ha_close_below_ema&quot;: 248942,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 3.697101632857558,
+            &quot;lower_wick_mean&quot;: 3.847440547147528
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2021,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2021-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2021-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.046004099958571285,
+              &quot;0.25&quot;: 0.23302352438915125,
+              &quot;0.5&quot;: 0.4584299824947967,
+              &quot;0.75&quot;: 0.6067615254049722,
+              &quot;0.95&quot;: 0.7460023014038211
+            },
+            &quot;both_wicks&quot;: 268449,
+            &quot;bullish&quot;: 261288,
+            &quot;bearish&quot;: 264312,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 270784,
+            &quot;ha_close_below_ema&quot;: 254816,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 23.192408489220785,
+            &quot;lower_wick_mean&quot;: 23.474461100694455
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2022,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2022-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2022-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.04930513267635517,
+              &quot;0.25&quot;: 0.24950986597099198,
+              &quot;0.5&quot;: 0.4763562845089595,
+              &quot;0.75&quot;: 0.6232486696707712,
+              &quot;0.95&quot;: 0.7872091190440326
+            },
+            &quot;both_wicks&quot;: 249009,
+            &quot;bullish&quot;: 262464,
+            &quot;bearish&quot;: 263136,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 263314,
+            &quot;ha_close_below_ema&quot;: 262286,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 9.754993225099991,
+            &quot;lower_wick_mean&quot;: 9.724553535128235
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2023,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2023-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2023-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05889112933445694,
+              &quot;0.25&quot;: 0.29604760734060165,
+              &quot;0.5&quot;: 0.5314148294592731,
+              &quot;0.75&quot;: 0.6811653802036695,
+              &quot;0.95&quot;: 0.8938312430637647
+            },
+            &quot;both_wicks&quot;: 212133,
+            &quot;bullish&quot;: 263685,
+            &quot;bearish&quot;: 261915,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 268040,
+            &quot;ha_close_below_ema&quot;: 257560,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 5.600668412705184,
+            &quot;lower_wick_mean&quot;: 5.677283146324399
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2024,
+            &quot;partition&quot;: &quot;validation&quot;,
+            &quot;candles&quot;: 527040,
+            &quot;indicator_ready&quot;: 527040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2024-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2024-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05289024126377792,
+              &quot;0.25&quot;: 0.2673780971956845,
+              &quot;0.5&quot;: 0.507618351552926,
+              &quot;0.75&quot;: 0.6529883786743111,
+              &quot;0.95&quot;: 0.8125573228801766
+            },
+            &quot;both_wicks&quot;: 234263,
+            &quot;bullish&quot;: 265098,
+            &quot;bearish&quot;: 261911,
+            &quot;neutral&quot;: 31,
+            &quot;ha_close_above_ema&quot;: 274162,
+            &quot;ha_close_below_ema&quot;: 252878,
+            &quot;zero_range&quot;: 31,
+            &quot;upper_wick_mean&quot;: 17.72211631667701,
+            &quot;lower_wick_mean&quot;: 17.99034933275088
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2025,
+            &quot;partition&quot;: &quot;out_of_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2025-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2025-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.058293090231513106,
+              &quot;0.25&quot;: 0.29356000714729547,
+              &quot;0.5&quot;: 0.5330558786987092,
+              &quot;0.75&quot;: 0.6798933690811642,
+              &quot;0.95&quot;: 0.8710696594730621
+            },
+            &quot;both_wicks&quot;: 214700,
+            &quot;bullish&quot;: 262314,
+            &quot;bearish&quot;: 263286,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 268383,
+            &quot;ha_close_below_ema&quot;: 257217,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 20.658262399560098,
+            &quot;lower_wick_mean&quot;: 20.886176025098745
+          },
+          {
+            &quot;symbol&quot;: &quot;BTCUSDT&quot;,
+            &quot;year&quot;: 2026,
+            &quot;partition&quot;: &quot;out_of_sample&quot;,
+            &quot;candles&quot;: 469440,
+            &quot;indicator_ready&quot;: 469440,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2026-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.0570173203699,
+              &quot;0.25&quot;: 0.2865582555404591,
+              &quot;0.5&quot;: 0.5245047621407215,
+              &quot;0.75&quot;: 0.6738848391188875,
+              &quot;0.95&quot;: 0.8823248762511
+            },
+            &quot;both_wicks&quot;: 195093,
+            &quot;bullish&quot;: 233824,
+            &quot;bearish&quot;: 235616,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 235536,
+            &quot;ha_close_below_ema&quot;: 233904,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 15.153853626005853,
+            &quot;lower_wick_mean&quot;: 15.081690090776187
+          }
+        ],
+        &quot;partitions&quot;: {
+          &quot;in_sample&quot;: {
+            &quot;candles&quot;: 2105280,
+            &quot;indicator_ready&quot;: 2104781,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2019-12-31T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2023-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.051139072063001244,
+              &quot;0.25&quot;: 0.2576274088398133,
+              &quot;0.5&quot;: 0.48857489173456287,
+              &quot;0.75&quot;: 0.6349885142939313,
+              &quot;0.95&quot;: 0.806306583617238
+            },
+            &quot;both_wicks&quot;: 971913,
+            &quot;bullish&quot;: 1053815,
+            &quot;bearish&quot;: 1050966,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 1080685,
+            &quot;ha_close_below_ema&quot;: 1024096,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 10.552399778052841,
+            &quot;lower_wick_mean&quot;: 10.672073732872763
+          },
+          &quot;validation&quot;: {
+            &quot;candles&quot;: 527040,
+            &quot;indicator_ready&quot;: 527040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2024-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2024-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05289024126377792,
+              &quot;0.25&quot;: 0.2673780971956845,
+              &quot;0.5&quot;: 0.507618351552926,
+              &quot;0.75&quot;: 0.6529883786743111,
+              &quot;0.95&quot;: 0.8125573228801766
+            },
+            &quot;both_wicks&quot;: 234263,
+            &quot;bullish&quot;: 265098,
+            &quot;bearish&quot;: 261911,
+            &quot;neutral&quot;: 31,
+            &quot;ha_close_above_ema&quot;: 274162,
+            &quot;ha_close_below_ema&quot;: 252878,
+            &quot;zero_range&quot;: 31,
+            &quot;upper_wick_mean&quot;: 17.72211631667701,
+            &quot;lower_wick_mean&quot;: 17.99034933275088
+          },
+          &quot;out_of_sample&quot;: {
+            &quot;candles&quot;: 995040,
+            &quot;indicator_ready&quot;: 995040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2025-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05771285685424462,
+              &quot;0.25&quot;: 0.2902446512565653,
+              &quot;0.5&quot;: 0.5290081367941698,
+              &quot;0.75&quot;: 0.6771023976756927,
+              &quot;0.95&quot;: 0.8758135426061345
+            },
+            &quot;both_wicks&quot;: 409793,
+            &quot;bullish&quot;: 496138,
+            &quot;bearish&quot;: 498902,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 503919,
+            &quot;ha_close_below_ema&quot;: 491121,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 18.061392269055492,
+            &quot;lower_wick_mean&quot;: 18.14773548300156
+          }
+        }
+      },
+      &quot;limitations&quot;: [
+        &quot;Single venue; no Forex or physical/spot gold.&quot;,
+        &quot;Archive availability is not proof of full listing-to-cutoff coverage.&quot;,
+        &quot;OHLC does not identify bid/ask, fees, funding, or intrabar path.&quot;,
+        &quot;Scheduled closures and outages are not distinguishable without a verified calendar.&quot;
+      ]
+    },
+    {
+      &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+      &quot;quality&quot;: {
+        &quot;raw_candles&quot;: 3575039,
+        &quot;validated_candles&quot;: 3575039,
+        &quot;invalid_candles&quot;: 0,
+        &quot;duplicate_candles&quot;: 0,
+        &quot;conflicting_duplicate_timestamps&quot;: 0,
+        &quot;missing_candles&quot;: 0,
+        &quot;gap_count&quot;: 0,
+        &quot;completeness&quot;: 1.0,
+        &quot;gap_ranges&quot;: [],
+        &quot;earliest_timestamp&quot;: &quot;2020-02-05T08:01:00+00:00&quot;,
+        &quot;latest_timestamp&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+        &quot;zero_volume_candles&quot;: 20166,
+        &quot;missing_policy&quot;: &quot;No imputation. Segment id increments after every temporal gap.&quot;,
+        &quot;missing_definition&quot;: &quot;Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.&quot;,
+        &quot;input_monotonic&quot;: false,
+        &quot;source_duplicate_rows&quot;: 0,
+        &quot;quarantined_conflict_rows&quot;: 0,
+        &quot;missing_volume_rows&quot;: 0,
+        &quot;timezone&quot;: &quot;UTC&quot;,
+        &quot;timestamp_role&quot;: &quot;candle open; indicators available one minute later&quot;,
+        &quot;closure_policy&quot;: &quot;No inferred closure calendar. All gaps remain unclassified; no imputation.&quot;,
+        &quot;volume_policy&quot;: &quot;Optional, missing retained as null; never a pattern filter&quot;
+      },
+      &quot;failures&quot;: [],
+      &quot;trailing_missing_minutes&quot;: 1440,
+      &quot;pre_research_excluded&quot;: 0,
+      &quot;feature_path&quot;: &quot;data/processed/ha_m1/ZECUSDT_features.parquet&quot;,
+      &quot;feature_sha256&quot;: &quot;8a7a3cd1d709b0ba5a30eb0502cfbe3b8d1656e42c7750a3da5d65a188ca2021&quot;,
+      &quot;descriptive&quot;: {
+        &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+        &quot;overall&quot;: {
+          &quot;candles&quot;: 3575039,
+          &quot;indicator_ready&quot;: 3574540,
+          &quot;warmup_excluded&quot;: 499,
+          &quot;first&quot;: &quot;2020-02-05T08:01:00+00:00&quot;,
+          &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+          &quot;body_ratio_quantiles&quot;: {
+            &quot;0.05&quot;: 0.049481152506928534,
+            &quot;0.25&quot;: 0.25077785847236866,
+            &quot;0.5&quot;: 0.4871316919365891,
+            &quot;0.75&quot;: 0.6433645561742425,
+            &quot;0.95&quot;: 0.8344751956953919
+          },
+          &quot;both_wicks&quot;: 1654700,
+          &quot;bullish&quot;: 1791976,
+          &quot;bearish&quot;: 1782564,
+          &quot;neutral&quot;: 0,
+          &quot;ha_close_above_ema&quot;: 1794728,
+          &quot;ha_close_below_ema&quot;: 1779812,
+          &quot;zero_range&quot;: 0,
+          &quot;upper_wick_mean&quot;: 0.11458254405933987,
+          &quot;lower_wick_mean&quot;: 0.11353487318963902
+        },
+        &quot;groups&quot;: [
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2020,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 476159,
+            &quot;indicator_ready&quot;: 475660,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2020-02-05T08:01:00+00:00&quot;,
+            &quot;last&quot;: &quot;2020-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.057227929521124196,
+              &quot;0.25&quot;: 0.28899218794901416,
+              &quot;0.5&quot;: 0.533280834325093,
+              &quot;0.75&quot;: 0.7012993297322404,
+              &quot;0.95&quot;: 1.0
+            },
+            &quot;both_wicks&quot;: 192515,
+            &quot;bullish&quot;: 238671,
+            &quot;bearish&quot;: 236989,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 237596,
+            &quot;ha_close_below_ema&quot;: 238064,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.030047817776413896,
+            &quot;lower_wick_mean&quot;: 0.03133014469702106
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2021,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2021-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2021-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.04519906070978446,
+              &quot;0.25&quot;: 0.22840317040309396,
+              &quot;0.5&quot;: 0.45948929880250555,
+              &quot;0.75&quot;: 0.6154433410240463,
+              &quot;0.95&quot;: 0.7593991655758346
+            },
+            &quot;both_wicks&quot;: 266886,
+            &quot;bullish&quot;: 263486,
+            &quot;bearish&quot;: 262114,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 271213,
+            &quot;ha_close_below_ema&quot;: 254387,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.13051694047025336,
+            &quot;lower_wick_mean&quot;: 0.13098088937185837
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2022,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2022-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2022-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.04522883828143831,
+              &quot;0.25&quot;: 0.23000259023743969,
+              &quot;0.5&quot;: 0.4574553051734448,
+              &quot;0.75&quot;: 0.6130842484920292,
+              &quot;0.95&quot;: 0.7716640705447054
+            },
+            &quot;both_wicks&quot;: 262684,
+            &quot;bullish&quot;: 263387,
+            &quot;bearish&quot;: 262213,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 263949,
+            &quot;ha_close_below_ema&quot;: 261651,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.05686462855586849,
+            &quot;lower_wick_mean&quot;: 0.05716898239386095
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2023,
+            &quot;partition&quot;: &quot;in_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2023-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2023-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.054467525759737484,
+              &quot;0.25&quot;: 0.2740939287402203,
+              &quot;0.5&quot;: 0.5168518376887697,
+              &quot;0.75&quot;: 0.6795073345110967,
+              &quot;0.95&quot;: 1.0
+            },
+            &quot;both_wicks&quot;: 222842,
+            &quot;bullish&quot;: 267944,
+            &quot;bearish&quot;: 257656,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 267903,
+            &quot;ha_close_below_ema&quot;: 257697,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.011510919167628756,
+            &quot;lower_wick_mean&quot;: 0.01202119048964606
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2024,
+            &quot;partition&quot;: &quot;validation&quot;,
+            &quot;candles&quot;: 527040,
+            &quot;indicator_ready&quot;: 527040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2024-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2024-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.050944589371842465,
+              &quot;0.25&quot;: 0.26138090666924024,
+              &quot;0.5&quot;: 0.5012060493808301,
+              &quot;0.75&quot;: 0.655683565104919,
+              &quot;0.95&quot;: 0.8413455529829841
+            },
+            &quot;both_wicks&quot;: 234572,
+            &quot;bullish&quot;: 264348,
+            &quot;bearish&quot;: 262692,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 265705,
+            &quot;ha_close_below_ema&quot;: 261335,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.018948941704894817,
+            &quot;lower_wick_mean&quot;: 0.019217821373130165
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2025,
+            &quot;partition&quot;: &quot;out_of_sample&quot;,
+            &quot;candles&quot;: 525600,
+            &quot;indicator_ready&quot;: 525600,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2025-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2025-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.051767494058561306,
+              &quot;0.25&quot;: 0.26168661237557467,
+              &quot;0.5&quot;: 0.4967951078380566,
+              &quot;0.75&quot;: 0.6502924020905336,
+              &quot;0.95&quot;: 0.8297017617422786
+            },
+            &quot;both_wicks&quot;: 234779,
+            &quot;bullish&quot;: 262356,
+            &quot;bearish&quot;: 263244,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 262032,
+            &quot;ha_close_below_ema&quot;: 263568,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.14950451592419148,
+            &quot;lower_wick_mean&quot;: 0.14651283273871712
+          },
+          {
+            &quot;symbol&quot;: &quot;ZECUSDT&quot;,
+            &quot;year&quot;: 2026,
+            &quot;partition&quot;: &quot;out_of_sample&quot;,
+            &quot;candles&quot;: 469440,
+            &quot;indicator_ready&quot;: 469440,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2026-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.04471971789291056,
+              &quot;0.25&quot;: 0.2252460873754224,
+              &quot;0.5&quot;: 0.44786382033802585,
+              &quot;0.75&quot;: 0.6009992231041019,
+              &quot;0.95&quot;: 0.7500524120762337
+            },
+            &quot;both_wicks&quot;: 240422,
+            &quot;bullish&quot;: 231784,
+            &quot;bearish&quot;: 237656,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 226330,
+            &quot;ha_close_below_ema&quot;: 243110,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.4306898143272955,
+            &quot;lower_wick_mean&quot;: 0.4230292118254152
+          }
+        ],
+        &quot;partitions&quot;: {
+          &quot;in_sample&quot;: {
+            &quot;candles&quot;: 2052959,
+            &quot;indicator_ready&quot;: 2052460,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2020-02-05T08:01:00+00:00&quot;,
+            &quot;last&quot;: &quot;2023-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.049805775825692886,
+              &quot;0.25&quot;: 0.2519465739891361,
+              &quot;0.5&quot;: 0.49087293504908075,
+              &quot;0.75&quot;: 0.6484540049475345,
+              &quot;0.95&quot;: 0.8607374443038518
+            },
+            &quot;both_wicks&quot;: 944927,
+            &quot;bullish&quot;: 1033488,
+            &quot;bearish&quot;: 1018972,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 1040661,
+            &quot;ha_close_below_ema&quot;: 1011799,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.05789659082182569,
+            &quot;lower_wick_mean&quot;: 0.05852119259230634
+          },
+          &quot;validation&quot;: {
+            &quot;candles&quot;: 527040,
+            &quot;indicator_ready&quot;: 527040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2024-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2024-12-31T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.050944589371842465,
+              &quot;0.25&quot;: 0.26138090666924024,
+              &quot;0.5&quot;: 0.5012060493808301,
+              &quot;0.75&quot;: 0.655683565104919,
+              &quot;0.95&quot;: 0.8413455529829841
+            },
+            &quot;both_wicks&quot;: 234572,
+            &quot;bullish&quot;: 264348,
+            &quot;bearish&quot;: 262692,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 265705,
+            &quot;ha_close_below_ema&quot;: 261335,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.018948941704894817,
+            &quot;lower_wick_mean&quot;: 0.019217821373130165
+          },
+          &quot;out_of_sample&quot;: {
+            &quot;candles&quot;: 995040,
+            &quot;indicator_ready&quot;: 995040,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: &quot;2025-01-01T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.04823098402774256,
+              &quot;0.25&quot;: 0.2431276960635687,
+              &quot;0.5&quot;: 0.4730613824694744,
+              &quot;0.75&quot;: 0.6266607496633232,
+              &quot;0.95&quot;: 0.7931770372751294
+            },
+            &quot;both_wicks&quot;: 475201,
+            &quot;bullish&quot;: 494140,
+            &quot;bearish&quot;: 500900,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 488362,
+            &quot;ha_close_below_ema&quot;: 506678,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.28216212414331143,
+            &quot;lower_wick_mean&quot;: 0.2769677380676079
+          }
+        }
+      },
+      &quot;limitations&quot;: [
+        &quot;Single venue; no Forex or physical/spot gold.&quot;,
+        &quot;Archive availability is not proof of full listing-to-cutoff coverage.&quot;,
+        &quot;OHLC does not identify bid/ask, fees, funding, or intrabar path.&quot;,
+        &quot;Scheduled closures and outages are not distinguishable without a verified calendar.&quot;
+      ]
+    },
+    {
+      &quot;symbol&quot;: &quot;XAUUSDT&quot;,
+      &quot;quality&quot;: {
+        &quot;raw_candles&quot;: 499195,
+        &quot;validated_candles&quot;: 499195,
+        &quot;invalid_candles&quot;: 0,
+        &quot;duplicate_candles&quot;: 0,
+        &quot;conflicting_duplicate_timestamps&quot;: 0,
+        &quot;missing_candles&quot;: 0,
+        &quot;gap_count&quot;: 0,
+        &quot;completeness&quot;: 1.0,
+        &quot;gap_ranges&quot;: [],
+        &quot;earliest_timestamp&quot;: &quot;2025-12-11T08:05:00+00:00&quot;,
+        &quot;latest_timestamp&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+        &quot;zero_volume_candles&quot;: 11538,
+        &quot;missing_policy&quot;: &quot;No imputation. Segment id increments after every temporal gap.&quot;,
+        &quot;missing_definition&quot;: &quot;Absent intervals on a continuous UTC grid between first and last candle; may include scheduled closures, not necessarily data defects.&quot;,
+        &quot;input_monotonic&quot;: false,
+        &quot;source_duplicate_rows&quot;: 0,
+        &quot;quarantined_conflict_rows&quot;: 0,
+        &quot;missing_volume_rows&quot;: 0,
+        &quot;timezone&quot;: &quot;UTC&quot;,
+        &quot;timestamp_role&quot;: &quot;candle open; indicators available one minute later&quot;,
+        &quot;closure_policy&quot;: &quot;No inferred closure calendar. All gaps remain unclassified; no imputation.&quot;,
+        &quot;volume_policy&quot;: &quot;Optional, missing retained as null; never a pattern filter&quot;
+      },
+      &quot;failures&quot;: [],
+      &quot;trailing_missing_minutes&quot;: 1440,
+      &quot;pre_research_excluded&quot;: 35515,
+      &quot;feature_path&quot;: &quot;data/processed/ha_m1/XAUUSDT_features.parquet&quot;,
+      &quot;feature_sha256&quot;: &quot;5762b3c8b40e4cd1af86e6612ad040f740265cc64ddd0638f25e1521907b34af&quot;,
+      &quot;descriptive&quot;: {
+        &quot;symbol&quot;: &quot;XAUUSDT&quot;,
+        &quot;overall&quot;: {
+          &quot;candles&quot;: 463680,
+          &quot;indicator_ready&quot;: 463181,
+          &quot;warmup_excluded&quot;: 499,
+          &quot;first&quot;: &quot;2026-01-05T00:00:00+00:00&quot;,
+          &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+          &quot;body_ratio_quantiles&quot;: {
+            &quot;0.05&quot;: 0.05581072415199687,
+            &quot;0.25&quot;: 0.28497161222985407,
+            &quot;0.5&quot;: 0.5330217750201631,
+            &quot;0.75&quot;: 0.704997950642883,
+            &quot;0.95&quot;: 0.9620423117677327
+          },
+          &quot;both_wicks&quot;: 192247,
+          &quot;bullish&quot;: 231969,
+          &quot;bearish&quot;: 231212,
+          &quot;neutral&quot;: 0,
+          &quot;ha_close_above_ema&quot;: 230832,
+          &quot;ha_close_below_ema&quot;: 232349,
+          &quot;zero_range&quot;: 0,
+          &quot;upper_wick_mean&quot;: 0.537867291880405,
+          &quot;lower_wick_mean&quot;: 0.5568741018344249
+        },
+        &quot;groups&quot;: [
+          {
+            &quot;symbol&quot;: &quot;XAUUSDT&quot;,
+            &quot;year&quot;: 2026,
+            &quot;partition&quot;: &quot;out_of_sample&quot;,
+            &quot;candles&quot;: 463680,
+            &quot;indicator_ready&quot;: 463181,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2026-01-05T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05581072415199687,
+              &quot;0.25&quot;: 0.28497161222985407,
+              &quot;0.5&quot;: 0.5330217750201631,
+              &quot;0.75&quot;: 0.704997950642883,
+              &quot;0.95&quot;: 0.9620423117677327
+            },
+            &quot;both_wicks&quot;: 192247,
+            &quot;bullish&quot;: 231969,
+            &quot;bearish&quot;: 231212,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 230832,
+            &quot;ha_close_below_ema&quot;: 232349,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.537867291880405,
+            &quot;lower_wick_mean&quot;: 0.5568741018344249
+          }
+        ],
+        &quot;partitions&quot;: {
+          &quot;in_sample&quot;: {
+            &quot;candles&quot;: 0,
+            &quot;indicator_ready&quot;: 0,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: null,
+            &quot;last&quot;: null,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: null,
+              &quot;0.25&quot;: null,
+              &quot;0.5&quot;: null,
+              &quot;0.75&quot;: null,
+              &quot;0.95&quot;: null
+            },
+            &quot;both_wicks&quot;: 0,
+            &quot;bullish&quot;: 0,
+            &quot;bearish&quot;: 0,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 0,
+            &quot;ha_close_below_ema&quot;: 0,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: null,
+            &quot;lower_wick_mean&quot;: null
+          },
+          &quot;validation&quot;: {
+            &quot;candles&quot;: 0,
+            &quot;indicator_ready&quot;: 0,
+            &quot;warmup_excluded&quot;: 0,
+            &quot;first&quot;: null,
+            &quot;last&quot;: null,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: null,
+              &quot;0.25&quot;: null,
+              &quot;0.5&quot;: null,
+              &quot;0.75&quot;: null,
+              &quot;0.95&quot;: null
+            },
+            &quot;both_wicks&quot;: 0,
+            &quot;bullish&quot;: 0,
+            &quot;bearish&quot;: 0,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 0,
+            &quot;ha_close_below_ema&quot;: 0,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: null,
+            &quot;lower_wick_mean&quot;: null
+          },
+          &quot;out_of_sample&quot;: {
+            &quot;candles&quot;: 463680,
+            &quot;indicator_ready&quot;: 463181,
+            &quot;warmup_excluded&quot;: 499,
+            &quot;first&quot;: &quot;2026-01-05T00:00:00+00:00&quot;,
+            &quot;last&quot;: &quot;2026-11-22T23:59:00+00:00&quot;,
+            &quot;body_ratio_quantiles&quot;: {
+              &quot;0.05&quot;: 0.05581072415199687,
+              &quot;0.25&quot;: 0.28497161222985407,
+              &quot;0.5&quot;: 0.5330217750201631,
+              &quot;0.75&quot;: 0.704997950642883,
+              &quot;0.95&quot;: 0.9620423117677327
+            },
+            &quot;both_wicks&quot;: 192247,
+            &quot;bullish&quot;: 231969,
+            &quot;bearish&quot;: 231212,
+            &quot;neutral&quot;: 0,
+            &quot;ha_close_above_ema&quot;: 230832,
+            &quot;ha_close_below_ema&quot;: 232349,
+            &quot;zero_range&quot;: 0,
+            &quot;upper_wick_mean&quot;: 0.537867291880405,
+            &quot;lower_wick_mean&quot;: 0.5568741018344249
+          }
+        }
+      },
+      &quot;limitations&quot;: [
+        &quot;Single venue; no Forex or physical/spot gold.&quot;,
+        &quot;Archive availability is not proof of full listing-to-cutoff coverage.&quot;,
+        &quot;OHLC does not identify bid/ask, fees, funding, or intrabar path.&quot;,
+        &quot;Scheduled closures and outages are not distinguishable without a verified calendar.&quot;
+      ]
+    }
+  ],
+  &quot;total_validated_candles&quot;: 7701594,
+  &quot;outcome_statistics&quot;: {
+    &quot;status&quot;: &quot;blocked_by_missing_definitions&quot;,
+    &quot;sample_size&quot;: null,
+    &quot;independent_observations&quot;: null,
+    &quot;observed_proportion&quot;: null,
+    &quot;confidence_interval&quot;: null,
+    &quot;p_value&quot;: null
+  },
+  &quot;missing_definitions&quot;: {
+    &quot;minimum_pullback_candles&quot;: null,
+    &quot;minimum_impulse_candles&quot;: null,
+    &quot;pullback_color_continuity&quot;: null,
+    &quot;maximum_doji_body_ratio&quot;: null,
+    &quot;doji_wick_ratio&quot;: null,
+    &quot;intermediate_characteristics&quot;: null,
+    &quot;maximum_intermediate_candles&quot;: null,
+    &quot;entry_price&quot;: null,
+    &quot;stop_loss&quot;: null,
+    &quot;outcome_labeling&quot;: null
+  }
+}</pre></details></section>
+<p>Nguồn: <a href="https://github.com/binance/binance-public-data">Binance Vision</a>.
+Dữ liệu và phân tích phái sinh: CC BY-NC-SA 4.0 theo điều khoản nguồn. Không có giao dịch thật.</p></main></html>

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "markets": [
+    {
+      "symbol": "BTCUSDT",
+      "research_candles": 3627360,
+      "partition_rows": 3,
+      "status": "passed"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "research_candles": 3575039,
+      "partition_rows": 3,
+      "status": "passed"
+    },
+    {
+      "symbol": "XAUUSDT",
+      "research_candles": 463680,
+      "partition_rows": 1,
+      "status": "passed"
+    }
+  ],
+  "total": 7701594
+}

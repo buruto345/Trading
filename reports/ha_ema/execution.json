@@ -1,0 +1,38 @@
+{
+  "completed_at": "2026-11-24T02:01:43.550659+00:00",
+  "python": "3.14.4",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "scipy": "1.18.1",
+    "pytest": "9.2.0",
+    "playwright": "1.65.2"
+  },
+  "command": [
+    "scripts/run_ha_research.py",
+    "--skip-collection"
+  ],
+  "source_sha256": {
+    "src\\ha_research\\data.py": "f5663e54c8d67a113ab2119a0349d294184119744d9a4146fcadc78436900cae",
+    "src\\ha_research\\indicators.py": "76171bf4a83f9524fccccf83ffbda083b3643970dc531ae7000c68727d1c8c73",
+    "src\\ha_research\\report.py": "0308548c6b1646acff17cf4eb0e9e523cbf71b0ff568d0ba6f95fa1496b7aa1f",
+    "src\\ha_research\\statistics.py": "e42d4bd7056f856a917d2a93f20be3e3ac669e6b065e5128060d9287d0cff48b",
+    "src\\ha_research\\__init__.py": "407b3c24cbaf85d32815b57e3043aa878c238ca57e66355500c92d8eb1ca8ca1",
+    "scripts\\collect_ha_m1.py": "8e982b4b1661b5936ae017415f908f62f5b4eda851a430f5fc7facca99d4cd99",
+    "scripts\\qa_ha_research.py": "9b7af6a764ba8ab052245b25e25a69540b265eb0f048fc3f550f414a22eaa876",
+    "scripts\\run_ha_research.py": "811d5615d25ac93c8e3cd0bed4331bc957b41e8e730fb61583c651e6eaa0d822",
+    "tests\\test_ha_research.py": "ff599bb5f0afb6f76f6799f1d018563560b8c94674f827b51da0785dd96cce1c",
+    "docs\\HA_CHANGE_SUMMARY.md": "c6fad7ea72a2df82627b7fb06a0369a82b50e094ba1df7edfccd5bb9b5d004c3",
+    "docs\\HA_ORIGINAL_METHOD.md": "4b14edfce8daeb5d96059a2d81eef305088da4a25600c140207ea88deb030525",
+    "docs\\HA_RESEARCH_PROTOCOL.md": "ac3dd916bb4a5f88a1d111cda2430e4dc6f48afacfa307a8a2cf93897f4f2494",
+    "docs\\HA_UNRESOLVED_METHOD.md": "633f42fbd2350c75cc8096b87bff149f640f1db68f4acb7ab7d8f84e5a13cd57",
+    "src\\data_collection\\collector.py": "4b4c568d2dae71b47ec77be5656c549196fd06c4c188bfbc18f7cf2ab50cb98f",
+    "src\\data_validation\\validator.py": "fa8f0e32d0b0363433bd24583bf9abbb73195b6b5835b5f3d3f32fb001aad3ba",
+    "src\\statistics\\analysis.py": "6a90a2d7673cc6a0ca3570b109795e9f899c3df3e2cfb30048861d9631028529",
+    "config\\ha_ema_research.json": "0cfecbd3aee22ac55662d89e1732cb793ab61c6f7596e352dd658cfc48cd8d6c"
+  },
+  "config_sha256": "0cfecbd3aee22ac55662d89e1732cb793ab61c6f7596e352dd658cfc48cd8d6c",
+  "network_collection": false
+}

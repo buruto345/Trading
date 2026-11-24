@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "markets": [
+    {
+      "symbol": "BTCUSDT",
+      "status": "passed",
+      "checks": [
+        "partition counts",
+        "clean candle/run reconciliation",
+        "forward counts and means",
+        "causal timestamps"
+      ]
+    },
+    {
+      "symbol": "ZECUSDT",
+      "status": "passed",
+      "checks": [
+        "partition counts",
+        "clean candle/run reconciliation",
+        "forward counts and means",
+        "causal timestamps"
+      ]
+    },
+    {
+      "symbol": "XAUUSDT",
+      "status": "passed",
+      "checks": [
+        "partition counts",
+        "clean candle/run reconciliation",
+        "forward counts and means",
+        "causal timestamps"
+      ]
+    }
+  ]
+}
