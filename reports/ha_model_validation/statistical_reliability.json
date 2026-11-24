@@ -1,0 +1,2122 @@
+{
+  "reconciliation": {
+    "full_history": {
+      "matched_rows": 45,
+      "expected_rows": 45,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "partitioned": {
+      "matched_rows": 135,
+      "expected_rows": 135,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "yearly": {
+      "matched_rows": 237,
+      "expected_rows": 237,
+      "max_numeric_difference": 0.0,
+      "discrepancies": []
+    }
+  },
+  "bootstrap_sensitivity": [
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6132067170026105,
+      "high": 0.6375235220729631,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6666666666666666,
+      "high": 0.6896281292627109,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.648073462339531,
+      "high": 0.6724325331059671,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6136413210237789,
+      "high": 0.6382698649511227,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6666104410476338,
+      "high": 0.6902484100894036,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6484549228191406,
+      "high": 0.6730705453997559,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6137456215806731,
+      "high": 0.6379059534356271,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6664960901983082,
+      "high": 0.690092086098168,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6479498061974043,
+      "high": 0.6726658216913088,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6123352939744279,
+      "high": 0.638748759733624,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6656648645911788,
+      "high": 0.6904374170116402,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6474223255261072,
+      "high": 0.6731707531474049,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6117719917452519,
+      "high": 0.6386106163107261,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6649443866456569,
+      "high": 0.6902669966314002,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6465413610808348,
+      "high": 0.6729087222109218,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6319171324842967,
+      "high": 0.649612393961883,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6865946835879246,
+      "high": 0.7029162607614076,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6686628672375257,
+      "high": 0.6859831010013138,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6317600084539932,
+      "high": 0.6495846057075765,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6861199179454999,
+      "high": 0.7025899830093854,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6682034368070954,
+      "high": 0.6857922537876225,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6313868535572694,
+      "high": 0.6498710830784635,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6858891544996752,
+      "high": 0.7028347730342711,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.668226250757869,
+      "high": 0.6860848103127705,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6307614043691641,
+      "high": 0.6508112910262343,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6851036042613978,
+      "high": 0.7032149016727551,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6672455972912085,
+      "high": 0.686487731409371,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.629975070460654,
+      "high": 0.6505455122457857,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.684864990689013,
+      "high": 0.703790921360621,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6666968859289393,
+      "high": 0.6869838491351059,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6577944941093076,
+      "high": 0.6702667198654297,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.7093768279482041,
+      "high": 0.7213206928640643,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6937175038918268,
+      "high": 0.706042281507964,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6577288245271221,
+      "high": 0.6702772490440677,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7090542249031698,
+      "high": 0.7212817775525456,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6933961750848313,
+      "high": 0.7062634295580921,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6569726439407441,
+      "high": 0.6704081681372874,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.7087379638153186,
+      "high": 0.721220032864195,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6930494831594463,
+      "high": 0.7062442367014713,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6564896371477962,
+      "high": 0.6710091598970849,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7080965478226223,
+      "high": 0.7219237131812588,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6924145730898992,
+      "high": 0.7067753250148758,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6559856088973791,
+      "high": 0.6713989308865049,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7078850775617217,
+      "high": 0.7222535777958842,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6919823479905017,
+      "high": 0.7072051703222028,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6788112647783086,
+      "high": 0.6891957557323748,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.730318126210906,
+      "high": 0.7402313941304925,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.7157449113600427,
+      "high": 0.7260853683026934,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6786566777478272,
+      "high": 0.6894996600265442,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7301285236694579,
+      "high": 0.7403482615542888,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.7156347299078025,
+      "high": 0.7263620966055242,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6780913198236717,
+      "high": 0.6898611133713208,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.7294026428354893,
+      "high": 0.7410043642961136,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.7149612412496521,
+      "high": 0.7268771710513168,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6770676055177351,
+      "high": 0.6906091881771842,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7286548092875059,
+      "high": 0.7413672531238775,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.7140157652517907,
+      "high": 0.7273602343404965,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6760707164420088,
+      "high": 0.6916104984177722,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7277482923369103,
+      "high": 0.7418665233659396,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.712912326642874,
+      "high": 0.7281078557469116,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6993307592029103,
+      "high": 0.7087921024113705,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.7498570899364091,
+      "high": 0.7587179386839528,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.7366237137336762,
+      "high": 0.7459522902572735,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6988013184757196,
+      "high": 0.7089134346548398,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7495546253775135,
+      "high": 0.7587802970272173,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.7363146687892264,
+      "high": 0.7460817939156706,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6984671901792594,
+      "high": 0.7094532227189813,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.749228433076573,
+      "high": 0.7591207787115956,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.7359204591184696,
+      "high": 0.7464298557620467,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6975180915308724,
+      "high": 0.7097507630027973,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7485332862764847,
+      "high": 0.759730995700441,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.7350219687960985,
+      "high": 0.7469448083120999,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6962218066160547,
+      "high": 0.7109322062912699,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7472391158816046,
+      "high": 0.7602873068999619,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.733805963236683,
+      "high": 0.7477803505089877,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.5689377070997469,
+      "high": 0.5960273287526558,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6330042015057951,
+      "high": 0.6594120477413297,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6082849277316347,
+      "high": 0.6358043591350481,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.569287583219766,
+      "high": 0.5958329332509107,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6326652842102677,
+      "high": 0.6589023320941758,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6080786329655252,
+      "high": 0.6356714759714015,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.5702345039074694,
+      "high": 0.5956458837019776,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.633867665743381,
+      "high": 0.6585003979384223,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6092876865785383,
+      "high": 0.6354733846813106,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.5695165122770087,
+      "high": 0.5956229391727403,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6334825794550516,
+      "high": 0.6584752963965033,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6087387641905552,
+      "high": 0.6353919207123578,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.5678020152789051,
+      "high": 0.596927881851239,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6322993501050388,
+      "high": 0.6600849891166558,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6075404049917128,
+      "high": 0.6368931850835775,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.5885303647858687,
+      "high": 0.6073250003331938,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6500573590421928,
+      "high": 0.6684165467782028,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.627394864359468,
+      "high": 0.6465840108216176,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.5878198555240162,
+      "high": 0.6076074987620093,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6494330023931232,
+      "high": 0.6683836665689495,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6267989503039231,
+      "high": 0.6468860907677587,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.5883423355917754,
+      "high": 0.6076803662707265,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6496851263834423,
+      "high": 0.6685401891791416,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6273627003424675,
+      "high": 0.6469064101485483,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.5869322675987645,
+      "high": 0.6089515217857677,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6484134049103828,
+      "high": 0.669934460437493,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6257528842023184,
+      "high": 0.6480210065934303,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.5865534447640892,
+      "high": 0.6093931688188299,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6478409179463002,
+      "high": 0.6706666284398345,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6251874498793322,
+      "high": 0.6488653635063486,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6127697101591908,
+      "high": 0.6269155315614863,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6726434052362471,
+      "high": 0.685909513638867,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6520987354630909,
+      "high": 0.6661476028377141,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6129059881287661,
+      "high": 0.6270799048111801,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6721891839761475,
+      "high": 0.6862755217529057,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.65180961924423,
+      "high": 0.6663623522348977,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6122740121217752,
+      "high": 0.6277700695345997,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.671546789309055,
+      "high": 0.6869471738763608,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.650947752065769,
+      "high": 0.6672167628248581,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6119035141344217,
+      "high": 0.6292470232056698,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6705543602391932,
+      "high": 0.6882976238944871,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6502304568398245,
+      "high": 0.6685599876608314,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6109260061573779,
+      "high": 0.6297788502647754,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6692651165576315,
+      "high": 0.6895047342238025,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6490555127845483,
+      "high": 0.6695344058551727,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6348057211062025,
+      "high": 0.6469018018692163,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.692417515739433,
+      "high": 0.7038169669143943,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6738286351196412,
+      "high": 0.6856857617199621,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6351412900565998,
+      "high": 0.647476529231495,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6924361794805346,
+      "high": 0.7042987878302764,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6739096909579628,
+      "high": 0.6865394190455268,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6343718893802239,
+      "high": 0.6476763582587038,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6915955309240585,
+      "high": 0.704967886968686,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6730091296331686,
+      "high": 0.6868120093070526,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.634421545079773,
+      "high": 0.648226947907846,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6906970092894315,
+      "high": 0.7065128173768845,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6724003828138012,
+      "high": 0.6882448298154334,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6330027944923997,
+      "high": 0.6492113810278667,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.689065822184156,
+      "high": 0.7075931765093573,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6709053188609617,
+      "high": 0.6893841535735385,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6544324332616461,
+      "high": 0.6651238330799111,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.7084417385807006,
+      "high": 0.7187501377137318,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6919332848935097,
+      "high": 0.7026495560919853,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6544481817042775,
+      "high": 0.6655315840703132,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7081471982937367,
+      "high": 0.7191153569449504,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6917169199116701,
+      "high": 0.7031029542247844,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6541646576501841,
+      "high": 0.6660830366091082,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.7073363914662716,
+      "high": 0.7200552727148198,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6910559434247076,
+      "high": 0.7038936304629021,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6537969640253939,
+      "high": 0.6669394779985003,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7065925400426981,
+      "high": 0.721394019126261,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6903416506744753,
+      "high": 0.7053485821152109,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6521888660105841,
+      "high": 0.6678635421413746,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7047244218836363,
+      "high": 0.7231175752577285,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "ZECUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6885082624534589,
+      "high": 0.7067668845093416,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6018741783800182,
+      "high": 0.673057172291088,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6696409161490683,
+      "high": 0.7382049713001532,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6466398224997946,
+      "high": 0.7193812422541371,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6050625139181527,
+      "high": 0.6739485041956744,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6709562580396966,
+      "high": 0.7392702325410527,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.648400572030709,
+      "high": 0.7202599223995544,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6057397609978914,
+      "high": 0.6729658058903412,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6716412366104101,
+      "high": 0.7391304347826086,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6499979740680714,
+      "high": 0.7198762868258425,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6090695854116518,
+      "high": 0.6682880760441555,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6782091549491084,
+      "high": 0.7331380358496161,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.655476323955785,
+      "high": 0.7140680803571429,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6136026194348749,
+      "high": 0.6722837382173057,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6834088404116746,
+      "high": 0.7325459893129803,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D01",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6600307855134266,
+      "high": 0.7147870592262923,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6124502967991139,
+      "high": 0.6626893952511225,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6758913249240461,
+      "high": 0.7240095849000541,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6539976624062135,
+      "high": 0.7050098151175201,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6131492862456166,
+      "high": 0.6630940264005264,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.675200583515682,
+      "high": 0.724868220651579,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6546752261849258,
+      "high": 0.7054218912101717,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6113106471192583,
+      "high": 0.6630324906873826,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6744172619367312,
+      "high": 0.7234074962324383,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.653152998302995,
+      "high": 0.7046214361540795,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6098789072048961,
+      "high": 0.6635385708747901,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.6737020119241725,
+      "high": 0.7223536585365854,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.651637487509115,
+      "high": 0.7039579499761467,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6048727953016746,
+      "high": 0.6661625731639718,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.6696509619667026,
+      "high": 0.725495367702469,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D02",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.647196834466201,
+      "high": 0.7076332819429376,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6376153831414362,
+      "high": 0.6732440930998002,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.6987120619046867,
+      "high": 0.733753195061834,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.6795076712904582,
+      "high": 0.7160672149177624,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6374622059938765,
+      "high": 0.6725257755645472,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.6984409561730262,
+      "high": 0.7343021137026239,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6792074155656891,
+      "high": 0.7163530022726242,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6381235619765744,
+      "high": 0.6718109567727761,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.6999990716672855,
+      "high": 0.7322179260255205,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6808577434873234,
+      "high": 0.7145807946566423,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6379288044447843,
+      "high": 0.6737504117387058,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7006097386857334,
+      "high": 0.7328348808955344,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.68107561737076,
+      "high": 0.714891966037887,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6384518345894272,
+      "high": 0.6713662115309004,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7009626708443628,
+      "high": 0.731829441744696,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D03",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.6812748231579304,
+      "high": 0.7141015300219277,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.661539606054149,
+      "high": 0.6915591643492237,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.7166126922592032,
+      "high": 0.7443313603090372,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.7005350185027862,
+      "high": 0.7297520054346484,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6606029572836802,
+      "high": 0.691151533175183,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7155728254060951,
+      "high": 0.7450024217834273,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.6995789450864773,
+      "high": 0.7301651754979473,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6612511414331503,
+      "high": 0.6918024172359433,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.7161966582644659,
+      "high": 0.7447701171742275,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.6999434608263589,
+      "high": 0.7301509310569062,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.661123213031694,
+      "high": 0.6922277689221187,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7155635062611807,
+      "high": 0.743454918394468,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.6997602495687822,
+      "high": 0.7292581187769608,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6620270472867483,
+      "high": 0.6919372116243996,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7170142054113247,
+      "high": 0.7429000381666927,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D04",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.7010328254704837,
+      "high": 0.7287241019401218,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 1,
+      "low": 0.6912209846585905,
+      "high": 0.7185612839684328,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 1,
+      "low": 0.7416045485622361,
+      "high": 0.7667800989408639,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 1,
+      "low": 0.7281653298204012,
+      "high": 0.7546665446492091,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 3,
+      "low": 0.6906026246210568,
+      "high": 0.7187651710739619,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 3,
+      "low": 0.7401355629548628,
+      "high": 0.7673057685444431,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 3,
+      "low": 0.7270164846326478,
+      "high": 0.7551250508914295,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 7,
+      "low": 0.6906447220740033,
+      "high": 0.7184293955696912,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 7,
+      "low": 0.7405608942461566,
+      "high": 0.7664449564813829,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 7,
+      "low": 0.7275014696170051,
+      "high": 0.754525926010683,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 14,
+      "low": 0.6893952001182422,
+      "high": 0.7197449487356289,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 14,
+      "low": 0.7384182902688716,
+      "high": 0.7665688142203555,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 14,
+      "low": 0.7251531054844726,
+      "high": 0.7548216783002346,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "conservative",
+      "block_days": 28,
+      "low": 0.6910072544290708,
+      "high": 0.7191349820157766,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "optimistic",
+      "block_days": 28,
+      "low": 0.7388194510857001,
+      "high": 0.7656886117235786,
+      "valid_repetitions": 2000
+    },
+    {
+      "symbol": "XAUUSDT",
+      "variant": "D05",
+      "scenario": "excluded",
+      "block_days": 28,
+      "low": 0.7261274978119405,
+      "high": 0.7539974632534698,
+      "valid_repetitions": 2000
+    }
+  ],
+  "arithmetic_means": [
+    {
+      "symbol": "BTCUSDT",
+      "scenario": "conservative",
+      "unweighted_mean": 0.6636324745868387,
+      "duplicated_variant_weighted_ratio": 0.6796470866265788,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "scenario": "optimistic",
+      "unweighted_mean": 0.7155643472547323,
+      "duplicated_variant_weighted_ratio": 0.7309648224492118,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "scenario": "excluded",
+      "unweighted_mean": 0.6999511687613891,
+      "duplicated_variant_weighted_ratio": 0.7164117136899599,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "ZECUSDT",
+      "scenario": "conservative",
+      "unweighted_mean": 0.6202460054210861,
+      "duplicated_variant_weighted_ratio": 0.6353231689823353,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "ZECUSDT",
+      "scenario": "optimistic",
+      "unweighted_mean": 0.6793284181232508,
+      "duplicated_variant_weighted_ratio": 0.6926103528833149,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "ZECUSDT",
+      "scenario": "excluded",
+      "unweighted_mean": 0.659095029983334,
+      "duplicated_variant_weighted_ratio": 0.6739307646323569,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "XAUUSDT",
+      "scenario": "conservative",
+      "unweighted_mean": 0.6624435015980308,
+      "duplicated_variant_weighted_ratio": 0.6772226304188097,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "XAUUSDT",
+      "scenario": "optimistic",
+      "unweighted_mean": 0.7209126567824555,
+      "duplicated_variant_weighted_ratio": 0.7321822189566495,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    },
+    {
+      "symbol": "XAUUSDT",
+      "scenario": "excluded",
+      "unweighted_mean": 0.7034412872495733,
+      "duplicated_variant_weighted_ratio": 0.7166070595552791,
+      "warning": "Neither statistic is an independent pooled estimate; variants reuse candles and outcomes."
+    }
+  ],
+  "limitations": [
+    "pointwise not simultaneous CI",
+    "block-length and stationarity sensitivity",
+    "resolved label correlations omit ambiguous/unresolved",
+    "three preselected surviving instruments, single venue; selection/survivorship not corrected",
+    "retrospective variants, no independent 45-experiment interpretation"
+  ],
+  "phase1_dependency_versions": "not recorded directly in Phase1 execution.json; present environment frozen, exact historical environment NOT VERIFIED"
+}

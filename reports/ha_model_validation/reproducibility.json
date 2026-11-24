@@ -1,0 +1,101 @@
+{
+  "commit": "fed1f51df2781990795339e69509b31bc701bad3",
+  "baseline": "baseline.json",
+  "current_environment": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "pyarrow": "26.0.1",
+    "plotly": "7.1.0",
+    "pytest": "9.2.0",
+    "playwright": "1.65.2"
+  },
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "tests": {
+    "tests": 278,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe scripts\\run_ha_validation.py",
+    ".\\.venv\\Scripts\\python.exe -m pytest -q --junitxml=reports/ha_model_validation/tests.xml",
+    ".\\.venv\\Scripts\\python.exe scripts\\report_ha_validation.py"
+  ],
+  "network_requests": 0,
+  "source_hashes": {
+    "scripts/report_ha_validation.py": "ee089829a61a121ac22400dce2f84547b54a0e1b467277f50ece6ca3faa8a505",
+    "scripts/run_ha_validation.py": "fcd2a1c0e97a42dc27d60353a96bd0ab24f06b25edb75153dfd4d2c7fb63e262",
+    "scripts/supplement_ha_validation.py": "5da5b209ab565c70da9335bd7006a515a511b3d24cc3caf80b35f9a5ad24466c",
+    "tests/test_ha_validation.py": "3ff2e18d756bb5912e62c503244ab5a6bdff816d44bc1f383054348f49e0bfb3"
+  },
+  "reference_source_hashes": {
+    "src/ha_validation/reference.py": "f6cbb98ef3691da6f33ab85281074e1c1d7a122bd0748eac262d2bc780c479b9",
+    "src/ha_validation/statistics.py": "03a8a4ed396cc147c44ef1bb95cc77ccd6e10e2f8ad894da282345de84ae261c",
+    "src/ha_validation/__init__.py": "890cf243edcd05dddd54c1156bbbb8a0e4ad925347511740c2641ebe37c2f357"
+  },
+  "result_reconciliation": {
+    "full_history": {
+      "matched_rows": 45,
+      "expected_rows": 45,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "partitioned": {
+      "matched_rows": 135,
+      "expected_rows": 135,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "yearly": {
+      "matched_rows": 237,
+      "expected_rows": 237,
+      "max_numeric_difference": 0.0,
+      "discrepancies": []
+    }
+  },
+  "status": "PASS",
+  "report_source_hash": "ee089829a61a121ac22400dce2f84547b54a0e1b467277f50ece6ca3faa8a505",
+  "artifact_hashes": {
+    "ambiguity_audit.csv": "4f756896836bacff14e3ad01179989c0a812b919845615f019a3da6624539962",
+    "baseline.json": "d66915e392e3454fb4985325f2c9c342c9f0481b7039f1fc131fdae617087d1d",
+    "bootstrap_sensitivity.csv": "13f8c3f8ca2500eccfd9345e30278d84244c380982876cb886daeaa889158598",
+    "browser_qa.json": "0e1d78adfe24053b5ed50a845447e4ba135fe881bfa0034e6c787f04f0e4989e",
+    "data_leakage_audit.json": "c7cd6dfabcaadb734e831cd9aa79a907e2d7409557c253e33ee5fcbac5ec27f5",
+    "data_quality_audit.json": "a5ab280aaea541f7c91da8546492a175983ab78d5b7df95852e86bbbcfb14771",
+    "directional_monthly_statistics.csv": "8516adc5f33911e12b11a142fd12412bed81b04e73a3e8c7f265c94cd31fb5c1",
+    "directional_statistics.csv": "8f43533f6e6300a040715ee43b793896c8aef3ec1fad08bf6d59fa9796e4adfb",
+    "FINAL_VALIDATION_REPORT.html": "65a28e976762b80c7df1fe3379a694671bf1c4b27f78c36e1c83d8aeab14de69",
+    "FINAL_VALIDATION_REPORT.md": "5089217fcc897b2b3c7fc46ef2d544457742d0de64e13afef1062c1283bd909e",
+    "frozen_config.json": "a413f9df95b54a10f4bb1711e27b3fded7ba66bcf78b7b131aef961bb98c1e95",
+    "full_history_reproduced.csv": "4f756896836bacff14e3ad01179989c0a812b919845615f019a3da6624539962",
+    "ha_price_bias.csv": "ea41b8baa7d43e5e637dbfafa99dd66940e02f1a8bc327401cdf473f74483856",
+    "independent_detection_audit.json": "5bfd9a2b4175440dbd4794abd89f28d5335b0f1929d78c1643ca98c7297e8ac8",
+    "lookahead_audit.json": "6d666ada7bf6c331ef8da318574422e08876805c7018d2371780385df37dfb97",
+    "market_condition_statistics.csv": "9d4636de0fa8abddef81a71cf347d933b5ba5374af0e7787b11ac380aef335fa",
+    "monthly_statistics.csv": "d2de9c71a94f0d00c007a3a3fadff46f16c9e7ae0aa0cbad67f5f95a8922520f",
+    "observation_dependence.json": "a3a6393e0d6574557293437fdd382869e88fb05b65139cf5c02f6df0c7f743f8",
+    "oos_review.csv": "113c34d72a83a657be2699fb4e8cb4ec97f6d2690d39f38649ca814f64096faf",
+    "outcome_reconciliation.json": "7acb92e2c19d1186b9088051deb594f0855a19bf5ce21692259aaded24c82552",
+    "outside_boundaries.json": "bf3de73990393bdd02689080165acb314b7c1d9cbe583a7a12a1fea35a468673",
+    "pattern_mismatches.csv": "fb1c47ed3a55a2f2a8542dda1458e3e151f99c4dd738294d236e552782c720de",
+    "phase1_identity_audit.json": "888ea79d458f148ecefd04ae57c14a36bef71177cdd5546d34730d1c1f00af4c",
+    "pipeline.log": "7a89e0f9abf72b4a59f91a74ffe6fbe9807bf2aa139514d2bd912d001b2a6cf1",
+    "preservation_verified.json": "8da59844bfa331a8d80f2821f4224a0eb03e87efeb40ac49579aa922881073ea",
+    "qa_1440_chart.png": "c6674bb31f5cd691c9e1be9b732a373328f25de2ff378ee45d8c3e615f2b36c0",
+    "qa_1440_statistics.png": "17c07516bf00c3abc37d647832948d81aa209ffc6f7efc7b797406e2bc30a744",
+    "qa_1440_top.png": "917eb8d61259fd4fdff2c3414b2237f46e744f7a09d9e3569ad0040ace733c52",
+    "qa_390_chart.png": "8dd921638bec74b7c42579e2e7e351f3e83ea654821dbcc876bf796d50fe4232",
+    "qa_390_statistics.png": "bd8d0b1da9fd32931438068576635442281a704d64a584d4783bc9c85999cfb3",
+    "qa_390_top.png": "dfc03f45def7eb40c90ada96e492b669bae42bd79e2038fe64cf48ba7d77cf10",
+    "quarterly_statistics.csv": "b31b525fecdd6c1036c97637e73c45da48c93647a487a1a5c9c42f50e65a6039",
+    "source_review.json": "2a6e70e23bfc3c44071291a25b3b017fc3e585a282b2985cd08aa5603c0f1084",
+    "statistical_reliability.json": "cc992033263abea1c91e58ef955fa5f1ec15debf1b188e3d160b6749f9b34435",
+    "supplemental_field_audit.json": "34d792389035ffe3d6e065768d4a25acfb4b0f9289c97ca8987dfce2f8aad995",
+    "temporal_variability.json": "5bd6e47ccc3a325b56d1acf011b9c22488e17b86e60c118aa4a6654959b7d374",
+    "tests.log": "8154fd05122921e4e850cbf737fad123475b5d5a7a012e5426a2f4a704d44d56",
+    "tests.xml": "57a9c7db55bc9088d53bfbb6183fa2804c38a445c3cbe42a989de7505973e9e7",
+    "validation_summary.json": "7c6f7ce6bbbfd55fd1a0f56405927a315f3ff1ee96eb75ce5d64ff7b23af2337",
+    "yearly_statistics.csv": "904aff8fb96f092bb39a882b0702ab0f551be6b812b074fe67f699c435bb4a37"
+  }
+}

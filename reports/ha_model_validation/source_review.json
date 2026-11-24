@@ -1,0 +1,37 @@
+{
+  "files": [
+    "src/data_validation/validator.py",
+    "src/ha_research/data.py",
+    "src/ha_research/indicators.py",
+    "src/ha_research/descriptive.py",
+    "src/ha_research/variants.py",
+    "scripts/run_ha_variants.py"
+  ],
+  "findings": [
+    {
+      "component": "normalization",
+      "status": "WARNING",
+      "finding": "normalize_timestamp selects unit using full-column median. Fixed same-unit source is prefix-stable; mixed units or revisions can change earlier timestamps."
+    },
+    {
+      "component": "duplicate handling",
+      "status": "WARNING",
+      "finding": "Global conflict quarantine may remove prior rows when a conflicting revision is appended. No duplicate/conflict observed in frozen processed M1."
+    },
+    {
+      "component": "indicators/detection",
+      "status": "PASS",
+      "finding": "HA/EMA past recurrences; pattern confirmed only at close. Independent full-history calculations and sampled prefix tests reconciled."
+    },
+    {
+      "component": "outcomes",
+      "status": "PASS",
+      "finding": "Future raw OHLC intentionally used only for outcome from next bar; not detection. Partition scope censored."
+    },
+    {
+      "component": "statistics",
+      "status": "WARNING",
+      "finding": "Full-history descriptive confidence intervals and calendar groups use future observations in cohort, but are never input to detector. Retrospective diagnostics are not deployed filters."
+    }
+  ]
+}

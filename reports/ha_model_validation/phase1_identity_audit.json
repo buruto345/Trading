@@ -1,0 +1,275 @@
+{
+  "checks": [
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/BTCUSDT_1m.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/BTCUSDT_features.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_descriptive/BTCUSDT_geometry.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/manifests/ha_m1/BTCUSDT.json",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_doji_variants/BTCUSDT_observations.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/ZECUSDT_1m.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/ZECUSDT_features.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_descriptive/ZECUSDT_geometry.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/manifests/ha_m1/ZECUSDT.json",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_doji_variants/ZECUSDT_observations.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/XAUUSDT_1m.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/processed/ha_m1/XAUUSDT_features.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_descriptive/XAUUSDT_geometry.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "data/manifests/ha_m1/XAUUSDT.json",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "input_and_output_hashes",
+      "path": "reports/ha_doji_variants/XAUUSDT_observations.parquet",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/data.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/descriptive.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/descriptive_report.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/indicators.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/report.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/statistics.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/variants.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/variant_report.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "src/ha_research/__init__.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/collect_ha_m1.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/qa_ha_descriptive.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/qa_ha_research.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/qa_ha_variants.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/run_ha_descriptive.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/run_ha_research.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "scripts/run_ha_variants.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "tests/test_ha_descriptive.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "tests/test_ha_research.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "tests/test_ha_variants.py",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_CHANGE_SUMMARY.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_DESCRIPTIVE_CHANGES.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_DESCRIPTIVE_PROTOCOL.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_DOJI_VARIANTS_PROTOCOL.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_ORIGINAL_METHOD.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_RESEARCH_PROTOCOL.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_UNRESOLVED_METHOD.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_VARIANTS_CHANGES.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "docs/HA_WIN_RATE_CLARIFICATION_REQUEST.md",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "config/ha_doji_variants.json",
+      "match": true,
+      "baseline_present": true
+    },
+    {
+      "group": "source_hashes",
+      "path": "config/ha_ema_research.json",
+      "match": true,
+      "baseline_present": true
+    }
+  ],
+  "mismatches": []
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Chrome offline desktop/mobile; report navigation, density toggle, charts, overflow",
+  "checks": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "charts": 22,
+      "sections": 17,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "external_requests": [],
+      "density_toggle": true,
+      "final_navigation": true,
+      "status": "PASS"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "charts": 22,
+      "sections": 17,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "external_requests": [],
+      "density_toggle": true,
+      "final_navigation": true,
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "instruments": [
+    "BTCUSDT",
+    "ZECUSDT",
+    "XAUUSDT"
+  ],
+  "research_candles": 7666079,
+  "observations": 225458,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "classification_mismatches": 0,
+  "outcome_discrepancies": 0,
+  "reconciliation": {
+    "full_history": {
+      "matched_rows": 45,
+      "expected_rows": 45,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "partitioned": {
+      "matched_rows": 135,
+      "expected_rows": 135,
+      "max_numeric_difference": 1.1102230246251565e-16,
+      "discrepancies": []
+    },
+    "yearly": {
+      "matched_rows": 237,
+      "expected_rows": 237,
+      "max_numeric_difference": 0.0,
+      "discrepancies": []
+    }
+  },
+  "tests": {
+    "tests": 278,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "preservation": {
+    "files": 338,
+    "unchanged": 338
+  },
+  "tasks": [
+    {
+      "Task": "T01",
+      "Status": "WARNING",
+      "Evidence": "data_quality_audit.json",
+      "Coverage": "Toàn bộ 3 Parquet M1",
+      "Limitations": "Thiếu đuôi 1 ngày/mã; chưa xác minh lịch đóng cửa hoặc parse lại ZIP nguồn."
+    },
+    {
+      "Task": "T02",
+      "Status": "PASS",
+      "Evidence": "independent_detection_audit.json; pattern_mismatches.csv",
+      "Coverage": "Toàn bộ nến và 15 nhóm mẫu",
+      "Limitations": "Đúng với đặc tả đóng băng; không xác nhận quy tắc của tác giả."
+    },
+    {
+      "Task": "T03",
+      "Status": "WARNING",
+      "Evidence": "ha_price_bias.csv; outside_boundaries.json",
+      "Coverage": "4 trường giá × 4 phép đo × 15 nhóm",
+      "Limitations": "Giá HA tổng hợp; không chứng minh có thể khớp lệnh."
+    },
+    {
+      "Task": "T04",
+      "Status": "WARNING",
+      "Evidence": "lookahead_audit.json; source_review.json",
+      "Coverage": "9 prefix, mọi variant; chỉ báo toàn lịch sử",
+      "Limitations": "Median-unit normalization có phụ thuộc toàn cột; nguồn sửa đổi có thể thay lịch sử."
+    },
+    {
+      "Task": "T05",
+      "Status": "PASS",
+      "Evidence": "data_leakage_audit.json",
+      "Coverage": "Mọi timestamp/nhãn partition",
+      "Limitations": "Full scope có thể dùng tương lai partition; không dùng nó làm đánh giá holdout."
+    },
+    {
+      "Task": "T06",
+      "Status": "PASS",
+      "Evidence": "outcome_reconciliation.json; ambiguity_audit.csv",
+      "Coverage": "Mọi observation, 2 scopes, 3 scenarios",
+      "Limitations": "M1 không xác định thứ tự hai biên trong một nến."
+    },
+    {
+      "Task": "T07",
+      "Status": "WARNING",
+      "Evidence": "observation_dependence.json",
+      "Coverage": "15 nhóm; 30 cặp variant",
+      "Limitations": "Không ước lượng số mẫu độc lập; correlations là mô tả."
+    },
+    {
+      "Task": "T08",
+      "Status": "WARNING",
+      "Evidence": "monthly_statistics.csv; quarterly_statistics.csv; yearly_statistics.csv",
+      "Coverage": "Mọi kỳ kể cả kỳ rỗng",
+      "Limitations": "CI theo kỳ ngắn ít block; chưa stationarity."
+    },
+    {
+      "Task": "T09",
+      "Status": "WARNING",
+      "Evidence": "market_condition_statistics.csv; HA_VALIDATION_PROTOCOL.md",
+      "Coverage": "Mọi nhóm đã định trước, kể cả unknown/rỗng",
+      "Limitations": "Phân nhóm chẩn đoán, không bộ lọc hoặc quan hệ nhân quả."
+    },
+    {
+      "Task": "T10",
+      "Status": "WARNING",
+      "Evidence": "directional_statistics.csv; directional_monthly_statistics.csv",
+      "Coverage": "Cả bullish và bearish × 15",
+      "Limitations": "Chênh lệch không chứng minh nguyên nhân hay hướng giao dịch."
+    },
+    {
+      "Task": "T11",
+      "Status": "WARNING",
+      "Evidence": "statistical_reliability.json; bootstrap_sensitivity.csv",
+      "Coverage": "45 full + 135 partition + 237 yearly cũ",
+      "Limitations": "CI pointwise; phụ thuộc block, selection/survivorship và tái sử dụng dữ liệu."
+    },
+    {
+      "Task": "T12",
+      "Status": "WARNING",
+      "Evidence": "oos_review.csv; HA_VALIDATION_PROTOCOL.md",
+      "Coverage": "IS/validation/retrospective OOS, mọi nhóm",
+      "Limitations": "Holdout mới: NOT VERIFIED; chưa có dữ liệu chưa từng xem."
+    },
+    {
+      "Task": "T13",
+      "Status": "WARNING",
+      "Evidence": "reproducibility.json; baseline.json; tests.xml",
+      "Coverage": "Hash, seed, kết quả và môi trường hiện tại",
+      "Limitations": "Phase1 không ghi trực tiếp versions trong execution.json; môi trường cũ chính xác chưa xác minh."
+    },
+    {
+      "Task": "T14",
+      "Status": "PASS",
+      "Evidence": "FINAL_VALIDATION_REPORT.md/html; browser_qa.json",
+      "Coverage": "17 phần, bảng audit và chart offline",
+      "Limitations": "PASS chỉ sau browser QA đạt; không nâng mức xác minh trading."
+    }
+  ],
+  "status_counts": {
+    "PASS": 4,
+    "WARNING": 10,
+    "FAIL": 0,
+    "NOT VERIFIED": 0
+  },
+  "original_author_claim": "NOT VERIFIED",
+  "executable_win_rate": "NOT VERIFIED",
+  "new_holdout": "NOT VERIFIED",
+  "phase1_identity_mismatches": 0
+}

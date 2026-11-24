@@ -1,0 +1,140 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "observations": 114252,
+    "saved_field_mismatches": {
+      "reference": 0,
+      "adverse": 0,
+      "risk": 0,
+      "favorable": 0,
+      "doji_market_close": 0,
+      "reference_minus_market_close": 0,
+      "market_close_outside_boundaries": 0,
+      "body_ratio": 0,
+      "doji_range": 0
+    },
+    "geometry_numeric_mismatches": {
+      "body_ratio": 0,
+      "range": 0,
+      "tolerance": 0
+    },
+    "normalized_source_timestamp_mismatches": 0,
+    "explicit_ms_conversion_mismatches": 0,
+    "normalization_prefixes": [
+      {
+        "rows": 1000,
+        "mismatches": 0
+      },
+      {
+        "rows": 10000,
+        "mismatches": 0
+      },
+      {
+        "rows": 50000,
+        "mismatches": 0
+      },
+      {
+        "rows": 1813680,
+        "mismatches": 0
+      },
+      {
+        "rows": 3627359,
+        "mismatches": 0
+      }
+    ],
+    "source_timestamp_min": 1577750400000,
+    "source_timestamp_max": 1795391940000
+  },
+  {
+    "symbol": "ZECUSDT",
+    "observations": 97596,
+    "saved_field_mismatches": {
+      "reference": 0,
+      "adverse": 0,
+      "risk": 0,
+      "favorable": 0,
+      "doji_market_close": 0,
+      "reference_minus_market_close": 0,
+      "market_close_outside_boundaries": 0,
+      "body_ratio": 0,
+      "doji_range": 0
+    },
+    "geometry_numeric_mismatches": {
+      "body_ratio": 0,
+      "range": 0,
+      "tolerance": 0
+    },
+    "normalized_source_timestamp_mismatches": 0,
+    "explicit_ms_conversion_mismatches": 0,
+    "normalization_prefixes": [
+      {
+        "rows": 1000,
+        "mismatches": 0
+      },
+      {
+        "rows": 10000,
+        "mismatches": 0
+      },
+      {
+        "rows": 50000,
+        "mismatches": 0
+      },
+      {
+        "rows": 1787519,
+        "mismatches": 0
+      },
+      {
+        "rows": 3575038,
+        "mismatches": 0
+      }
+    ],
+    "source_timestamp_min": 1580889660000,
+    "source_timestamp_max": 1795391940000
+  },
+  {
+    "symbol": "XAUUSDT",
+    "observations": 13610,
+    "saved_field_mismatches": {
+      "reference": 0,
+      "adverse": 0,
+      "risk": 0,
+      "favorable": 0,
+      "doji_market_close": 0,
+      "reference_minus_market_close": 0,
+      "market_close_outside_boundaries": 0,
+      "body_ratio": 0,
+      "doji_range": 0
+    },
+    "geometry_numeric_mismatches": {
+      "body_ratio": 0,
+      "range": 0,
+      "tolerance": 0
+    },
+    "normalized_source_timestamp_mismatches": 0,
+    "explicit_ms_conversion_mismatches": 0,
+    "normalization_prefixes": [
+      {
+        "rows": 1000,
+        "mismatches": 0
+      },
+      {
+        "rows": 10000,
+        "mismatches": 0
+      },
+      {
+        "rows": 50000,
+        "mismatches": 0
+      },
+      {
+        "rows": 249597,
+        "mismatches": 0
+      },
+      {
+        "rows": 499194,
+        "mismatches": 0
+      }
+    ],
+    "source_timestamp_min": 1765440300000,
+    "source_timestamp_max": 1795391940000
+  }
+]

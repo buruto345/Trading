@@ -1,0 +1,71 @@
+{
+  "method": {
+    "symbols": [
+      "BTCUSDT",
+      "ZECUSDT",
+      "XAUUSDT"
+    ],
+    "variants": {
+      "D01": 0.05,
+      "D02": 0.1,
+      "D03": 0.2,
+      "D04": 0.3,
+      "D05": 0.4
+    },
+    "minimum_pullback": 2,
+    "minimum_impulse": null,
+    "maximum_pullback": null,
+    "maximum_intermediate": null,
+    "maximum_observation_bars": null,
+    "outcome_interpretation": "H1_HA_reference_real_OHLC_first_passage",
+    "reference": "Doji HA close; not an executable fill",
+    "adverse_boundary": "bullish HA low; bearish HA high of Doji",
+    "favorable_boundary": "symmetric distance from reference, RR 1:1",
+    "buffer": 0,
+    "future_path": "original market OHLC, starting next candle",
+    "opposite_doji_policy": "invalidate before accepting as intermediate; uses variant threshold, both wicks and range expansion",
+    "floating_point_ulps": 32,
+    "scenarios": [
+      "conservative",
+      "optimistic",
+      "excluded"
+    ],
+    "bootstrap_block_days": 7,
+    "bootstrap_repetitions": 2000,
+    "seed": 20261124,
+    "network": false
+  },
+  "base": {
+    "symbols": [
+      "BTCUSDT",
+      "ZECUSDT",
+      "XAUUSDT"
+    ],
+    "cutoff_exclusive": "2026-11-24T00:00:00Z",
+    "ema_span": 100,
+    "warmup_bars": 500,
+    "train_end_exclusive": "2024-01-01T00:00:00Z",
+    "validation_end_exclusive": "2025-01-01T00:00:00Z",
+    "research_start_by_symbol": {
+      "XAUUSDT": "2026-01-05T00:00:00Z"
+    },
+    "workers": 4,
+    "minimum_free_disk_gb": 3,
+    "seed": 20261124,
+    "pattern_definition_status": "unresolved",
+    "outcome_definition_status": "unresolved"
+  },
+  "protocol_sha256": "5920d58139480e115cd5b6f8778a0e325a9af9d52447867a3708d0fa960552cf",
+  "audit": {
+    "block_lengths": [
+      1,
+      3,
+      7,
+      14,
+      28
+    ],
+    "repetitions": 2000,
+    "diagnostic_repetitions": 500,
+    "seed": 20261124
+  }
+}

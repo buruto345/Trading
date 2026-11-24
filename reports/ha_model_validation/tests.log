@@ -1,0 +1,7 @@
+........................................................................ [ 26%]
+........................................................................ [ 52%]
+........................................................................ [ 78%]
+............................................................             [100%]
+276 passed in 34.04s
+
+Final full-suite rerun after adding 2 partition/gap tests: 278 passed in 29.48s. Command: .\.venv\Scripts\python.exe -m pytest -q --junitxml=reports/ha_model_validation/tests.xml. tests.xml contains the final run.

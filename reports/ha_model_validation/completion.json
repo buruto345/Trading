@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "report_pending": false,
+  "tests": {
+    "tests": 278,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "browser_qa": "PASS"
+}

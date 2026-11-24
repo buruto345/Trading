@@ -1,0 +1,38 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "observations": 114252,
+    "partition_assignment_errors": 0,
+    "confirmation_time_errors": 0,
+    "partition_end_beyond_boundary": 0,
+    "full_outcome_crossing_partition": 0,
+    "scope_label_changes": 0,
+    "indicators_reset_at_partition": false,
+    "indicator_evidence": "independent continuous recurrence agrees across full history",
+    "holdout_status": "retrospective reused OOS"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "observations": 97596,
+    "partition_assignment_errors": 0,
+    "confirmation_time_errors": 0,
+    "partition_end_beyond_boundary": 0,
+    "full_outcome_crossing_partition": 0,
+    "scope_label_changes": 0,
+    "indicators_reset_at_partition": false,
+    "indicator_evidence": "independent continuous recurrence agrees across full history",
+    "holdout_status": "retrospective reused OOS"
+  },
+  {
+    "symbol": "XAUUSDT",
+    "observations": 13610,
+    "partition_assignment_errors": 0,
+    "confirmation_time_errors": 0,
+    "partition_end_beyond_boundary": 0,
+    "full_outcome_crossing_partition": 0,
+    "scope_label_changes": 0,
+    "indicators_reset_at_partition": false,
+    "indicator_evidence": "independent continuous recurrence agrees across full history",
+    "holdout_status": "retrospective reused OOS"
+  }
+]

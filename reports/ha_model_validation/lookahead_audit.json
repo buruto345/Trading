@@ -1,0 +1,260 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "prefixes": [
+      {
+        "prefix_bars": 1000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 10000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 50000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      }
+    ],
+    "outcome_start": "doji_index + 1",
+    "full_indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "normalization_note": "Frozen processed timestamps UTC; raw normalization infers epoch unit from whole-column median. Mixed-unit/revised inputs can change history; not observed in this fixed homogeneous snapshot."
+  },
+  {
+    "symbol": "ZECUSDT",
+    "prefixes": [
+      {
+        "prefix_bars": 1000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 10000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 50000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      }
+    ],
+    "outcome_start": "doji_index + 1",
+    "full_indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "normalization_note": "Frozen processed timestamps UTC; raw normalization infers epoch unit from whole-column median. Mixed-unit/revised inputs can change history; not observed in this fixed homogeneous snapshot."
+  },
+  {
+    "symbol": "XAUUSDT",
+    "prefixes": [
+      {
+        "prefix_bars": 1000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 10000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      },
+      {
+        "prefix_bars": 50000,
+        "reference_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "original_max_errors": {
+          "ha_open": 0.0,
+          "ha_high": 0.0,
+          "ha_low": 0.0,
+          "ha_close": 0.0,
+          "ema100": 0.0
+        },
+        "pattern_mismatch_variants": [],
+        "available_at_matches": true
+      }
+    ],
+    "outcome_start": "doji_index + 1",
+    "full_indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "normalization_note": "Frozen processed timestamps UTC; raw normalization infers epoch unit from whole-column median. Mixed-unit/revised inputs can change history; not observed in this fixed homogeneous snapshot."
+  }
+]

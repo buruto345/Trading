@@ -1,0 +1,152 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D01",
+    "months": 84,
+    "empty_months": 1,
+    "warning_months": 84,
+    "monthly_min": 0.5,
+    "monthly_max": 0.8166666666666667,
+    "monthly_std": 0.06465106116704823
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D02",
+    "months": 84,
+    "empty_months": 0,
+    "warning_months": 84,
+    "monthly_min": 0.5230769230769231,
+    "monthly_max": 0.7938931297709924,
+    "monthly_std": 0.04693460782070348
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D03",
+    "months": 84,
+    "empty_months": 0,
+    "warning_months": 84,
+    "monthly_min": 0.5695067264573991,
+    "monthly_max": 0.8333333333333334,
+    "monthly_std": 0.036889626338866756
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D04",
+    "months": 84,
+    "empty_months": 0,
+    "warning_months": 84,
+    "monthly_min": 0.5915492957746479,
+    "monthly_max": 0.8333333333333334,
+    "monthly_std": 0.03615236959023738
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D05",
+    "months": 84,
+    "empty_months": 0,
+    "warning_months": 84,
+    "monthly_min": 0.6184615384615385,
+    "monthly_max": 0.875,
+    "monthly_std": 0.03480114962643373
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D01",
+    "months": 82,
+    "empty_months": 0,
+    "warning_months": 82,
+    "monthly_min": 0.4339622641509434,
+    "monthly_max": 0.7906976744186046,
+    "monthly_std": 0.0676565513856417
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D02",
+    "months": 82,
+    "empty_months": 0,
+    "warning_months": 82,
+    "monthly_min": 0.5254237288135594,
+    "monthly_max": 0.78,
+    "monthly_std": 0.055295377690109976
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D03",
+    "months": 82,
+    "empty_months": 0,
+    "warning_months": 82,
+    "monthly_min": 0.5565217391304348,
+    "monthly_max": 0.7686274509803922,
+    "monthly_std": 0.050324675857657
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D04",
+    "months": 82,
+    "empty_months": 0,
+    "warning_months": 82,
+    "monthly_min": 0.5667655786350149,
+    "monthly_max": 0.7657142857142857,
+    "monthly_std": 0.04481189744530821
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D05",
+    "months": 82,
+    "empty_months": 0,
+    "warning_months": 82,
+    "monthly_min": 0.5766590389016019,
+    "monthly_max": 0.7845303867403315,
+    "monthly_std": 0.043282167031784544
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D01",
+    "months": 11,
+    "empty_months": 0,
+    "warning_months": 11,
+    "monthly_min": 0.6122448979591837,
+    "monthly_max": 0.7575757575757576,
+    "monthly_std": 0.04720035000944859
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D02",
+    "months": 11,
+    "empty_months": 0,
+    "warning_months": 11,
+    "monthly_min": 0.5887850467289719,
+    "monthly_max": 0.7619047619047619,
+    "monthly_std": 0.05527019146710168
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D03",
+    "months": 11,
+    "empty_months": 0,
+    "warning_months": 11,
+    "monthly_min": 0.643979057591623,
+    "monthly_max": 0.7664670658682635,
+    "monthly_std": 0.034928732513915116
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D04",
+    "months": 11,
+    "empty_months": 0,
+    "warning_months": 11,
+    "monthly_min": 0.6326530612244898,
+    "monthly_max": 0.7975708502024291,
+    "monthly_std": 0.04110697652536381
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D05",
+    "months": 11,
+    "empty_months": 0,
+    "warning_months": 11,
+    "monthly_min": 0.6711956521739131,
+    "monthly_max": 0.8228228228228228,
+    "monthly_std": 0.03881081441285178
+  }
+]

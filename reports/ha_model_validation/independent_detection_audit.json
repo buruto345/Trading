@@ -1,0 +1,662 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D01",
+    "candles_scanned": 3627360,
+    "original_patterns": 6009,
+    "reference_patterns": 6009,
+    "matching_keys": 6009,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D02",
+    "candles_scanned": 3627360,
+    "original_patterns": 11731,
+    "reference_patterns": 11731,
+    "matching_keys": 11731,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D03",
+    "candles_scanned": 3627360,
+    "original_patterns": 22776,
+    "reference_patterns": 22776,
+    "matching_keys": 22776,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D04",
+    "candles_scanned": 3627360,
+    "original_patterns": 32824,
+    "reference_patterns": 32824,
+    "matching_keys": 32824,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "BTCUSDT",
+    "variant": "D05",
+    "candles_scanned": 3627360,
+    "original_patterns": 40912,
+    "reference_patterns": 40912,
+    "matching_keys": 40912,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D01",
+    "candles_scanned": 3575039,
+    "original_patterns": 5413,
+    "reference_patterns": 5413,
+    "matching_keys": 5413,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D02",
+    "candles_scanned": 3575039,
+    "original_patterns": 10603,
+    "reference_patterns": 10603,
+    "matching_keys": 10603,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D03",
+    "candles_scanned": 3575039,
+    "original_patterns": 19909,
+    "reference_patterns": 19909,
+    "matching_keys": 19909,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D04",
+    "candles_scanned": 3575039,
+    "original_patterns": 27874,
+    "reference_patterns": 27874,
+    "matching_keys": 27874,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "ZECUSDT",
+    "variant": "D05",
+    "candles_scanned": 3575039,
+    "original_patterns": 33797,
+    "reference_patterns": 33797,
+    "matching_keys": 33797,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D01",
+    "candles_scanned": 463680,
+    "original_patterns": 669,
+    "reference_patterns": 669,
+    "matching_keys": 669,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D02",
+    "candles_scanned": 463680,
+    "original_patterns": 1333,
+    "reference_patterns": 1333,
+    "matching_keys": 1333,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D03",
+    "candles_scanned": 463680,
+    "original_patterns": 2632,
+    "reference_patterns": 2632,
+    "matching_keys": 2632,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D04",
+    "candles_scanned": 463680,
+    "original_patterns": 3904,
+    "reference_patterns": 3904,
+    "matching_keys": 3904,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  },
+  {
+    "symbol": "XAUUSDT",
+    "variant": "D05",
+    "candles_scanned": 463680,
+    "original_patterns": 5072,
+    "reference_patterns": 5072,
+    "matching_keys": 5072,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "classification_mismatches": 0,
+    "duplicate_keys": 0,
+    "geometry_classification_mismatches": {
+      "ready": 0,
+      "segment_id": 0,
+      "ema_zone": 0,
+      "color": 0,
+      "clean_direction": 0,
+      "both_wicks": 0
+    },
+    "indicator_comparison": {
+      "ha_open": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_close": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_high": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ha_low": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      },
+      "ema100": {
+        "max_abs": 0.0,
+        "outside_512eps": 0
+      }
+    },
+    "coverage": "exhaustive all research candles and all observations",
+    "root_cause": null
+  }
+]

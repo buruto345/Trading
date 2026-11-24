@@ -1,0 +1,27 @@
+2026-11-24 16:38:40,478 BTCUSDT independent data/indicator audit
+2026-11-24 16:38:50,676 BTCUSDT exhaustive suffix scan / first-passage verification: 114252 observation rows
+2026-11-24 16:39:07,964 BTCUSDT independent data/indicator audit
+2026-11-24 16:39:16,259 BTCUSDT exhaustive suffix scan / first-passage verification: 114252 observation rows
+2026-11-24 20:59:05,294 BTCUSDT independent data/indicator audit
+2026-11-24 20:59:19,674 BTCUSDT exhaustive suffix scan / first-passage verification: 114252 observation rows
+2026-11-24 20:59:51,788 BTCUSDT D01: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:00:00,123 BTCUSDT D02: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:00:08,843 BTCUSDT D03: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:00:19,666 BTCUSDT D04: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:00:32,859 BTCUSDT D05: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:00:45,502 ZECUSDT independent data/indicator audit
+2026-11-24 21:00:56,142 ZECUSDT exhaustive suffix scan / first-passage verification: 97596 observation rows
+2026-11-24 21:01:35,433 ZECUSDT D01: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:01:44,680 ZECUSDT D02: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:01:55,988 ZECUSDT D03: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:07,088 ZECUSDT D04: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:20,476 ZECUSDT D05: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:35,191 XAUUSDT independent data/indicator audit
+2026-11-24 21:02:36,147 XAUUSDT exhaustive suffix scan / first-passage verification: 13610 observation rows
+2026-11-24 21:02:46,848 XAUUSDT D01: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:48,240 XAUUSDT D02: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:49,986 XAUUSDT D03: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:52,089 XAUUSDT D04: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:02:55,296 XAUUSDT D05: reconcile, bias, dependence, calendar and diagnostic cohorts
+2026-11-24 21:03:00,480 Run complete test suite
+2026-11-24 21:03:47,856 Analysis completed: {'instruments': ['BTCUSDT', 'ZECUSDT', 'XAUUSDT'], 'research_candles': 7666079, 'observations': 225458, 'false_positives': 0, 'false_negatives': 0, 'classification_mismatches': 0, 'outcome_discrepancies': 0, 'reconciliation': {'full_history': {'matched_rows': 45, 'expected_rows': 45, 'max_numeric_difference': np.float64(1.1102230246251565e-16), 'discrepancies': []}, 'partitioned': {'matched_rows': 135, 'expected_rows': 135, 'max_numeric_difference': np.float64(1.1102230246251565e-16), 'discrepancies': []}, 'yearly': {'matched_rows': 237, 'expected_rows': 237, 'max_numeric_difference': 0.0, 'discrepancies': []}}, 'tests': {'tests': 276, 'failures': 0, 'errors': 0, 'skipped': 0}, 'preservation': {'files': 338, 'unchanged': 338}}
